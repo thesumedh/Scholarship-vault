@@ -1,64 +1,79 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { Shield, Code, Globe, Mail } from 'lucide-react';
+import { Shield, Github, Twitter, Globe } from 'lucide-react';
 
 export default function Footer() {
   return (
-    <footer className="border-t mt-xl py-xl" style={{ borderTop: '1px solid var(--border-color)', marginTop: '4rem', padding: '3rem 0', backgroundColor: '#0a0a0a' }}>
-      <div className="max-w-7xl mx-auto px-md grid grid-cols-1 md:grid-cols-4 gap-xl" style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(200px, 1fr))', gap: '2rem', padding: '0 2rem' }}>
-        
-        {/* Brand Column */}
+    <footer style={{ borderTop: '1px solid var(--border-color)', marginTop: '4rem', padding: '3rem 0', backgroundColor: 'var(--bg-main)' }}>
+      <div style={{ maxWidth: '1200px', margin: '0 auto', display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(200px, 1fr))', gap: '2rem', padding: '0 2rem' }}>
+
+        {/* Brand */}
         <div style={{ display: 'flex', flexDirection: 'column', gap: '1rem' }}>
-          <Link to="/" className="flex items-center gap-xs" style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', textDecoration: 'none', color: '#fff' }}>
-            <Shield className="text-accent" size={24} style={{ color: 'var(--accent-color)' }} />
-            <span className="font-bold text-lg" style={{ fontSize: '1.2rem', fontWeight: 'bold' }}>ScholarShield</span>
+          <Link to="/" style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', textDecoration: 'none', color: '#fff' }}>
+            <Shield size={22} style={{ color: 'var(--accent-color)' }} />
+            <span style={{ fontSize: '1.1rem', fontWeight: 700 }}>Scholar<span style={{ color: 'var(--accent-color)' }}>Shield</span></span>
           </Link>
-          <p className="text-secondary text-sm" style={{ fontSize: '0.9rem', color: '#888' }}>
-            Privacy-preserving eligibility verification built on the Midnight Network using Zero-Knowledge proofs.
+          <p style={{ fontSize: '0.875rem', color: 'var(--text-secondary)', lineHeight: 1.6 }}>
+            Privacy-preserving scholarship eligibility using Zero-Knowledge proofs on Midnight Network.
           </p>
-          <div style={{ display: 'flex', gap: '1rem', marginTop: '0.5rem' }}>
-            <a href="#" className="text-secondary hover-text-accent" style={{ color: '#888', transition: 'color 0.2s' }}><Code size={20} /></a>
-            <a href="#" className="text-secondary hover-text-accent" style={{ color: '#888', transition: 'color 0.2s' }}><Globe size={20} /></a>
-            <a href="#" className="text-secondary hover-text-accent" style={{ color: '#888', transition: 'color 0.2s' }}><Mail size={20} /></a>
+          <div style={{ display: 'flex', gap: '0.75rem', marginTop: '0.25rem' }}>
+            <a href="https://github.com/thesumedh" target="_blank" rel="noopener noreferrer" style={{ color: 'var(--text-secondary)', transition: 'color 0.2s' }} onMouseOver={e => (e.currentTarget.style.color = 'var(--accent-color)')} onMouseOut={e => (e.currentTarget.style.color = 'var(--text-secondary)')}>
+              <Github size={18} />
+            </a>
+            <a href="https://x.com/thesumedh_" target="_blank" rel="noopener noreferrer" style={{ color: 'var(--text-secondary)', transition: 'color 0.2s' }} onMouseOver={e => (e.currentTarget.style.color = 'var(--accent-color)')} onMouseOut={e => (e.currentTarget.style.color = 'var(--text-secondary)')}>
+              <Twitter size={18} />
+            </a>
           </div>
         </div>
 
-        {/* Links Column */}
-        <div style={{ display: 'flex', flexDirection: 'column', gap: '0.75rem' }}>
-          <h4 style={{ color: '#fff', fontWeight: 'bold', marginBottom: '0.5rem' }}>Application</h4>
-          <Link to="/" style={{ color: '#888', textDecoration: 'none', fontSize: '0.9rem' }}>Home</Link>
-          <Link to="/verify" style={{ color: '#888', textDecoration: 'none', fontSize: '0.9rem' }}>Verify Eligibility</Link>
-          <Link to="/about" style={{ color: '#888', textDecoration: 'none', fontSize: '0.9rem' }}>How it Works</Link>
-          <Link to="/admin" style={{ color: '#888', textDecoration: 'none', fontSize: '0.9rem' }}>Admin Portal</Link>
+        {/* App Links */}
+        <div style={{ display: 'flex', flexDirection: 'column', gap: '0.6rem' }}>
+          <h4 style={{ color: '#fff', fontWeight: 600, marginBottom: '0.25rem', fontSize: '0.875rem', textTransform: 'uppercase', letterSpacing: '0.05em' }}>App</h4>
+          {[['/', 'Home'], ['/verify', 'Verify Eligibility'], ['/about', 'How it Works'], ['/admin', 'Admin Portal']].map(([path, label]) => (
+            <Link key={path} to={path} style={{ color: 'var(--text-secondary)', textDecoration: 'none', fontSize: '0.875rem', transition: 'color 0.2s' }} onMouseOver={e => (e.currentTarget.style.color = '#fff')} onMouseOut={e => (e.currentTarget.style.color = 'var(--text-secondary)')}>
+              {label}
+            </Link>
+          ))}
         </div>
 
-        {/* Resources Column */}
-        <div style={{ display: 'flex', flexDirection: 'column', gap: '0.75rem' }}>
-          <h4 style={{ color: '#fff', fontWeight: 'bold', marginBottom: '0.5rem' }}>Resources</h4>
-          <a href="https://midnight.network/" target="_blank" rel="noopener noreferrer" style={{ color: '#888', textDecoration: 'none', fontSize: '0.9rem' }}>Midnight Network</a>
-          <a href="https://docs.midnight.network/" target="_blank" rel="noopener noreferrer" style={{ color: '#888', textDecoration: 'none', fontSize: '0.9rem' }}>Documentation</a>
-          <a href="https://github.com/midnight-ntwrk" target="_blank" rel="noopener noreferrer" style={{ color: '#888', textDecoration: 'none', fontSize: '0.9rem' }}>GitHub</a>
+        {/* Resources */}
+        <div style={{ display: 'flex', flexDirection: 'column', gap: '0.6rem' }}>
+          <h4 style={{ color: '#fff', fontWeight: 600, marginBottom: '0.25rem', fontSize: '0.875rem', textTransform: 'uppercase', letterSpacing: '0.05em' }}>Resources</h4>
+          {[
+            ['https://midnight.network/', 'Midnight Network'],
+            ['https://docs.midnight.network/', 'Documentation'],
+            ['https://github.com/midnight-ntwrk', 'GitHub'],
+          ].map(([href, label]) => (
+            <a key={href} href={href} target="_blank" rel="noopener noreferrer" style={{ color: 'var(--text-secondary)', textDecoration: 'none', fontSize: '0.875rem', transition: 'color 0.2s' }} onMouseOver={e => (e.currentTarget.style.color = '#fff')} onMouseOut={e => (e.currentTarget.style.color = 'var(--text-secondary)')}>
+              {label}
+            </a>
+          ))}
         </div>
 
-        {/* Status Column */}
-        <div style={{ display: 'flex', flexDirection: 'column', gap: '0.75rem' }}>
-          <h4 style={{ color: '#fff', fontWeight: 'bold', marginBottom: '0.5rem' }}>Network Status</h4>
+        {/* Network Status */}
+        <div style={{ display: 'flex', flexDirection: 'column', gap: '0.6rem' }}>
+          <h4 style={{ color: '#fff', fontWeight: 600, marginBottom: '0.25rem', fontSize: '0.875rem', textTransform: 'uppercase', letterSpacing: '0.05em' }}>Network</h4>
           <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
-            <span style={{ width: '8px', height: '8px', borderRadius: '50%', backgroundColor: 'var(--accent-color)', boxShadow: '0 0 8px var(--accent-color)' }}></span>
-            <span style={{ color: '#888', fontSize: '0.9rem' }}>Preprod Live</span>
+            <span style={{ width: 8, height: 8, borderRadius: '50%', backgroundColor: '#4ade80', boxShadow: '0 0 8px #4ade80', display: 'inline-block' }} />
+            <span style={{ color: 'var(--text-secondary)', fontSize: '0.875rem' }}>Preprod Live</span>
           </div>
-          <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', marginTop: '0.5rem' }}>
-            <span style={{ padding: '0.25rem 0.5rem', backgroundColor: 'rgba(0,255,102,0.1)', color: 'var(--accent-color)', borderRadius: '4px', fontSize: '0.8rem', border: '1px solid rgba(0,255,102,0.2)' }}>
-              v1.0.0
-            </span>
-          </div>
+          <span style={{ display: 'inline-block', padding: '0.2rem 0.6rem', backgroundColor: 'var(--accent-glow)', color: 'var(--accent-color)', borderRadius: 6, fontSize: '0.75rem', border: '1px solid rgba(167,139,250,0.2)', width: 'fit-content' }}>
+            v1.0.0
+          </span>
         </div>
 
       </div>
 
-      <div style={{ borderTop: '1px solid #1a1a1a', marginTop: '3rem', paddingTop: '1.5rem', textAlign: 'center' }}>
-        <p style={{ color: '#666', fontSize: '0.85rem' }}>
-          &copy; {new Date().getFullYear()} ScholarShield. Built for the New Moon to Full Hackathon.
+      <div style={{ borderTop: '1px solid var(--border-color)', marginTop: '2.5rem', paddingTop: '1.5rem', textAlign: 'center' }}>
+        <p style={{ color: 'var(--text-muted)', fontSize: '0.8rem' }}>
+          Built for the <span style={{ color: 'var(--text-secondary)' }}>Midnight Buildthon</span> by{' '}
+          <a href="https://github.com/thesumedh" target="_blank" rel="noopener noreferrer" style={{ color: 'var(--accent-color)', textDecoration: 'none', fontWeight: 600 }}>
+            @thesumedh
+          </a>
+          {' '}·{' '}
+          <a href="https://x.com/thesumedh_" target="_blank" rel="noopener noreferrer" style={{ color: 'var(--text-secondary)', textDecoration: 'none' }}>
+            𝕏 thesumedh_
+          </a>
         </p>
       </div>
     </footer>

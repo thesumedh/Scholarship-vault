@@ -7,18 +7,18 @@ export default function NavBar() {
   const location = useLocation();
 
   const navLinks = [
-    { name: 'Home', path: '/', icon: <Home size={18} /> },
-    { name: 'Verify', path: '/verify', icon: <Key size={18} /> },
-    { name: 'Admin', path: '/admin', icon: <Lock size={18} /> },
-    { name: 'About', path: '/about', icon: <Info size={18} /> },
+    { name: 'Home', path: '/', icon: <Home size={16} /> },
+    { name: 'Verify', path: '/verify', icon: <Key size={16} /> },
+    { name: 'Admin', path: '/admin', icon: <Lock size={16} /> },
+    { name: 'About', path: '/about', icon: <Info size={16} /> },
   ];
 
   return (
     <nav className="navbar">
       <div className="navbar-container">
         <Link to="/" className="navbar-logo">
-          <Shield className="text-accent" size={28} />
-          <span>ScholarShield</span>
+          <Shield className="text-accent" size={24} />
+          <span>Scholar<span className="text-accent">Shield</span></span>
         </Link>
 
         <div className="navbar-links">

@@ -1,33 +1,29 @@
 :root {
-  /* Flat Dark Mode Theme - No Glassmorphism */
-  --bg-main: #0a0a0a;
-  --bg-surface: #111111;
-  --bg-surface-hover: #1a1a1a;
-  
-  /* Cyber Green Accent */
-  --accent-color: #00ff66;
-  --accent-hover: #00cc52;
-  --accent-active: #00993d;
-  
-  /* Text */
-  --text-primary: #ffffff;
-  --text-secondary: #a3a3a3;
-  --text-muted: #666666;
-  
-  /* Borders */
-  --border-color: #333333;
-  --border-focus: #00ff66;
-  
-  /* Spacing */
+  --bg-main: #09090b;
+  --bg-surface: #18181b;
+  --bg-surface-hover: #27272a;
+
+  /* Purple/Violet accent — thesumedh brand */
+  --accent-color: #a78bfa;
+  --accent-hover: #8b5cf6;
+  --accent-active: #7c3aed;
+  --accent-glow: rgba(167, 139, 250, 0.15);
+
+  --text-primary: #fafafa;
+  --text-secondary: #a1a1aa;
+  --text-muted: #52525b;
+
+  --border-color: #27272a;
+  --border-focus: #a78bfa;
+
   --sm: 0.5rem;
   --md: 1rem;
   --lg: 1.5rem;
   --xl: 2.5rem;
-  
-  /* Radii */
-  --radius-sm: 0;
-  --radius-md: 0; /* Brutalist/sharp edges */
-  --radius-lg: 0;
+
+  --radius-sm: 6px;
+  --radius-md: 10px;
+  --radius-lg: 16px;
 }
 
 * {
@@ -40,12 +36,8 @@ body {
   font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
   background-color: var(--bg-main);
   color: var(--text-primary);
-  line-height: 1.5;
+  line-height: 1.6;
   -webkit-font-smoothing: antialiased;
-  background-image: 
-    linear-gradient(to right, #1a1a1a 1px, transparent 1px),
-    linear-gradient(to bottom, #1a1a1a 1px, transparent 1px);
-  background-size: 50px 50px;
 }
 
 a {
@@ -122,7 +114,9 @@ a {
 /* NavBar */
 .navbar {
   border-bottom: 1px solid var(--border-color);
-  background: var(--bg-surface);
+  background: rgba(9, 9, 11, 0.85);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
   position: sticky;
   top: 0;
   z-index: 50;
@@ -190,12 +184,14 @@ a {
 }
 
 .btn-primary {
-  background-color: var(--accent-color);
-  color: #000;
+  background: linear-gradient(135deg, var(--accent-color), var(--accent-hover));
+  color: #fff;
+  box-shadow: 0 0 20px var(--accent-glow);
 }
 
 .btn-primary:hover:not(:disabled) {
-  background-color: var(--accent-hover);
+  background: linear-gradient(135deg, var(--accent-hover), var(--accent-active));
+  box-shadow: 0 0 28px rgba(167, 139, 250, 0.3);
 }
 
 .btn-primary:disabled {
@@ -230,6 +226,11 @@ a {
   border: 1px solid var(--border-color);
   padding: var(--lg);
   border-radius: var(--radius-md);
+  transition: border-color 0.2s;
+}
+
+.card:hover {
+  border-color: #3f3f46;
 }
 
 .border-accent {
@@ -308,7 +309,10 @@ a {
 .rule-value {
   font-size: 1.5rem;
   font-weight: 700;
-  color: var(--accent-color);
+  background: linear-gradient(135deg, #a78bfa, #c084fc);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
 }
 
 /* Wallet Banner */
@@ -351,7 +355,8 @@ a {
 }
 
 .status-dot.connected {
-  background-color: var(--accent-color);
+  background-color: #4ade80;
+  box-shadow: 0 0 6px #4ade80;
 }
 
 .btn-icon {
@@ -380,7 +385,7 @@ a {
 .result-box.success {
   border-color: var(--accent-color);
   color: var(--accent-color);
-  background-color: rgba(0, 255, 102, 0.05);
+  background-color: var(--accent-glow);
 }
 
 .result-box.error {
@@ -440,23 +445,44 @@ a {
 
 .hero-section {
   text-align: center;
-  padding: 4rem 1rem;
+  padding: 5rem 1rem 4rem;
+  position: relative;
+  overflow: hidden;
+}
+
+.hero-section::before {
+  content: '';
+  position: absolute;
+  top: -120px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 600px;
+  height: 400px;
+  background: radial-gradient(ellipse at center, rgba(167,139,250,0.12) 0%, transparent 70%);
+  pointer-events: none;
+  z-index: 0;
 }
 
 .hero-content {
   max-width: 800px;
   margin: 0 auto;
+  position: relative;
+  z-index: 1;
 }
 
 .badge-pill {
-  display: inline-block;
-  background-color: var(--bg-surface);
-  border: 1px solid var(--border-color);
-  color: var(--text-secondary);
-  padding: 0.25rem 0.75rem;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  background-color: var(--accent-glow);
+  border: 1px solid rgba(167, 139, 250, 0.3);
+  color: var(--accent-color);
+  padding: 0.3rem 0.9rem;
   font-size: 0.75rem;
+  font-weight: 600;
   text-transform: uppercase;
-  letter-spacing: 0.05em;
+  letter-spacing: 0.08em;
+  border-radius: 999px;
   margin-bottom: var(--lg);
 }
 
@@ -466,6 +492,13 @@ a {
   line-height: 1.1;
   letter-spacing: -0.03em;
   margin-bottom: var(--md);
+}
+
+.text-gradient {
+  background: linear-gradient(135deg, #a78bfa 0%, #818cf8 50%, #c084fc 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
 }
 
 .hero-subtitle {
@@ -494,6 +527,13 @@ a {
   background-color: var(--bg-surface);
   border: 1px solid var(--border-color);
   padding: var(--xl);
+  border-radius: var(--radius-md);
+  transition: border-color 0.2s, transform 0.2s;
+}
+
+.feature-card:hover {
+  border-color: var(--accent-color);
+  transform: translateY(-2px);
 }
 
 .feature-icon {
