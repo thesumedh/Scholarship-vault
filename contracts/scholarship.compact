@@ -1,0 +1,17 @@
+pragma language_version >=0.22.0;
+
+// Ledger state: holds the public criteria of the scholarship
+export ledger min_gpa: Uint<32>;
+export ledger max_income: Uint<32>;
+
+// Constructor to initialize the rules
+constructor(initial_min_gpa: Uint<32>, initial_max_income: Uint<32>) {
+    min_gpa = disclose(initial_min_gpa);
+    max_income = disclose(initial_max_income);
+}
+
+// Circuit: verifies eligibility based on private credentials
+export circuit verify_eligibility(gpa: Uint<32>, income: Uint<32>): [] {
+    assert(gpa >= min_gpa, "GPA too low");
+    assert(income <= max_income, "Income too high");
+}

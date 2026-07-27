@@ -1,0 +1,8 @@
+{
+  "version": 3,
+  "file": "index.js",
+  "sourceRoot": "../../../../",
+  "sources": ["contracts/scholarship.compact"],
+  "names": [],
+  "mappings": ";;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;EAOA;;;;;;;;;;MAMA,AAAA,kBAGC;;;;;cAHiC,KAAa;cAAE,QAAgB;;;;;;;;;;;;;;;;;;;;;;;;;yCAA/B,KAAa,+BAAE,QAAgB;;;;;;;;;oDAA/B,KAAa;oDAAE,QAAgB;;;OAGhE;;;;;;;;GANA;EAHD;;;;;UAAY,iBAAyB;UAAE,oBAA4B;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;IAJnE;;;;;;;;;yEAAgC;IAChC;;;;;;;;;yEAAmC;IAI/B;;;;;;;2HAAmB,iBAAe;;yEAA3B;IACP;;;;;;;2HAAsB,oBAAkB;;yEAA9B;;;;;;;GACb;EAGD,AAAA,qBAGC,4BAHiC,KAAa,EAAE,QAAgB;4BACtD,KAAG;;oDAAI;;;;;;;;;;;yHAAO;;4BACd,QAAM;;oDAAI;;;;;;;;;;;yHAAU;;;GAC9B;;;;;;;;;;;;;;;;IAbD;qCAAA;;;;;;;;;;;0GAAgC;KAAA;IAChC;qCAAA;;;;;;;;;;;0GAAmC;KAAA;;;;;;;;;;"
+}
