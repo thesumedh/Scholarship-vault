@@ -108,4 +108,4 @@ Jul 13 → Level 5 submission prepared
 
 ---
 
-*Feedback collected by [@thesumedh](https://github.com/thesumedh) · Scholarship Vault · Midnight Buildthon Level 5*
+*[@thesumedh](https://github.com/thesumedh) · Scholarship Vault · Midnight Buildthon Level 5*
