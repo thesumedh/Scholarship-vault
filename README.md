@@ -15,6 +15,8 @@
 
 ## Submission Checklist
 
+### 🌔 Level 4
+
 | Item | Status | Link |
 |------|--------|------|
 | Public GitHub repository | ✅ | [thesumedh/Scholarship-vault](https://github.com/thesumedh/Scholarship-vault) |
@@ -25,6 +27,17 @@
 | Launch tweet | ✅ | [View post](https://x.com/thesumedh_/status/2081776021905543689) |
 | Demo video | ✅ | [Watch on Google Drive](https://drive.google.com/file/d/1YUe91VBOKsM_-cpF4jBO_dhbyJyNmcWX/view?usp=sharing) |
 | Minimum 15 meaningful commits | ✅ | [Commit history](https://github.com/thesumedh/Scholarship-vault/commits/main) |
+
+### 🌕 Level 5
+
+| Item | Status | Link |
+|------|--------|------|
+| Public GitHub repository (updated docs) | ✅ | [thesumedh/Scholarship-vault](https://github.com/thesumedh/Scholarship-vault) |
+| Live demo link | ✅ | [scholar-shield-ten.vercel.app](https://scholar-shield-ten.vercel.app/) |
+| 50 Preprod user wallet addresses | ✅ | [USERS.md](./USERS.md) |
+| Feedback documentation | ✅ | [FEEDBACK.md](./FEEDBACK.md) |
+| Demo video | ✅ | [Watch on Google Drive](https://drive.google.com/file/d/1YUe91VBOKsM_-cpF4jBO_dhbyJyNmcWX/view?usp=sharing) |
+| Minimum 20 meaningful commits | ✅ | [Commit history](https://github.com/thesumedh/Scholarship-vault/commits/main) |
 
 ---
 
@@ -43,6 +56,8 @@ Your data never leaves your browser. Only a cryptographic proof goes on-chain.
 - **Demo Video:** [Google Drive](https://drive.google.com/file/d/1YUe91VBOKsM_-cpF4jBO_dhbyJyNmcWX/view?usp=sharing)
 - **X (Twitter):** [x.com/thesumedh_](https://x.com/thesumedh_)
 - **Launch Tweet:** [x.com/thesumedh_/status/2081776021905543689](https://x.com/thesumedh_/status/2081776021905543689)
+- **50 Onboarded Users:** [USERS.md](./USERS.md)
+- **Feedback Docs:** [FEEDBACK.md](./FEEDBACK.md)
 
 ---
 
@@ -209,8 +224,6 @@ Scholarship-vault/
 ### Admin Portal
 ![UI Screenshot 3](./sub%20assets/ui3.png)
 
-### CI/CD Pipeline
-![CI/CD](./sub%20assets/cicd%20ss.png)
 
 ### Contract Compilation
 ![Compile](./sub%20assets/yarn%20compile%20ss.png)

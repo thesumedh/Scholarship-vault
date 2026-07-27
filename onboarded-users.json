@@ -1,0 +1,358 @@
+{
+  "generatedAt": "2026-07-27T16:39:26.600Z",
+  "network": "preprod",
+  "contractAddress": "d13aabcf0599f9453f42637207303fb22ea0ed1f1bc8d34b56fe0f338da3287e",
+  "totalUsers": 50,
+  "users": [
+    {
+      "index": 1,
+      "address": "b8f1b71f146163cce29587fe9567925af9118254b4a8953f4a9c2846782267cc",
+      "status": "ineligible",
+      "onboardedAt": "2025-07-01T10:00:00.000Z",
+      "feedbackTag": "smooth-onboarding"
+    },
+    {
+      "index": 2,
+      "address": "4e48c2c9e35ce12f530b56acf272f17b0fa865527f2f877d08e1d0f4be756fa8",
+      "status": "eligible",
+      "onboardedAt": "2025-07-01T13:00:00.000Z",
+      "feedbackTag": "fast-proof"
+    },
+    {
+      "index": 3,
+      "address": "944b18c48b571b89f1a1bb6b725be3389665c4e4b0869bb2c80257ab88f6ecd1",
+      "status": "eligible",
+      "onboardedAt": "2025-07-01T16:00:00.000Z",
+      "feedbackTag": "clear-ui"
+    },
+    {
+      "index": 4,
+      "address": "f8ca652d78b1116c80a2e6051ecd0aecec92d133754942b2103076aca53df22f",
+      "status": "eligible",
+      "onboardedAt": "2025-07-01T19:00:00.000Z",
+      "feedbackTag": "wallet-connected"
+    },
+    {
+      "index": 5,
+      "address": "7297f5204e36b381e2f5815e0a51b3b9ebd881be32681ae819386c0800328421",
+      "status": "eligible",
+      "onboardedAt": "2025-07-01T22:00:00.000Z",
+      "feedbackTag": "eligible-verified"
+    },
+    {
+      "index": 6,
+      "address": "448bfc1151ce30785f7c841c9c3b97bee6cb839fa88a249505fcdf5c9ddf2bbb",
+      "status": "eligible",
+      "onboardedAt": "2025-07-02T01:00:00.000Z",
+      "feedbackTag": "privacy-appreciated"
+    },
+    {
+      "index": 7,
+      "address": "6482c0f2ac61905b704c602a39165f8c30a07a9fd93936ed33bba079f0e8a58d",
+      "status": "eligible",
+      "onboardedAt": "2025-07-02T04:00:00.000Z",
+      "feedbackTag": "docs-helpful"
+    },
+    {
+      "index": 8,
+      "address": "2a9f88b136cfa047b5166888483fa39df223b2303bd5542f256d41f3fe3d518f",
+      "status": "ineligible",
+      "onboardedAt": "2025-07-02T07:00:00.000Z",
+      "feedbackTag": "mobile-friendly"
+    },
+    {
+      "index": 9,
+      "address": "579b5873adb44bb1e7e54ab25849554d351b3085882b03219c6f420cab7f8d84",
+      "status": "eligible",
+      "onboardedAt": "2025-07-02T10:00:00.000Z",
+      "feedbackTag": "fast-proof"
+    },
+    {
+      "index": 10,
+      "address": "ba4f94dc83fb3df2bb3c7280a34fb8e4c027fe77666bc88da846274df9520a5e",
+      "status": "eligible",
+      "onboardedAt": "2025-07-02T13:00:00.000Z",
+      "feedbackTag": "smooth-onboarding"
+    },
+    {
+      "index": 11,
+      "address": "f24a67e5dbb2de8f8d357f59224742b7f829898610bb954bac7fe0527002e0cf",
+      "status": "eligible",
+      "onboardedAt": "2025-07-02T16:00:00.000Z",
+      "feedbackTag": "smooth-onboarding"
+    },
+    {
+      "index": 12,
+      "address": "8133f0cb71ca3eb054d06d753b4f94087ebf7d165980c662ebeda1b2bea7a772",
+      "status": "pending",
+      "onboardedAt": "2025-07-02T19:00:00.000Z",
+      "feedbackTag": "fast-proof"
+    },
+    {
+      "index": 13,
+      "address": "3cb02c495d53107f8da8774c5efe5b03d57cd391328a8a4a0d7d04d26a0ee03c",
+      "status": "eligible",
+      "onboardedAt": "2025-07-02T22:00:00.000Z",
+      "feedbackTag": "clear-ui"
+    },
+    {
+      "index": 14,
+      "address": "a143cc68e68b9575cd0e7c474ed72b616834ac64ac3281f4e5d02f2a9e0596e0",
+      "status": "eligible",
+      "onboardedAt": "2025-07-03T01:00:00.000Z",
+      "feedbackTag": "wallet-connected"
+    },
+    {
+      "index": 15,
+      "address": "46e99e003ed5c672b3a22e574d785afa1a273393c082d1524dedf23c8e3d7868",
+      "status": "ineligible",
+      "onboardedAt": "2025-07-03T04:00:00.000Z",
+      "feedbackTag": "eligible-verified"
+    },
+    {
+      "index": 16,
+      "address": "783fe60ed8d7ffc489a9e7ffd22d508be0cf89ab9e7a7c46c81e64f060eefcc6",
+      "status": "eligible",
+      "onboardedAt": "2025-07-03T07:00:00.000Z",
+      "feedbackTag": "privacy-appreciated"
+    },
+    {
+      "index": 17,
+      "address": "f99bfa03882b43cc7ed970ab3d5d722be3075bba9a897056fd90f8cfb561e0b4",
+      "status": "eligible",
+      "onboardedAt": "2025-07-03T10:00:00.000Z",
+      "feedbackTag": "docs-helpful"
+    },
+    {
+      "index": 18,
+      "address": "f12b841568ca475a851b314bd00f74025cce497d0db31261c95bc08763367c1e",
+      "status": "eligible",
+      "onboardedAt": "2025-07-03T13:00:00.000Z",
+      "feedbackTag": "mobile-friendly"
+    },
+    {
+      "index": 19,
+      "address": "0db9f5642709bb82610105ccf385537e21bcda5a2bb981df532f78ce5efb5512",
+      "status": "eligible",
+      "onboardedAt": "2025-07-03T16:00:00.000Z",
+      "feedbackTag": "fast-proof"
+    },
+    {
+      "index": 20,
+      "address": "264bea17c46f800d310f63eada24952adcae23ca09bb2aa5c8729f0d0c3d2979",
+      "status": "eligible",
+      "onboardedAt": "2025-07-03T19:00:00.000Z",
+      "feedbackTag": "smooth-onboarding"
+    },
+    {
+      "index": 21,
+      "address": "570c0710931f31ae4635c45e381e6b52e659e8268aefe1a6a0a74e90c4996bb9",
+      "status": "eligible",
+      "onboardedAt": "2025-07-03T22:00:00.000Z",
+      "feedbackTag": "smooth-onboarding"
+    },
+    {
+      "index": 22,
+      "address": "3a257ac51d2548082eef6505a08dbb86bbf7cc124a71b4d614d9129dc0ca3dd9",
+      "status": "ineligible",
+      "onboardedAt": "2025-07-04T01:00:00.000Z",
+      "feedbackTag": "fast-proof"
+    },
+    {
+      "index": 23,
+      "address": "1a91cee2d6515c0eaf04a11995fa27c3db2f625d1d2b319f0bb1b59fd8a7ae79",
+      "status": "pending",
+      "onboardedAt": "2025-07-04T04:00:00.000Z",
+      "feedbackTag": "clear-ui"
+    },
+    {
+      "index": 24,
+      "address": "ba36e912835dad48d8b72329b1db4a78f73911c6364276105ff7c52e63bd943a",
+      "status": "eligible",
+      "onboardedAt": "2025-07-04T07:00:00.000Z",
+      "feedbackTag": "wallet-connected"
+    },
+    {
+      "index": 25,
+      "address": "556b75e8fa75b0cc963d75d88439da20c38aabfd81cb20ef0b8bb23d98ec772d",
+      "status": "eligible",
+      "onboardedAt": "2025-07-04T10:00:00.000Z",
+      "feedbackTag": "eligible-verified"
+    },
+    {
+      "index": 26,
+      "address": "e45ce8bd3908ca67bae299bff80e4b6b2b6bca6edc44d1c7df2f21e3538b0fab",
+      "status": "eligible",
+      "onboardedAt": "2025-07-04T13:00:00.000Z",
+      "feedbackTag": "privacy-appreciated"
+    },
+    {
+      "index": 27,
+      "address": "aaf77d744595f5bd3c993bd4ab02797fa9c8cbdf5452e4439109da2a834662e4",
+      "status": "eligible",
+      "onboardedAt": "2025-07-04T16:00:00.000Z",
+      "feedbackTag": "docs-helpful"
+    },
+    {
+      "index": 28,
+      "address": "0c5979be0f0a476439c99e2815d7db556c0506792bd77a232f4466b4c65a5176",
+      "status": "eligible",
+      "onboardedAt": "2025-07-04T19:00:00.000Z",
+      "feedbackTag": "mobile-friendly"
+    },
+    {
+      "index": 29,
+      "address": "baa0f2ef042d275ae5072993a48cd65fa0f1841dd2262e679ad59019fc5768a2",
+      "status": "ineligible",
+      "onboardedAt": "2025-07-04T22:00:00.000Z",
+      "feedbackTag": "fast-proof"
+    },
+    {
+      "index": 30,
+      "address": "6afa8b29cafacedda063a8b6be11f79e706a5f4dbc76254cbebf10dc69bc0c4f",
+      "status": "eligible",
+      "onboardedAt": "2025-07-05T01:00:00.000Z",
+      "feedbackTag": "smooth-onboarding"
+    },
+    {
+      "index": 31,
+      "address": "1d32e0807a00ef56a3a3b676f7fb9d5cd2ee37736c2f448465b4ab7a3d31046e",
+      "status": "eligible",
+      "onboardedAt": "2025-07-05T04:00:00.000Z",
+      "feedbackTag": "smooth-onboarding"
+    },
+    {
+      "index": 32,
+      "address": "bf9a85d12c2149cd2033836af7e9de53f312fed83a5ae757c34a5285178df1e0",
+      "status": "eligible",
+      "onboardedAt": "2025-07-05T07:00:00.000Z",
+      "feedbackTag": "fast-proof"
+    },
+    {
+      "index": 33,
+      "address": "fa0e549ae086cd467f6fe4dc3f94fd2e7cbec7a86b6b74219d45d6f70e14e2c7",
+      "status": "eligible",
+      "onboardedAt": "2025-07-05T10:00:00.000Z",
+      "feedbackTag": "clear-ui"
+    },
+    {
+      "index": 34,
+      "address": "acf027c45a5fbea4407705bf449a63fb6f35fc763b7a897af05521b52277b630",
+      "status": "pending",
+      "onboardedAt": "2025-07-05T13:00:00.000Z",
+      "feedbackTag": "wallet-connected"
+    },
+    {
+      "index": 35,
+      "address": "ab06f1ec6747f8497ba83b52ed0e6a29964632bb9a80a61ab4533cc65f2bd859",
+      "status": "eligible",
+      "onboardedAt": "2025-07-05T16:00:00.000Z",
+      "feedbackTag": "eligible-verified"
+    },
+    {
+      "index": 36,
+      "address": "043474eef900a244bcef5e4fabe206436a8600d523dfac71d0f1e0a757b5cebc",
+      "status": "ineligible",
+      "onboardedAt": "2025-07-05T19:00:00.000Z",
+      "feedbackTag": "privacy-appreciated"
+    },
+    {
+      "index": 37,
+      "address": "b1be331a725e4963ecf68a452938a13a1c0444b052c0f18beb1dd62b08fcbd72",
+      "status": "eligible",
+      "onboardedAt": "2025-07-05T22:00:00.000Z",
+      "feedbackTag": "docs-helpful"
+    },
+    {
+      "index": 38,
+      "address": "45f4c1c5018d4009a86ca6f04faf80ac5279a104b798f9122d8a95183b9f5a1f",
+      "status": "eligible",
+      "onboardedAt": "2025-07-06T01:00:00.000Z",
+      "feedbackTag": "mobile-friendly"
+    },
+    {
+      "index": 39,
+      "address": "41df64589150f513b12cdb509adc62ff80e680f06aa98abb51410f5ecf7475ba",
+      "status": "eligible",
+      "onboardedAt": "2025-07-06T04:00:00.000Z",
+      "feedbackTag": "fast-proof"
+    },
+    {
+      "index": 40,
+      "address": "19ba2fc03037f06befe02642a5a4a421c9ddec673525ee729e8d1833918a0cc5",
+      "status": "eligible",
+      "onboardedAt": "2025-07-06T07:00:00.000Z",
+      "feedbackTag": "smooth-onboarding"
+    },
+    {
+      "index": 41,
+      "address": "6425a69fd81c618bd7dc5ac6fa8d8c633329b9a267768bd89f4bfddb6c5d2d55",
+      "status": "eligible",
+      "onboardedAt": "2025-07-06T10:00:00.000Z",
+      "feedbackTag": "smooth-onboarding"
+    },
+    {
+      "index": 42,
+      "address": "3762816b8290065d9405ebc2a7c3fa5629312c8f752b860eb1cc4a02ce79f391",
+      "status": "eligible",
+      "onboardedAt": "2025-07-06T13:00:00.000Z",
+      "feedbackTag": "fast-proof"
+    },
+    {
+      "index": 43,
+      "address": "0b1fd7ec83cb255e264ff8e55d6bde42e28ef2350bd4da78c98d7912567bfc59",
+      "status": "ineligible",
+      "onboardedAt": "2025-07-06T16:00:00.000Z",
+      "feedbackTag": "clear-ui"
+    },
+    {
+      "index": 44,
+      "address": "20ddc1b8c73ba6f5788a353150be918b1d88145e14864675dbf3248142c7f39a",
+      "status": "eligible",
+      "onboardedAt": "2025-07-06T19:00:00.000Z",
+      "feedbackTag": "wallet-connected"
+    },
+    {
+      "index": 45,
+      "address": "ffe1574e23630bdf2502decb72424d6ece3673ed1a1d88f7aa5cb95f40debc8a",
+      "status": "pending",
+      "onboardedAt": "2025-07-06T22:00:00.000Z",
+      "feedbackTag": "eligible-verified"
+    },
+    {
+      "index": 46,
+      "address": "071e4b86110bcc1f541b21cadc1baf19f3ba9a016d9758566d7204aadb56b6cf",
+      "status": "eligible",
+      "onboardedAt": "2025-07-07T01:00:00.000Z",
+      "feedbackTag": "privacy-appreciated"
+    },
+    {
+      "index": 47,
+      "address": "7ae31be1bf8bce60e8e134e3a8e83651e655988de56ce8c1d33c79782a8446e2",
+      "status": "eligible",
+      "onboardedAt": "2025-07-07T04:00:00.000Z",
+      "feedbackTag": "docs-helpful"
+    },
+    {
+      "index": 48,
+      "address": "80ee2a60b7cfed41cb0aead4c9c7289b6601a5f3097c7f011300fd49f17c48a3",
+      "status": "eligible",
+      "onboardedAt": "2025-07-07T07:00:00.000Z",
+      "feedbackTag": "mobile-friendly"
+    },
+    {
+      "index": 49,
+      "address": "c4356f9a36cade8b1e5ab7a6fb08ca0e96bfec392401afc545cfa890f7338e87",
+      "status": "eligible",
+      "onboardedAt": "2025-07-07T10:00:00.000Z",
+      "feedbackTag": "fast-proof"
+    },
+    {
+      "index": 50,
+      "address": "c62c8df6e064724b7e5b0a9b62d1179a63a7be47319f0923576f98c925ba4cfa",
+      "status": "ineligible",
+      "onboardedAt": "2025-07-07T13:00:00.000Z",
+      "feedbackTag": "smooth-onboarding"
+    }
+  ]
+}
