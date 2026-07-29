@@ -28,16 +28,6 @@
 | Demo video | ✅ | [Watch on Google Drive](https://drive.google.com/file/d/1YUe91VBOKsM_-cpF4jBO_dhbyJyNmcWX/view?usp=sharing) |
 | Minimum 15 meaningful commits | ✅ | [Commit history](https://github.com/thesumedh/Scholarship-vault/commits/main) |
 
-### 🌕 Level 5
-
-| Item | Status | Link |
-|------|--------|------|
-| Public GitHub repository (updated docs) | ✅ | [thesumedh/Scholarship-vault](https://github.com/thesumedh/Scholarship-vault) |
-| Live demo link | ✅ | [scholar-shield-ten.vercel.app](https://scholar-shield-ten.vercel.app/) |
-| 50 Preprod user wallet addresses | ✅ | [USERS.md](./USERS.md) |
-| Feedback documentation | ✅ | [FEEDBACK.md](./FEEDBACK.md) |
-| Demo video | ✅ | [Watch on Google Drive](https://drive.google.com/file/d/1YUe91VBOKsM_-cpF4jBO_dhbyJyNmcWX/view?usp=sharing) |
-| Minimum 20 meaningful commits | ✅ | [Commit history](https://github.com/thesumedh/Scholarship-vault/commits/main) |
 
 ---
 
