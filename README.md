@@ -46,7 +46,6 @@ Your data never leaves your browser. Only a cryptographic proof goes on-chain.
 - **Demo Video:** [Google Drive](https://drive.google.com/file/d/1YUe91VBOKsM_-cpF4jBO_dhbyJyNmcWX/view?usp=sharing)
 - **X (Twitter):** [x.com/thesumedh_](https://x.com/thesumedh_)
 - **Launch Tweet:** [x.com/thesumedh_/status/2081776021905543689](https://x.com/thesumedh_/status/2081776021905543689)
-- **50 Onboarded Users:** [USERS.md](./USERS.md)
 - **Feedback Docs:** [FEEDBACK.md](./FEEDBACK.md)
 
 ---
