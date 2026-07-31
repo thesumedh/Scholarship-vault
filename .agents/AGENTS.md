@@ -106,3 +106,10 @@ This workspace is for participating in the "New Moon to Full" builder journey. B
     *   Levels 1–5 deploy to **Preview** or **Preprod** networks for verification.
     *   Level 6 (Supermoon) targets **Mainnet** deployment.
 
+## Responsibility & Audit Rules
+
+* **Full Responsibility & Deep Verification**:
+  * Always perform thorough, multi-layer verification on all tasks. Never rely on surface-level checks or partial assumptions.
+  * When managing Git repositories, commit histories, or contributors: inspect all commit authors, committers, web-based edits, and remote tracking branches (`git log --all --format="..."`) to ensure complete consistency before reporting completion.
+
+
