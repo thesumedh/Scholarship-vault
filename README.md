@@ -7,7 +7,7 @@
 [![Midnight Network](https://img.shields.io/badge/Network-Midnight_Preprod-7c3aed?style=flat-square)](https://midnight.network)
 [![Language](https://img.shields.io/badge/Contract-Compact-a78bfa?style=flat-square)](https://midnight.network)
 [![License](https://img.shields.io/badge/License-Apache_2.0-blue?style=flat-square)](./LICENSE)
-[![X Follow](https://img.shields.io/badge/X-@thesumedh__-000?style=flat-square&logo=x)](https://x.com/thesumedh_)
+[![X Follow](https://img.shields.io/badge/X-@ScholrshipVault-000?style=flat-square&logo=x)](https://x.com/ScholrshipVault)
 
 > Built for the **Midnight Buildthon** · by [@thesumedh](https://github.com/thesumedh)
 
@@ -23,8 +23,8 @@
 | Live Preprod demo | ✅ | [scholar-shield-ten.vercel.app](https://scholar-shield-ten.vercel.app/) |
 | Contract address (Preprod) | ✅ | [`d13aabcf...3287e`](https://preprod.midnightexplorer.com/contracts/d13aabcf0599f9453f42637207303fb22ea0ed1f1bc8d34b56fe0f338da3287e) |
 | CI/CD pipeline (passing) | ✅ | [GitHub Actions](https://github.com/thesumedh/Scholarship-vault/actions) |
-| Product X profile | ✅ | [x.com/thesumedh_](https://x.com/thesumedh_) |
-| Launch tweet | ✅ | [View post](https://x.com/thesumedh_/status/2081776021905543689) |
+| Product X profile | ✅ | https://x.com/ScholrshipVault |
+| Launch tweet | ✅ | [View post](https://x.com/ScholrshipVault/status/2088506773858820269) |
 | Demo video | ✅ | [Watch on Google Drive](https://drive.google.com/file/d/1YUe91VBOKsM_-cpF4jBO_dhbyJyNmcWX/view?usp=sharing) |
 | Minimum 15 meaningful commits | ✅ | [Commit history](https://github.com/thesumedh/Scholarship-vault/commits/main) |
 
