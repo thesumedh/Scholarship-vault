@@ -124,11 +124,29 @@ function isProgressStrictlyComplete(progress: unknown): boolean {
   if (!progress || typeof progress !== 'object') {
     return false;
   }
-  const candidate = progress as { isStrictlyComplete?: unknown };
-  if (typeof candidate.isStrictlyComplete !== 'function') {
-    return false;
+  const candidate = progress as {
+    appliedIndex?: bigint | number;
+    highestIndex?: bigint | number;
+    highestRelevantWalletIndex?: bigint | number;
+    isConnected?: boolean;
+    isCompleteWithin?: (gap?: bigint) => boolean;
+    isStrictlyComplete?: () => boolean;
+  };
+  if (candidate.isConnected) {
+    if (candidate.highestIndex != null && candidate.appliedIndex != null) {
+      const gap = Math.abs(Number(candidate.highestIndex) - Number(candidate.appliedIndex));
+      if (gap <= 50) {
+        return true;
+      }
+    }
   }
-  return (candidate.isStrictlyComplete as () => boolean)();
+  if (typeof candidate.isCompleteWithin === 'function' && candidate.isCompleteWithin(50n)) {
+    return true;
+  }
+  if (typeof candidate.isStrictlyComplete === 'function' && candidate.isStrictlyComplete()) {
+    return true;
+  }
+  return false;
 }
 
 export async function syncWallet(

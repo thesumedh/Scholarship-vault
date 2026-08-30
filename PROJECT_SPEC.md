@@ -1,4 +1,4 @@
-# Project Spec: ScholarShield | Privacy-Preserving Scholarship Verification on Midnight
+# Project Spec: ScholarshipVault | Privacy-Preserving Scholarship Verification on Midnight
 
 ## 1. Overview
 A decentralized application (dApp) that allows students to prove their eligibility for scholarships (based on GPA, income, category, and age) without revealing their raw personal data or certificates. It utilizes Midnight's zero-knowledge proofs to check that credentials issued by trusted authorities satisfy scholarship rules.
@@ -47,6 +47,8 @@ A decentralized application (dApp) that allows students to prove their eligibili
 
 ## 4. Implementation Roadmap
 
-- **Phase 1 (Level 1)**: Set up WSL2/Docker, install `compact` compiler. Write the `.compact` contract, compile circuits, write test suite, and deploy to Preview/Preprod.
-- **Phase 2 (Level 2)**: Wire the compiled smart contract APIs to a React/Vite frontend. Integrate Lace Wallet connection.
-- **Phase 3 (Level 3)**: Polishing the UX, adding comprehensive integration tests, and configuring CI/CD pipelines.
+- **Phase 1 (Level 1 - New Moon)**: Set up WSL2/Docker, install `compact` compiler. Write the `.compact` contract, compile circuits, write test suite, and deploy to Preview/Preprod.
+- **Phase 2 (Level 2 - Waxing Crescent)**: Wire the compiled smart contract APIs to a React/Vite frontend. Integrate Lace Wallet connection.
+- **Phase 3 (Level 3 - First Quarter)**: Polishing the UX, adding comprehensive integration tests, and configuring CI/CD pipelines.
+- **Phase 4 (Level 4 - Waxing Gibbous)**: Live Preprod MVP, comprehensive documentation, and public brand presence.
+- **Phase 5 (Level 5 - Full Moon)**: User onboarding (50+ Preprod users), feedback loops, and deployment with dedicated preprod contracts.

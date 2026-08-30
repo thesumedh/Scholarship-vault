@@ -1,24 +1,26 @@
 import React from 'react';
 import { Link, useLocation } from 'react-router-dom';
-import { Shield, Home, Key, Lock, Info } from 'lucide-react';
+import { Shield, Sparkles, CheckCircle2, Sliders, Info, BookOpen } from 'lucide-react';
 import WalletBanner from './WalletBanner';
 
 export default function NavBar() {
   const location = useLocation();
 
   const navLinks = [
-    { name: 'Home', path: '/', icon: <Home size={16} /> },
-    { name: 'Verify', path: '/verify', icon: <Key size={16} /> },
-    { name: 'Admin', path: '/admin', icon: <Lock size={16} /> },
-    { name: 'About', path: '/about', icon: <Info size={16} /> },
+    { name: 'Overview', path: '/', icon: <Sparkles size={15} /> },
+    { name: 'Verify ZK', path: '/verify', icon: <CheckCircle2 size={15} /> },
+    { name: 'Admin Portal', path: '/admin', icon: <Sliders size={15} /> },
+    { name: 'How It Works', path: '/about', icon: <Info size={15} /> },
   ];
 
   return (
     <nav className="navbar">
       <div className="navbar-container">
         <Link to="/" className="navbar-logo">
-          <Shield className="text-accent" size={24} />
-          <span>Scholar<span className="text-accent">Shield</span></span>
+          <div className="navbar-logo-icon">
+            <Shield size={18} />
+          </div>
+          <span>Scholarship <span className="text-gradient">Vault</span></span>
         </Link>
 
         <div className="navbar-links">
@@ -29,12 +31,16 @@ export default function NavBar() {
               className={`nav-item ${location.pathname === link.path ? 'active' : ''}`}
             >
               {link.icon}
-              <span className="nav-item-text">{link.name}</span>
+              <span>{link.name}</span>
             </Link>
           ))}
         </div>
 
-        <div className="navbar-wallet">
+        <div style={{ display: 'flex', alignItems: 'center', gap: '0.75rem' }}>
+          <div className="badge-pill badge-live" style={{ padding: '0.25rem 0.65rem', fontSize: '0.75rem' }}>
+            <span className="badge-dot" />
+            <span>Preprod</span>
+          </div>
           <WalletBanner />
         </div>
       </div>

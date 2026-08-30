@@ -15,19 +15,21 @@
 
 ## Submission Checklist
 
-### 🌔 Level 4
+### 🌕 Level 5 — Full Moon
 
 | Item | Status | Link |
 |------|--------|------|
 | Public GitHub repository | ✅ | [thesumedh/Scholarship-vault](https://github.com/thesumedh/Scholarship-vault) |
 | Live Preprod demo | ✅ | [scholar-shield-ten.vercel.app](https://scholar-shield-ten.vercel.app/) |
-| Contract address (Preprod) | ✅ | [`d13aabcf...3287e`](https://preprod.midnightexplorer.com/contracts/d13aabcf0599f9453f42637207303fb22ea0ed1f1bc8d34b56fe0f338da3287e) |
+| Deployed Contract (Preprod) | ✅ | [`2acabfd9...9bfdc`](https://explorer.1am.xyz/contract/2acabfd90d77a94af7fcab23806b1d5b6da329392d25e0ce6c0766403289bfdc) |
+| Contract Explorer (Midnight) | ✅ | [Midnight Explorer](https://preprod.midnightexplorer.com/contracts/2acabfd90d77a94af7fcab23806b1d5b6da329392d25e0ce6c0766403289bfdc) |
+| 50 Verified Preprod Users | ✅ | [USERS.md](./USERS.md) · [onboarded-users.json](./onboarded-users.json) |
+| Structured Feedback Loop | ✅ | [FEEDBACK.md](./FEEDBACK.md) |
 | CI/CD pipeline (passing) | ✅ | [GitHub Actions](https://github.com/thesumedh/Scholarship-vault/actions) |
-| Product X profile | ✅ | https://x.com/ScholrshipVault |
+| Product X profile | ✅ | [@ScholrshipVault](https://x.com/ScholrshipVault) |
 | Launch tweet | ✅ | [View post](https://x.com/ScholrshipVault/status/2088506773858820269) |
 | Demo video | ✅ | [Watch on Google Drive](https://drive.google.com/file/d/1YUe91VBOKsM_-cpF4jBO_dhbyJyNmcWX/view?usp=sharing) |
-| Minimum 15 meaningful commits | ✅ | [Commit history](https://github.com/thesumedh/Scholarship-vault/commits/main) |
-
+| Meaningful commits (20+) | ✅ | [35+ Commits](https://github.com/thesumedh/Scholarship-vault/commits/main) |
 
 ---
 
@@ -42,10 +44,12 @@ Your data never leaves your browser. Only a cryptographic proof goes on-chain.
 ## Live Links
 
 - **Frontend (Vercel):** https://scholar-shield-ten.vercel.app/
-- **Contract (Midnight Preprod):** [`d13aabcf0599f9453f42637207303fb22ea0ed1f1bc8d34b56fe0f338da3287e`](https://preprod.midnightexplorer.com/contracts/d13aabcf0599f9453f42637207303fb22ea0ed1f1bc8d34b56fe0f338da3287e)
+- **Contract (1AM Explorer):** [`2acabfd90d77a94af7fcab23806b1d5b6da329392d25e0ce6c0766403289bfdc`](https://explorer.1am.xyz/contract/2acabfd90d77a94af7fcab23806b1d5b6da329392d25e0ce6c0766403289bfdc)
+- **Contract (Midnight Explorer):** [`2acabfd90d77a94af7fcab23806b1d5b6da329392d25e0ce6c0766403289bfdc`](https://preprod.midnightexplorer.com/contracts/2acabfd90d77a94af7fcab23806b1d5b6da329392d25e0ce6c0766403289bfdc)
 - **Demo Video:** [Google Drive](https://drive.google.com/file/d/1YUe91VBOKsM_-cpF4jBO_dhbyJyNmcWX/view?usp=sharing)
-- **X (Twitter):** [x.com/thesumedh_](https://x.com/thesumedh_)
-- **Launch Tweet:** [x.com/thesumedh_/status/2081776021905543689](https://x.com/thesumedh_/status/2081776021905543689)
+- **X (Product):** [x.com/ScholrshipVault](https://x.com/ScholrshipVault)
+- **X (Builder):** [x.com/thesumedh_](https://x.com/thesumedh_)
+- **Users Registry:** [USERS.md](./USERS.md)
 - **Feedback Docs:** [FEEDBACK.md](./FEEDBACK.md)
 
 ---
