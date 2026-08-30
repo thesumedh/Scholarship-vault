@@ -12,13 +12,12 @@ import {
   AlertCircle, 
   Loader2, 
   ExternalLink, 
-  Sparkles, 
   Copy, 
   Check, 
   RefreshCw,
   Cpu,
   Layers,
-  HelpCircle
+  ArrowRight
 } from 'lucide-react';
 import { PREPROD_CONTRACT_ADDRESS, MIN_GPA_THRESHOLD, MAX_INCOME_THRESHOLD } from '../config';
 
@@ -72,7 +71,7 @@ export default function VerifyPage() {
     const incomeBig = BigInt(incomeVal);
 
     setStatus('proving');
-    setStepMsg('Constructing private witness & generating WASM ZK proof…');
+    setStepMsg('Generating local WASM zero-knowledge proof…');
     setErrorMsg(null);
     setTxId(null);
 
@@ -87,7 +86,7 @@ export default function VerifyPage() {
       });
 
       setStatus('submitting');
-      setStepMsg('Broadcasting balanced ZK transaction to Midnight Preprod…');
+      setStepMsg('Submitting balanced transaction to Midnight Preprod…');
 
       const id = await submitTxAsync(session.providers as any, {
         unprovenTx: callTxData.private.unprovenTx,
@@ -118,7 +117,7 @@ export default function VerifyPage() {
       } else {
         setSimStatus('failed');
       }
-    }, 900);
+    }, 700);
   };
 
   const copyTx = () => {
@@ -138,53 +137,60 @@ export default function VerifyPage() {
   const isProcessing = status === 'proving' || status === 'submitting';
 
   return (
-    <div className="page-container" style={{ maxWidth: '800px' }}>
+    <div className="page-container" style={{ maxWidth: '680px' }}>
       {/* Header */}
-      <div style={{ textAlign: 'center', marginBottom: '2rem' }}>
-        <div className="badge-pill mb-sm">
-          <Sparkles size={13} />
-          <span>Zero-Knowledge Proof Engine</span>
-        </div>
-        <h1 className="title-lg mb-xs">
-          Scholarship <span className="text-gradient">Eligibility Verification</span>
-        </h1>
-        <p className="text-secondary" style={{ fontSize: '0.95rem' }}>
-          Your GPA and Income are private witnesses. They are proven locally in WASM and never broadcast to the network.
+      <div style={{ marginBottom: '1.75rem' }}>
+        <h1 className="title-lg mb-xs">Scholarship Verification</h1>
+        <p className="text-secondary" style={{ fontSize: '0.9rem' }}>
+          Verify your eligibility against on-chain criteria without revealing your private credentials.
         </p>
       </div>
 
-      {/* Tabs */}
-      <div style={{ display: 'flex', justifyContent: 'center', gap: '0.5rem', marginBottom: '1.5rem' }}>
+      {/* Mode Switcher */}
+      <div style={{ display: 'flex', gap: '0.5rem', marginBottom: '1.25rem', background: '#121215', padding: '0.25rem', borderRadius: 'var(--radius-sm)', border: '1px solid var(--border-subtle)', width: 'fit-content' }}>
         <button
           onClick={() => { setActiveTab('wallet'); reset(); }}
-          className={`btn ${activeTab === 'wallet' ? 'btn-primary' : 'btn-secondary'}`}
-          style={{ padding: '0.45rem 1.25rem', fontSize: '0.875rem', borderRadius: 'var(--radius-pill)' }}
+          style={{
+            padding: '0.35rem 0.85rem',
+            fontSize: '0.8rem',
+            fontWeight: 500,
+            borderRadius: 'var(--radius-xs)',
+            border: 'none',
+            background: activeTab === 'wallet' ? '#27272a' : 'transparent',
+            color: activeTab === 'wallet' ? '#fff' : 'var(--text-secondary)',
+            cursor: 'pointer',
+          }}
         >
-          <Layers size={15} />
-          <span>Live Preprod Verification</span>
+          Live Preprod
         </button>
         <button
           onClick={() => { setActiveTab('simulator'); reset(); }}
-          className={`btn ${activeTab === 'simulator' ? 'btn-primary' : 'btn-secondary'}`}
-          style={{ padding: '0.45rem 1.25rem', fontSize: '0.875rem', borderRadius: 'var(--radius-pill)' }}
+          style={{
+            padding: '0.35rem 0.85rem',
+            fontSize: '0.8rem',
+            fontWeight: 500,
+            borderRadius: 'var(--radius-xs)',
+            border: 'none',
+            background: activeTab === 'simulator' ? '#27272a' : 'transparent',
+            color: activeTab === 'simulator' ? '#fff' : 'var(--text-secondary)',
+            cursor: 'pointer',
+          }}
         >
-          <Cpu size={15} />
-          <span>ZK Circuit Sandbox</span>
+          Circuit Sandbox
         </button>
       </div>
 
       {/* Main Card */}
-      <div className="card card-glow">
+      <div className="card">
         
-        {/* Verification Form */}
-        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))', gap: '1.25rem' }}>
+        {/* Form Inputs */}
+        <div style={{ display: 'flex', flexDirection: 'column', gap: '1rem' }}>
           
-          {/* GPA Input */}
-          <div className="form-group">
+          <div className="form-group" style={{ marginBottom: 0 }}>
             <label className="form-label">
               <span>Cumulative GPA (out of 10.0)</span>
-              <span style={{ fontSize: '0.75rem', color: satisfiesGpa ? '#10b981' : '#f59e0b', fontWeight: 600 }}>
-                Requirement: ≥ {(MIN_GPA_THRESHOLD / 100).toFixed(2)}
+              <span style={{ fontSize: '0.75rem', color: 'var(--text-muted)' }}>
+                Min required: {(MIN_GPA_THRESHOLD / 100).toFixed(2)}
               </span>
             </label>
             <input
@@ -199,22 +205,23 @@ export default function VerifyPage() {
               onChange={(e) => setGpaRaw(e.target.value)}
             />
             <div style={{ display: 'flex', justifyContent: 'space-between', fontSize: '0.75rem', color: 'var(--text-muted)', marginTop: '0.35rem' }}>
-              <span>Scaled integer witness: {gpaScaled}</span>
-              <span>{satisfiesGpa ? '✅ Meets threshold' : '⚠️ Below 8.00'}</span>
+              <span>Scaled witness value: {gpaScaled}</span>
+              <span style={{ color: satisfiesGpa ? '#10b981' : '#f59e0b' }}>
+                {satisfiesGpa ? 'Meets threshold' : 'Below threshold'}
+              </span>
             </div>
           </div>
 
-          {/* Income Input */}
-          <div className="form-group">
+          <div className="form-group" style={{ marginBottom: 0 }}>
             <label className="form-label">
-              <span>Annual Family Income (INR ₹)</span>
-              <span style={{ fontSize: '0.75rem', color: satisfiesIncome ? '#10b981' : '#f59e0b', fontWeight: 600 }}>
-                Cap: ≤ ₹{MAX_INCOME_THRESHOLD.toLocaleString()}
+              <span>Annual Household Income (INR ₹)</span>
+              <span style={{ fontSize: '0.75rem', color: 'var(--text-muted)' }}>
+                Max ceiling: ₹{MAX_INCOME_THRESHOLD.toLocaleString()}
               </span>
             </label>
             <input
               type="number"
-              step="1000"
+              step="5000"
               min="0"
               placeholder="e.g. 180000"
               className="form-input"
@@ -224,174 +231,137 @@ export default function VerifyPage() {
             />
             <div style={{ display: 'flex', justifyContent: 'space-between', fontSize: '0.75rem', color: 'var(--text-muted)', marginTop: '0.35rem' }}>
               <span>Formatted: ₹{incomeVal.toLocaleString()}</span>
-              <span>{satisfiesIncome ? '✅ Within limit' : '⚠️ Exceeds limit'}</span>
+              <span style={{ color: satisfiesIncome ? '#10b981' : '#f59e0b' }}>
+                {satisfiesIncome ? 'Within ceiling' : 'Exceeds ceiling'}
+              </span>
             </div>
           </div>
 
         </div>
 
-        {/* Real-time Cryptographic Circuit Assertion Status */}
-        <div style={{
-          background: 'rgba(0, 0, 0, 0.4)',
-          border: '1px solid var(--border-subtle)',
-          borderRadius: 'var(--radius-sm)',
-          padding: '0.85rem 1.15rem',
-          margin: '1rem 0 1.5rem',
-          display: 'flex',
-          alignItems: 'center',
-          justifyContent: 'space-between',
-          flexWrap: 'wrap',
-          gap: '0.75rem'
-        }}>
-          <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
-            <Lock size={15} style={{ color: 'var(--accent-light)' }} />
-            <span style={{ fontSize: '0.85rem', color: 'var(--text-secondary)' }}>
-              Circuit Assertion: <code className="font-mono" style={{ color: '#fff' }}>assert(gpa &gt;= min_gpa &amp;&amp; income &lt;= max_income)</code>
-            </span>
-          </div>
-
-          <div style={{ display: 'flex', alignItems: 'center', gap: '0.4rem' }}>
-            <span style={{ fontSize: '0.8rem', fontWeight: 600, color: willPassCircuit ? '#10b981' : '#f59e0b' }}>
-              {willPassCircuit ? 'Proof Will Validate' : 'Constraint Violation'}
-            </span>
-          </div>
-        </div>
-
-        {/* Action Button Section */}
-        {activeTab === 'wallet' ? (
-          <div>
-            {!isConnected ? (
-              <div style={{ textAlign: 'center', padding: '1rem 0' }}>
-                <p className="text-secondary mb-md" style={{ fontSize: '0.9rem' }}>
-                  Connect your Midnight Lace or 1AM wallet on Preprod to submit your proof on-chain.
-                </p>
+        {/* Action Button */}
+        <div style={{ marginTop: '1.5rem' }}>
+          {activeTab === 'wallet' ? (
+            <div>
+              {!isConnected ? (
                 <button
-                  className="btn btn-primary btn-lg btn-block"
+                  className="btn btn-primary btn-block btn-lg"
                   onClick={() => connect('preprod')}
                 >
-                  <Key size={18} />
+                  <Key size={16} />
                   <span>Connect Wallet &amp; Verify</span>
                 </button>
-              </div>
-            ) : (
+              ) : (
+                <button
+                  className="btn btn-primary btn-block btn-lg"
+                  onClick={handleVerify}
+                  disabled={isProcessing}
+                >
+                  {isProcessing ? (
+                    <>
+                      <Loader2 size={16} className="spinner-icon" />
+                      <span>{stepMsg}</span>
+                    </>
+                  ) : (
+                    <>
+                      <ShieldCheck size={16} />
+                      <span>Submit ZK Proof to Preprod</span>
+                    </>
+                  )}
+                </button>
+              )}
+            </div>
+          ) : (
+            <div>
               <button
-                className="btn btn-primary btn-lg btn-block"
-                onClick={handleVerify}
-                disabled={isProcessing}
+                className="btn btn-primary btn-block btn-lg"
+                onClick={handleSimulate}
+                disabled={simStatus === 'simulating'}
               >
-                {isProcessing ? (
+                {simStatus === 'simulating' ? (
                   <>
-                    <Loader2 size={18} className="spinner-icon" />
-                    <span>{status === 'proving' ? 'Generating ZK Proof…' : 'Submitting to Preprod…'}</span>
+                    <Loader2 size={16} className="spinner-icon" />
+                    <span>Evaluating WASM Circuit…</span>
                   </>
                 ) : (
                   <>
-                    <ShieldCheck size={18} />
-                    <span>Submit ZK Proof to Preprod</span>
+                    <Cpu size={16} />
+                    <span>Simulate ZK Proof</span>
                   </>
                 )}
               </button>
-            )}
-          </div>
-        ) : (
-          <div>
-            <button
-              className="btn btn-primary btn-lg btn-block"
-              onClick={handleSimulate}
-              disabled={simStatus === 'simulating'}
-            >
-              {simStatus === 'simulating' ? (
-                <>
-                  <Loader2 size={18} className="spinner-icon" />
-                  <span>Evaluating WASM Circuit…</span>
-                </>
-              ) : (
-                <>
-                  <Cpu size={18} />
-                  <span>Run ZK Proof Simulation</span>
-                </>
-              )}
-            </button>
-          </div>
-        )}
-
-        {/* Progress feedback message */}
-        {isProcessing && (
-          <div style={{ textAlign: 'center', marginTop: '1rem', color: 'var(--accent-light)', fontSize: '0.875rem' }}>
-            <div style={{ display: 'inline-flex', alignItems: 'center', gap: '0.5rem', background: 'rgba(139, 92, 246, 0.1)', padding: '0.4rem 0.85rem', borderRadius: 'var(--radius-pill)', border: '1px solid rgba(139, 92, 246, 0.25)' }}>
-              <Loader2 size={14} className="spinner-icon" />
-              <span>{stepMsg}</span>
             </div>
-          </div>
-        )}
+          )}
+        </div>
 
-        {/* Result Boxes */}
+        {/* Result: Eligible */}
         {status === 'eligible' && (
           <div className="result-box success">
-            <CheckCircle2 size={36} style={{ color: '#10b981', margin: '0 auto 0.5rem' }} />
-            <div className="result-title" style={{ color: '#10b981' }}>Scholarship Eligibility Verified!</div>
-            <p style={{ color: 'var(--text-secondary)', fontSize: '0.9rem', maxWidth: '520px', margin: '0 auto' }}>
-              Your zero-knowledge proof has been verified by the smart contract on <strong>Midnight Preprod</strong>.
-              Your GPA and income were never revealed to the network.
+            <CheckCircle2 size={32} style={{ color: '#10b981', margin: '0 auto 0.4rem' }} />
+            <div className="result-title" style={{ color: '#10b981' }}>Eligibility Verified</div>
+            <p style={{ color: 'var(--text-secondary)', fontSize: '0.85rem', maxWidth: '480px', margin: '0 auto' }}>
+              Your zero-knowledge proof has been verified and confirmed by the smart contract on Midnight Preprod.
             </p>
 
             {txId && (
               <div className="result-tx font-mono">
-                <span>TX: {txId.slice(0, 12)}…{txId.slice(-8)}</span>
+                <span>TX: {txId.slice(0, 10)}…{txId.slice(-6)}</span>
                 <button
                   onClick={copyTx}
                   style={{ background: 'none', border: 'none', color: 'var(--text-secondary)', cursor: 'pointer', display: 'flex', alignItems: 'center' }}
-                  title="Copy Transaction Hash"
+                  title="Copy TX"
                 >
-                  {copied ? <Check size={13} style={{ color: '#10b981' }} /> : <Copy size={13} />}
+                  {copied ? <Check size={12} style={{ color: '#10b981' }} /> : <Copy size={12} />}
                 </button>
                 <a
                   href={`https://explorer.1am.xyz/tx/${txId}?network=preprod`}
                   target="_blank"
                   rel="noopener noreferrer"
-                  style={{ color: 'var(--accent-light)', display: 'flex', alignItems: 'center', gap: '0.2rem' }}
+                  style={{ color: '#fafafa', display: 'flex', alignItems: 'center', gap: '0.2rem' }}
                 >
-                  <span>Explorer</span>
-                  <ExternalLink size={12} />
+                  <span>1AM</span>
+                  <ExternalLink size={11} />
                 </a>
               </div>
             )}
 
-            <div style={{ marginTop: '1.25rem' }}>
-              <button className="btn btn-secondary" onClick={reset} style={{ fontSize: '0.85rem' }}>
-                <RefreshCw size={14} />
-                <span>Verify Another Record</span>
+            <div style={{ marginTop: '1rem' }}>
+              <button className="btn btn-secondary" onClick={reset} style={{ fontSize: '0.8rem', padding: '0.4rem 0.85rem' }}>
+                <RefreshCw size={13} />
+                <span>Verify Another</span>
               </button>
             </div>
           </div>
         )}
 
+        {/* Result: Ineligible */}
         {status === 'ineligible' && (
           <div className="result-box ineligible">
-            <XCircle size={36} style={{ color: '#f59e0b', margin: '0 auto 0.5rem' }} />
+            <XCircle size={32} style={{ color: '#f59e0b', margin: '0 auto 0.4rem' }} />
             <div className="result-title" style={{ color: '#f59e0b' }}>Threshold Not Met</div>
-            <p style={{ color: 'var(--text-secondary)', fontSize: '0.9rem', maxWidth: '520px', margin: '0 auto' }}>
-              The Zero-Knowledge circuit assertion failed: the entered GPA is below <strong>8.00</strong> or the annual family income exceeds <strong>₹2,50,000</strong>.
+            <p style={{ color: 'var(--text-secondary)', fontSize: '0.85rem', maxWidth: '480px', margin: '0 auto' }}>
+              The Zero-Knowledge circuit rejected the input: GPA is below 8.00 or household income exceeds ₹2,50,000.
             </p>
-            <div style={{ marginTop: '1.25rem' }}>
-              <button className="btn btn-secondary" onClick={reset} style={{ fontSize: '0.85rem' }}>
-                <RefreshCw size={14} />
+            <div style={{ marginTop: '1rem' }}>
+              <button className="btn btn-secondary" onClick={reset} style={{ fontSize: '0.8rem', padding: '0.4rem 0.85rem' }}>
+                <RefreshCw size={13} />
                 <span>Try Again</span>
               </button>
             </div>
           </div>
         )}
 
+        {/* Result: Error */}
         {status === 'error' && errorMsg && (
           <div className="result-box error">
-            <AlertCircle size={36} style={{ color: '#f43f5e', margin: '0 auto 0.5rem' }} />
-            <div className="result-title" style={{ color: '#f43f5e' }}>Verification Notice</div>
-            <p style={{ color: 'var(--text-secondary)', fontSize: '0.85rem', maxWidth: '520px', margin: '0 auto' }}>
+            <AlertCircle size={32} style={{ color: '#ef4444', margin: '0 auto 0.4rem' }} />
+            <div className="result-title" style={{ color: '#ef4444' }}>Verification Notice</div>
+            <p style={{ color: 'var(--text-secondary)', fontSize: '0.85rem', maxWidth: '480px', margin: '0 auto' }}>
               {errorMsg}
             </p>
-            <div style={{ marginTop: '1.25rem' }}>
-              <button className="btn btn-secondary" onClick={reset} style={{ fontSize: '0.85rem' }}>
-                <RefreshCw size={14} />
+            <div style={{ marginTop: '1rem' }}>
+              <button className="btn btn-secondary" onClick={reset} style={{ fontSize: '0.8rem', padding: '0.4rem 0.85rem' }}>
+                <RefreshCw size={13} />
                 <span>Retry</span>
               </button>
             </div>
@@ -401,43 +371,37 @@ export default function VerifyPage() {
         {/* Simulator Results */}
         {activeTab === 'simulator' && simStatus === 'success' && (
           <div className="result-box success">
-            <CheckCircle2 size={36} style={{ color: '#10b981', margin: '0 auto 0.5rem' }} />
-            <div className="result-title" style={{ color: '#10b981' }}>ZK Simulation: Constraints Satisfied!</div>
-            <p style={{ color: 'var(--text-secondary)', fontSize: '0.9rem', maxWidth: '520px', margin: '0 auto' }}>
-              Mathematical proof generated locally. Output state: <code className="font-mono" style={{ color: '#10b981' }}>is_eligible: true</code>.
-              When ready, switch to <strong>Live Preprod Verification</strong> to commit to the blockchain!
+            <CheckCircle2 size={32} style={{ color: '#10b981', margin: '0 auto 0.4rem' }} />
+            <div className="result-title" style={{ color: '#10b981' }}>Sandbox: Valid ZK Proof</div>
+            <p style={{ color: 'var(--text-secondary)', fontSize: '0.85rem' }}>
+              Mathematical proof generated locally. Constraints satisfied.
             </p>
           </div>
         )}
 
         {activeTab === 'simulator' && simStatus === 'failed' && (
           <div className="result-box ineligible">
-            <XCircle size={36} style={{ color: '#f59e0b', margin: '0 auto 0.5rem' }} />
-            <div className="result-title" style={{ color: '#f59e0b' }}>ZK Simulation: Constraint Assertion Rejection</div>
-            <p style={{ color: 'var(--text-secondary)', fontSize: '0.9rem', maxWidth: '520px', margin: '0 auto' }}>
-              The proof engine asserted failure because either GPA &lt; 8.00 or Family Income &gt; ₹2,50,000.
+            <XCircle size={32} style={{ color: '#f59e0b', margin: '0 auto 0.4rem' }} />
+            <div className="result-title" style={{ color: '#f59e0b' }}>Sandbox: Constraint Violation</div>
+            <p style={{ color: 'var(--text-secondary)', fontSize: '0.85rem' }}>
+              The proof engine rejected the inputs against the minimum threshold requirements.
             </p>
           </div>
         )}
 
       </div>
 
-      {/* Contract & Privacy Info Footnote */}
-      <div style={{ marginTop: '1.5rem', display: 'flex', justifyContent: 'space-between', alignItems: 'center', flexWrap: 'wrap', gap: '1rem', fontSize: '0.8rem', color: 'var(--text-muted)' }}>
-        <div>
-          <span>Target Contract: </span>
-          <code className="font-mono" style={{ color: 'var(--text-secondary)' }}>
-            {PREPROD_CONTRACT_ADDRESS.slice(0, 8)}…{PREPROD_CONTRACT_ADDRESS.slice(-6)}
-          </code>
-        </div>
+      {/* Footer Info */}
+      <div style={{ marginTop: '1.25rem', display: 'flex', justifyContent: 'space-between', alignItems: 'center', fontSize: '0.75rem', color: 'var(--text-muted)' }}>
+        <span>Contract: {PREPROD_CONTRACT_ADDRESS.slice(0, 8)}…{PREPROD_CONTRACT_ADDRESS.slice(-6)}</span>
         <a
           href={`https://explorer.1am.xyz/contract/${PREPROD_CONTRACT_ADDRESS}`}
           target="_blank"
           rel="noopener noreferrer"
-          style={{ color: 'var(--accent-light)', display: 'flex', alignItems: 'center', gap: '0.25rem' }}
+          style={{ color: 'var(--text-secondary)', display: 'flex', alignItems: 'center', gap: '0.2rem' }}
         >
-          <span>View Contract on 1AM</span>
-          <ExternalLink size={12} />
+          <span>1AM Explorer</span>
+          <ExternalLink size={10} />
         </a>
       </div>
     </div>

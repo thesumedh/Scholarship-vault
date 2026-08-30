@@ -13,7 +13,6 @@ import {
   Copy, 
   Check, 
   Rocket,
-  Shield,
   Key
 } from 'lucide-react';
 import { PREPROD_CONTRACT_ADDRESS, MIN_GPA_THRESHOLD, MAX_INCOME_THRESHOLD } from '../config';
@@ -26,7 +25,7 @@ function getCompiledContract() {
 }
 
 export default function AdminPage() {
-  const { session, isConnected, connect, address } = useWallet();
+  const { session, isConnected, connect } = useWallet();
   const [status, setStatus] = useState<'idle' | 'deploying' | 'deployed' | 'error'>('idle');
   const [errorMsg, setErrorMsg] = useState<string | null>(null);
   const [deployedAddress, setDeployedAddress] = useState<string | null>(null);
@@ -71,153 +70,109 @@ export default function AdminPage() {
   }, [session, isConnected]);
 
   return (
-    <div className="page-container" style={{ maxWidth: '800px' }}>
-      {/* Header */}
-      <div style={{ textAlign: 'center', marginBottom: '2rem' }}>
-        <div className="badge-pill mb-sm">
-          <Sliders size={13} />
-          <span>Contract Administration</span>
-        </div>
-        <h1 className="title-lg mb-xs">
-          Scholarship Vault <span className="text-gradient">Admin &amp; Deployer</span>
-        </h1>
-        <p className="text-secondary" style={{ fontSize: '0.95rem' }}>
-          Manage and deploy instance criteria on the Midnight Preprod Network.
+    <div className="page-container" style={{ maxWidth: '680px' }}>
+      <div style={{ marginBottom: '1.75rem' }}>
+        <h1 className="title-lg mb-xs">Admin Portal</h1>
+        <p className="text-secondary" style={{ fontSize: '0.9rem' }}>
+          Inspect active criteria and deploy smart contract instances to Midnight Preprod.
         </p>
       </div>
 
-      {/* Current Active Contract */}
-      <div className="card card-accent mb-lg">
-        <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', marginBottom: '1rem', flexWrap: 'wrap', gap: '0.5rem' }}>
-          <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
-            <span className="badge-dot" />
-            <h2 className="title-sm">Current Active Preprod Contract</h2>
-          </div>
+      {/* Active Contract Details */}
+      <div className="card mb-lg">
+        <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', marginBottom: '0.75rem' }}>
+          <span style={{ fontSize: '0.85rem', fontWeight: 600, color: '#fff' }}>Active Contract Instance</span>
           <a
             href={`https://explorer.1am.xyz/contract/${PREPROD_CONTRACT_ADDRESS}`}
             target="_blank"
             rel="noopener noreferrer"
-            className="btn btn-secondary"
-            style={{ padding: '0.25rem 0.65rem', fontSize: '0.75rem' }}
+            style={{ fontSize: '0.75rem', color: 'var(--text-secondary)', display: 'flex', alignItems: 'center', gap: '0.2rem' }}
           >
-            <span>View on 1AM Explorer</span>
-            <ExternalLink size={12} />
+            <span>1AM Explorer</span>
+            <ExternalLink size={11} />
           </a>
         </div>
 
         <div style={{ 
-          background: 'rgba(0, 0, 0, 0.45)', 
+          background: 'var(--bg-input)', 
           border: '1px solid var(--border-subtle)', 
           borderRadius: 'var(--radius-sm)', 
-          padding: '0.85rem 1rem',
+          padding: '0.65rem 0.85rem',
           display: 'flex',
           alignItems: 'center',
           justifyContent: 'space-between',
-          flexWrap: 'wrap',
-          gap: '0.75rem'
+          gap: '0.5rem',
+          fontSize: '0.8rem'
         }}>
-          <div className="font-mono" style={{ fontSize: '0.85rem', color: 'var(--accent-light)', wordBreak: 'break-all' }}>
+          <span className="font-mono" style={{ color: 'var(--text-primary)', wordBreak: 'break-all' }}>
             {PREPROD_CONTRACT_ADDRESS}
-          </div>
+          </span>
           <button
             onClick={copyContract}
             className="btn btn-secondary"
-            style={{ padding: '0.3rem 0.65rem', fontSize: '0.75rem' }}
+            style={{ padding: '0.2rem 0.5rem', fontSize: '0.7rem' }}
           >
-            {copied ? <Check size={12} style={{ color: '#10b981' }} /> : <Copy size={12} />}
+            {copied ? <Check size={11} style={{ color: '#10b981' }} /> : <Copy size={11} />}
             <span>{copied ? 'Copied' : 'Copy'}</span>
           </button>
         </div>
 
-        {/* Criteria Grid */}
-        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(200px, 1fr))', gap: '1rem', marginTop: '1.25rem' }}>
-          <div style={{ background: 'rgba(255, 255, 255, 0.03)', padding: '0.85rem 1rem', borderRadius: 'var(--radius-sm)', border: '1px solid rgba(255, 255, 255, 0.05)' }}>
-            <div style={{ fontSize: '0.75rem', color: 'var(--text-muted)', textTransform: 'uppercase', letterSpacing: '0.05em' }}>Minimum GPA Criterion</div>
-            <div style={{ fontSize: '1.35rem', fontWeight: 700, color: '#fff', marginTop: '0.25rem' }}>8.00 / 10.0</div>
-            <div style={{ fontSize: '0.75rem', color: 'var(--text-secondary)' }}>Disclosed constructor arg: {MIN_GPA_THRESHOLD}</div>
+        <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '0.75rem', marginTop: '1rem' }}>
+          <div style={{ background: 'rgba(255,255,255,0.02)', padding: '0.75rem', borderRadius: 'var(--radius-xs)', border: '1px solid var(--border-subtle)' }}>
+            <div style={{ fontSize: '0.7rem', color: 'var(--text-muted)' }}>Configured GPA Threshold</div>
+            <div style={{ fontSize: '1.1rem', fontWeight: 600, color: '#fff', marginTop: '0.15rem' }}>≥ 8.00 / 10.0</div>
           </div>
-          <div style={{ background: 'rgba(255, 255, 255, 0.03)', padding: '0.85rem 1rem', borderRadius: 'var(--radius-sm)', border: '1px solid rgba(255, 255, 255, 0.05)' }}>
-            <div style={{ fontSize: '0.75rem', color: 'var(--text-muted)', textTransform: 'uppercase', letterSpacing: '0.05em' }}>Maximum Income Criterion</div>
-            <div style={{ fontSize: '1.35rem', fontWeight: 700, color: '#fff', marginTop: '0.25rem' }}>₹2,50,000</div>
-            <div style={{ fontSize: '0.75rem', color: 'var(--text-secondary)' }}>Disclosed constructor arg: {MAX_INCOME_THRESHOLD}</div>
+          <div style={{ background: 'rgba(255,255,255,0.02)', padding: '0.75rem', borderRadius: 'var(--radius-xs)', border: '1px solid var(--border-subtle)' }}>
+            <div style={{ fontSize: '0.7rem', color: 'var(--text-muted)' }}>Configured Income Ceiling</div>
+            <div style={{ fontSize: '1.1rem', fontWeight: 600, color: '#fff', marginTop: '0.15rem' }}>≤ ₹2,50,000</div>
           </div>
         </div>
       </div>
 
-      {/* Deploy Card */}
+      {/* Deploy Section */}
       <div className="card">
-        <h2 className="title-sm mb-xs" style={{ display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
-          <Rocket size={18} style={{ color: 'var(--accent-light)' }} />
-          <span>Deploy Fresh Smart Contract Instance</span>
-        </h2>
-        <p className="text-secondary mb-lg" style={{ fontSize: '0.9rem' }}>
-          Compile and publish a new Scholarship Vault contract to Midnight Preprod with custom constructor thresholds.
+        <h2 className="title-sm mb-xs">Deploy Contract</h2>
+        <p className="text-secondary mb-md" style={{ fontSize: '0.85rem' }}>
+          Publish a new instance of `contracts/scholarship.compact` to Midnight Preprod with Lace / 1AM.
         </p>
 
         {!isConnected ? (
-          <div style={{ textAlign: 'center', padding: '1.5rem 0' }}>
-            <p className="text-secondary mb-md" style={{ fontSize: '0.9rem' }}>
-              Connect your Lace or 1AM wallet to authorize contract deployment.
-            </p>
-            <button className="btn btn-primary" onClick={() => connect('preprod')}>
-              <Key size={16} />
-              <span>Connect Deployer Wallet</span>
-            </button>
-          </div>
+          <button className="btn btn-primary btn-block" onClick={() => connect('preprod')}>
+            <Key size={14} />
+            <span>Connect Wallet to Deploy</span>
+          </button>
         ) : (
-          <div>
-            <button
-              className="btn btn-primary btn-lg btn-block"
-              onClick={handleDeploy}
-              disabled={status === 'deploying'}
-            >
-              {status === 'deploying' ? (
-                <>
-                  <Loader2 size={18} className="spinner-icon" />
-                  <span>Submitting Deployment to Preprod…</span>
-                </>
-              ) : (
-                <>
-                  <Shield size={18} />
-                  <span>Deploy Contract to Preprod</span>
-                </>
-              )}
-            </button>
-          </div>
+          <button
+            className="btn btn-primary btn-block btn-lg"
+            onClick={handleDeploy}
+            disabled={status === 'deploying'}
+          >
+            {status === 'deploying' ? (
+              <>
+                <Loader2 size={16} className="spinner-icon" />
+                <span>Deploying to Preprod…</span>
+              </>
+            ) : (
+              <span>Deploy Contract Instance</span>
+            )}
+          </button>
         )}
 
         {status === 'deployed' && deployedAddress && (
-          <div className="result-box success" style={{ marginTop: '1.5rem' }}>
-            <CheckCircle2 size={36} style={{ color: '#10b981', margin: '0 auto 0.5rem' }} />
-            <div className="result-title" style={{ color: '#10b981' }}>Contract Successfully Deployed!</div>
-            <p style={{ color: 'var(--text-secondary)', fontSize: '0.9rem', marginBottom: '0.75rem' }}>
-              New Preprod Contract Address:
-            </p>
-            <div className="result-tx font-mono">
+          <div className="result-box success" style={{ marginTop: '1rem' }}>
+            <CheckCircle2 size={28} style={{ color: '#10b981', margin: '0 auto 0.35rem' }} />
+            <div className="result-title" style={{ color: '#10b981', fontSize: '1.05rem' }}>Deployment Complete</div>
+            <div className="result-tx font-mono" style={{ fontSize: '0.75rem' }}>
               <span>{deployedAddress}</span>
-            </div>
-            <div style={{ marginTop: '1rem' }}>
-              <a
-                href={`https://explorer.1am.xyz/contract/${deployedAddress}`}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="btn btn-secondary"
-                style={{ fontSize: '0.85rem' }}
-              >
-                <span>View on 1AM Explorer</span>
-                <ExternalLink size={14} />
-              </a>
             </div>
           </div>
         )}
 
         {status === 'error' && errorMsg && (
-          <div className="result-box error" style={{ marginTop: '1.5rem' }}>
-            <AlertCircle size={36} style={{ color: '#f43f5e', margin: '0 auto 0.5rem' }} />
-            <div className="result-title" style={{ color: '#f43f5e' }}>Deployment Error</div>
-            <p style={{ color: 'var(--text-secondary)', fontSize: '0.85rem' }}>
-              {errorMsg}
-            </p>
+          <div className="result-box error" style={{ marginTop: '1rem' }}>
+            <AlertCircle size={28} style={{ color: '#ef4444', margin: '0 auto 0.35rem' }} />
+            <div className="result-title" style={{ color: '#ef4444', fontSize: '1rem' }}>Deployment Error</div>
+            <p style={{ color: 'var(--text-secondary)', fontSize: '0.8rem' }}>{errorMsg}</p>
           </div>
         )}
       </div>
