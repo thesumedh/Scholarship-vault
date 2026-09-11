@@ -21,7 +21,7 @@ Feedback is gathered continuously across 3 primary touchpoints:
 1. **In-App Post-Verification Flow**:
    - Directly in the web dApp at [https://scholar-shield-ten.vercel.app/verify](https://scholar-shield-ten.vercel.app/verify).
 2. **Community 𝕏 Direct Engagement**:
-   - Via author profile [@thesumedh_](https://x.com/thesumedh_).
+   - Via project account [@ScholrshipVault](https://x.com/ScholrshipVault) and author [@thesumedh_](https://x.com/thesumedh_).
 3. **GitHub Discussions & Issues**:
    - [thesumedh/Scholarship-vault Issues](https://github.com/thesumedh/Scholarship-vault/issues).
 
