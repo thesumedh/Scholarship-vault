@@ -48,6 +48,7 @@ Based on early community testing of the Midnight Preprod DApp:
 - **Action 1 (Added ZK Simulation Sandbox)**: Added an interactive client-side sandbox mode on `/verify` so new users can test and understand zero-knowledge math without needing immediate testnet tokens.
 - **Action 2 (Real-Time Constraint Feedback)**: Integrated real-time constraint validation on the input form so users know whether their private inputs meet thresholds before submitting transactions.
 - **Action 3 (Direct Explorer Integration)**: Added 1AM Explorer deep links for instant transaction lookup.
+- **Action 4 (Universal 1AM Wallet DApp Connector & Resilient Probing)**: Resolved connection issues with 1AM Wallet by supporting CAIP-372/CIP-30 UUID injection discovery, fallback connection invocation without network parameter mismatches, defensive address extraction (string, object, array formats), safe proving provider handling, and real-time visual diagnostic popovers.
 
 ---
 

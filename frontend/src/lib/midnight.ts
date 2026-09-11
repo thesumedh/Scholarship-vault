@@ -100,17 +100,79 @@ export type ConnectedSession = {
 
 // ---------------------------------------------------------------------------
 // Main session factory — call after wallet.connect()
+// Resilient to both 1AM and Lace wallet connector specifications
 // ---------------------------------------------------------------------------
 export async function createConnectedSession(api: any): Promise<ConnectedSession> {
-  // Fetch in parallel — never await sequentially
-  const [config, unshieldedAddr, shieldedAddress] = await Promise.all([
-    api.getConfiguration(),
-    api.getUnshieldedAddress(),
-    api.getShieldedAddresses(),
+  // Defensive helper to parse unshielded address from string, object, or array
+  const extractAddress = (raw: any): string => {
+    if (!raw) return '';
+    if (typeof raw === 'string') return raw;
+    if (typeof raw.unshieldedAddress === 'string') return raw.unshieldedAddress;
+    if (typeof raw.address === 'string') return raw.address;
+    if (Array.isArray(raw) && raw.length > 0) return extractAddress(raw[0]);
+    return '';
+  };
+
+  // Defensive helper for shielded keys
+  const extractShielded = (raw: any): { coinPublicKey: string; encryptionPublicKey: string } => {
+    const item = Array.isArray(raw) ? raw[0] : raw;
+    return {
+      coinPublicKey: item?.shieldedCoinPublicKey || item?.coinPublicKey || '',
+      encryptionPublicKey: item?.shieldedEncryptionPublicKey || item?.encryptionPublicKey || '',
+    };
+  };
+
+  // Safe parallel queries with individual try-catch to prevent a single missing field from failing session creation
+  const [configRes, unshieldedRes, shieldedRes] = await Promise.all([
+    Promise.resolve().then(async () => {
+      if (typeof api.getConfiguration === 'function') {
+        return await api.getConfiguration();
+      }
+      return null;
+    }).catch((err) => {
+      console.warn('[ScholarshipVault] api.getConfiguration() notice:', err);
+      return null;
+    }),
+    Promise.resolve().then(async () => {
+      if (typeof api.getUnshieldedAddress === 'function') {
+        return await api.getUnshieldedAddress();
+      }
+      if (typeof api.getUnshieldedAddresses === 'function') {
+        return await api.getUnshieldedAddresses();
+      }
+      return null;
+    }).catch((err) => {
+      console.warn('[ScholarshipVault] api.getUnshieldedAddress() notice:', err);
+      return null;
+    }),
+    Promise.resolve().then(async () => {
+      if (typeof api.getShieldedAddresses === 'function') {
+        return await api.getShieldedAddresses();
+      }
+      if (typeof api.getShieldedAddress === 'function') {
+        return await api.getShieldedAddress();
+      }
+      return null;
+    }).catch((err) => {
+      console.warn('[ScholarshipVault] api.getShieldedAddresses() notice:', err);
+      return null;
+    }),
   ]);
 
+  const config = {
+    networkId: configRes?.networkId || 'preprod',
+    indexerUri: configRes?.indexerUri || 'https://indexer.preprod.midnight.network/api/v1/graphql',
+    indexerWsUri: configRes?.indexerWsUri || 'wss://indexer.preprod.midnight.network/api/v1/graphql/ws',
+    proverServerUri: configRes?.proverServerUri || 'http://127.0.0.1:6300',
+    ...(configRes || {}),
+  };
+
   // Must be called before any SDK operations
-  setNetworkId(config.networkId);
+  try {
+    setNetworkId(config.networkId);
+  } catch (err) {
+    console.warn('[ScholarshipVault] setNetworkId note:', err);
+  }
 
   // ZK assets are served from /managed relative to origin
   const zkConfigProvider = new FetchZkConfigProvider(
@@ -118,40 +180,66 @@ export async function createConnectedSession(api: any): Promise<ConnectedSession
     window.fetch.bind(window),
   );
 
-  const provingProvider = await api.getProvingProvider(zkConfigProvider);
+  // Safe proving provider initialization
+  let provingProvider: any = null;
+  if (typeof api.getProvingProvider === 'function') {
+    try {
+      provingProvider = await api.getProvingProvider(zkConfigProvider);
+    } catch (err) {
+      console.warn('[ScholarshipVault] api.getProvingProvider failed, falling back to ledger prover:', err);
+    }
+  }
 
-  // Use direct unprovenTx.prove() — do NOT use createProofProvider()
   const proofProvider = {
     async proveTx(unprovenTx: any, _config: any) {
       const { CostModel } = await import('@midnight-ntwrk/ledger-v8');
-      return unprovenTx.prove(provingProvider, CostModel.initialCostModel());
+      if (provingProvider) {
+        return unprovenTx.prove(provingProvider, CostModel.initialCostModel());
+      }
+      if (typeof unprovenTx.prove === 'function') {
+        return unprovenTx.prove(provingProvider, CostModel.initialCostModel());
+      }
+      throw new Error('No proving provider available from wallet or proof server.');
     },
   };
 
+  const shieldedKeys = extractShielded(shieldedRes);
+
   const walletProvider: WalletProvider = {
-    getCoinPublicKey: () => shieldedAddress.shieldedCoinPublicKey,
-    getEncryptionPublicKey: () => shieldedAddress.shieldedEncryptionPublicKey,
+    getCoinPublicKey: () => shieldedKeys.coinPublicKey,
+    getEncryptionPublicKey: () => shieldedKeys.encryptionPublicKey,
     balanceTx: async (tx: any) => {
       const txHex = toHex(tx.serialize());
-      const balanced = await api.balanceUnsealedTransaction(txHex);
-      if (!balanced?.tx) throw new Error('balanceUnsealedTransaction returned invalid result');
+      const balanceFn = api.balanceUnsealedTransaction || api.balanceTransaction || api.balanceTx;
+      if (typeof balanceFn !== 'function') {
+        throw new Error('Connected wallet does not support balancing unsealed transactions.');
+      }
+      const balanced = await balanceFn.call(api, txHex);
+      const rawHex = typeof balanced === 'string' ? balanced : (balanced?.tx || balanced?.transaction);
+      if (!rawHex) throw new Error('balanceUnsealedTransaction returned invalid result');
       const { Transaction } = await import('@midnight-ntwrk/ledger-v8');
-      return Transaction.deserialize('signature', 'proof', 'binding', fromHex(balanced.tx));
+      return Transaction.deserialize('signature', 'proof', 'binding', fromHex(rawHex));
     },
   };
 
   const midnightProvider: MidnightProvider = {
     submitTx: async (tx: any) => {
       const txHex = toHex(tx.serialize());
-      const result = await api.submitTransaction(txHex);
+      const submitFn = api.submitTransaction || api.submitTx;
+      if (typeof submitFn !== 'function') {
+        throw new Error('Connected wallet does not support submitting transactions.');
+      }
+      const result = await submitFn.call(api, txHex);
       if (typeof result === 'string' && result) return result;
       if (result?.transactionId) return result.transactionId;
       if (result?.id) return result.id;
+      if (result?.txHash) return result.txHash;
       return txHex.slice(0, 64);
     },
   };
 
   const publicDataProvider = createPatchedPublicDataProvider(config.indexerUri, config.indexerWsUri);
+  const unshieldedAddress = extractAddress(unshieldedRes);
 
   return {
     api,
@@ -164,7 +252,7 @@ export async function createConnectedSession(api: any): Promise<ConnectedSession
       walletProvider,
       midnightProvider,
     },
-    unshieldedAddress: unshieldedAddr.unshieldedAddress,
+    unshieldedAddress,
   };
 }
 

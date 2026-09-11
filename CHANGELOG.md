@@ -5,6 +5,16 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [1.1.0] - 2026-09-11
+
+### Fixed
+- **1AM Wallet Connection Support**:
+  - Implemented multi-strategy discovery compliant with Midnight DApp Connector specification (scanning `window.midnight` UUIDv4 keys, RDNS `xyz.1am.wallet`, and direct namespace keys).
+  - Added fallback connection invocation handling (`wallet.connect(network)` -> `wallet.connect()` -> `wallet.enable()`).
+  - Added defensive parsing for unshielded addresses supporting raw strings, objects (`{ unshieldedAddress }`, `{ address }`), and arrays.
+  - Added resilient fallback for `api.getProvingProvider`, preventing connection crashes on wallets without built-in proving providers.
+  - Added interactive wallet selection dropdown and inline diagnostic error popover with actionable 1AM troubleshooting checklist.
+
 ## [1.0.0] - 2025-07-13
 
 ### Added
