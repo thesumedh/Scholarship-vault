@@ -513,3 +513,116 @@ h1, h2, h3, h4, h5, h6 {
     font-size: 0.7rem;
   }
 }
+
+/* -------------------------------------------------------------------------
+   Engineering Protocol Components (Replaces "Vibe Coded" Templates)
+   ------------------------------------------------------------------------- */
+
+/* Obsidian Range Sliders */
+input[type="range"] {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 100%;
+  height: 4px;
+  background: #27272a;
+  border-radius: 2px;
+  outline: none;
+  cursor: pointer;
+  margin: 0.5rem 0;
+}
+
+input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background: #fafafa;
+  cursor: pointer;
+  border: 2px solid #18181b;
+  box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.25);
+  transition: transform 0.1s ease;
+}
+
+input[type="range"]::-webkit-slider-thumb:hover {
+  transform: scale(1.15);
+}
+
+/* Protocol Telemetry Strip */
+.protocol-telemetry {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1px;
+  background: var(--border-subtle);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-sm);
+  overflow: hidden;
+  margin: 1.5rem 0;
+}
+
+.protocol-telemetry-cell {
+  background: #0f0f13;
+  padding: 0.85rem 1rem;
+}
+
+.protocol-telemetry-label {
+  font-size: 0.7rem;
+  color: var(--text-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin-bottom: 0.25rem;
+  display: flex;
+  align-items: center;
+  gap: 0.35rem;
+}
+
+.protocol-telemetry-val {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: #fafafa;
+  word-break: break-all;
+}
+
+/* Console Inspector Panel */
+.console-panel {
+  background: #09090c;
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-sm);
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.78rem;
+  color: #e4e4e7;
+  padding: 0.9rem 1.1rem;
+  line-height: 1.5;
+}
+
+.console-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+  padding-bottom: 0.5rem;
+  margin-bottom: 0.65rem;
+  font-size: 0.72rem;
+  color: var(--text-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.console-row {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.2rem 0;
+  gap: 1rem;
+}
+
+.console-key {
+  color: var(--text-muted);
+}
+
+.console-val {
+  color: #fafafa;
+  text-align: right;
+  word-break: break-all;
+}
+

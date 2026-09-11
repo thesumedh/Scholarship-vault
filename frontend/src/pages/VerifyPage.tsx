@@ -180,67 +180,144 @@ export default function VerifyPage() {
         </button>
       </div>
 
+      {/* Docker Reassurance Strip */}
+      <div style={{
+        display: 'flex',
+        alignItems: 'center',
+        justifyContent: 'space-between',
+        gap: '0.75rem',
+        padding: '0.65rem 0.95rem',
+        background: '#0d0d10',
+        border: '1px solid var(--border-subtle)',
+        borderRadius: 'var(--radius-sm)',
+        fontSize: '0.78rem',
+        color: 'var(--text-secondary)',
+        marginBottom: '1rem',
+      }}>
+        <div style={{ display: 'flex', alignItems: 'center', gap: '0.45rem' }}>
+          <span className="badge-dot" style={{ backgroundColor: '#10b981' }} />
+          <span><strong>Zero Docker Required:</strong> Proofs generate inside 1AM wallet or local browser memory.</span>
+        </div>
+        <span className="font-mono" style={{ color: '#10b981', fontSize: '0.72rem' }}>0-DAEMON</span>
+      </div>
+
       {/* Main Card */}
       <div className="card">
         
-        {/* Form Inputs */}
-        <div style={{ display: 'flex', flexDirection: 'column', gap: '1rem' }}>
+        {/* Form Inputs with Dual Controls (Slider + Number) */}
+        <div style={{ display: 'flex', flexDirection: 'column', gap: '1.25rem' }}>
           
           <div className="form-group" style={{ marginBottom: 0 }}>
-            <label className="form-label">
-              <span>Cumulative GPA (out of 10.0)</span>
-              <span style={{ fontSize: '0.75rem', color: 'var(--text-muted)' }}>
-                Min required: {(MIN_GPA_THRESHOLD / 100).toFixed(2)}
+            <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '0.35rem' }}>
+              <label className="form-label" style={{ marginBottom: 0 }}>
+                <span>Cumulative GPA (out of 10.0)</span>
+              </label>
+              <span className="font-mono" style={{ fontSize: '0.8rem', color: satisfiesGpa ? '#10b981' : '#f59e0b', fontWeight: 600 }}>
+                {gpaVal.toFixed(2)} {satisfiesGpa ? '✓ Eligible' : '✗ Below 8.00'}
               </span>
-            </label>
-            <input
-              type="number"
-              step="0.01"
-              min="0"
-              max="10"
-              placeholder="e.g. 8.50"
-              className="form-input"
-              value={gpaRaw}
-              disabled={isProcessing}
-              onChange={(e) => setGpaRaw(e.target.value)}
-            />
-            <div className="form-hint-row">
-              <span>Scaled witness value: {gpaScaled}</span>
-              <span style={{ color: satisfiesGpa ? '#10b981' : '#f59e0b', fontWeight: 500 }}>
-                {satisfiesGpa ? 'Meets threshold' : 'Below threshold'}
-              </span>
+            </div>
+
+            <div style={{ display: 'flex', gap: '0.75rem', alignItems: 'center' }}>
+              <input
+                type="range"
+                step="0.01"
+                min="0"
+                max="10"
+                value={gpaRaw}
+                disabled={isProcessing}
+                onChange={(e) => setGpaRaw(e.target.value)}
+                style={{ flex: 1 }}
+              />
+              <input
+                type="number"
+                step="0.01"
+                min="0"
+                max="10"
+                placeholder="8.50"
+                className="form-input"
+                style={{ width: '90px', padding: '0.4rem 0.6rem', textAlign: 'center', fontFamily: 'JetBrains Mono, monospace' }}
+                value={gpaRaw}
+                disabled={isProcessing}
+                onChange={(e) => setGpaRaw(e.target.value)}
+              />
+            </div>
+
+            <div className="form-hint-row" style={{ marginTop: '0.25rem' }}>
+              <span>Compact witness: <code>{gpaScaled}</code> (Uint&lt;32&gt;)</span>
+              <span>Required: ≥ {(MIN_GPA_THRESHOLD / 100).toFixed(2)}</span>
             </div>
           </div>
 
           <div className="form-group" style={{ marginBottom: 0 }}>
-            <label className="form-label">
-              <span>Annual Household Income (INR ₹)</span>
-              <span style={{ fontSize: '0.75rem', color: 'var(--text-muted)' }}>
-                Max ceiling: ₹{MAX_INCOME_THRESHOLD.toLocaleString()}
+            <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '0.35rem' }}>
+              <label className="form-label" style={{ marginBottom: 0 }}>
+                <span>Annual Family Income (INR ₹)</span>
+              </label>
+              <span className="font-mono" style={{ fontSize: '0.8rem', color: satisfiesIncome ? '#10b981' : '#f59e0b', fontWeight: 600 }}>
+                ₹{incomeVal.toLocaleString()} {satisfiesIncome ? '✓ Eligible' : '✗ Exceeds ceiling'}
               </span>
-            </label>
-            <input
-              type="number"
-              step="5000"
-              min="0"
-              placeholder="e.g. 180000"
-              className="form-input"
-              value={incomeRaw}
-              disabled={isProcessing}
-              onChange={(e) => setIncomeRaw(e.target.value)}
-            />
-            <div className="form-hint-row">
-              <span>Formatted: ₹{incomeVal.toLocaleString()}</span>
-              <span style={{ color: satisfiesIncome ? '#10b981' : '#f59e0b', fontWeight: 500 }}>
-                {satisfiesIncome ? 'Within ceiling' : 'Exceeds ceiling'}
-              </span>
+            </div>
+
+            <div style={{ display: 'flex', gap: '0.75rem', alignItems: 'center' }}>
+              <input
+                type="range"
+                step="5000"
+                min="0"
+                max="500000"
+                value={incomeRaw}
+                disabled={isProcessing}
+                onChange={(e) => setIncomeRaw(e.target.value)}
+                style={{ flex: 1 }}
+              />
+              <input
+                type="number"
+                step="5000"
+                min="0"
+                placeholder="180000"
+                className="form-input"
+                style={{ width: '110px', padding: '0.4rem 0.6rem', textAlign: 'center', fontFamily: 'JetBrains Mono, monospace' }}
+                value={incomeRaw}
+                disabled={isProcessing}
+                onChange={(e) => setIncomeRaw(e.target.value)}
+              />
+            </div>
+
+            <div className="form-hint-row" style={{ marginTop: '0.25rem' }}>
+              <span>Compact witness: <code>{incomeVal}</code> (Uint&lt;32&gt;)</span>
+              <span>Max Ceiling: ≤ ₹{MAX_INCOME_THRESHOLD.toLocaleString()}</span>
             </div>
           </div>
 
         </div>
 
+        {/* Live Cryptographic Witness Summary */}
+        <div className="console-panel" style={{ marginTop: '1.25rem' }}>
+          <div className="console-header">
+            <span>Client ZK Witness State</span>
+            <span style={{ color: willPassCircuit ? '#10b981' : '#f59e0b' }}>
+              {willPassCircuit ? 'SATISFIED' : 'UNSATISFIED'}
+            </span>
+          </div>
+          <div className="console-row">
+            <span className="console-key">circuit_target</span>
+            <span className="console-val font-mono">scholarship::verify_eligibility</span>
+          </div>
+          <div className="console-row">
+            <span className="console-key">local_math_check</span>
+            <span className="console-val font-mono">
+              ({gpaScaled} ≥ 850) &amp;&amp; ({incomeVal} ≤ 250000)
+            </span>
+          </div>
+          <div className="console-row">
+            <span className="console-key">data_leaked_to_chain</span>
+            <span className="console-val font-mono" style={{ color: '#10b981' }}>
+              0 bits (Shielded private witness)
+            </span>
+          </div>
+        </div>
+
         {/* Action Button */}
-        <div style={{ marginTop: '1.5rem' }}>
+        <div style={{ marginTop: '1.25rem' }}>
           {activeTab === 'wallet' ? (
             <div>
               {!isConnected ? (
@@ -249,7 +326,7 @@ export default function VerifyPage() {
                   onClick={() => connect('preprod')}
                 >
                   <Key size={16} />
-                  <span>Connect Wallet &amp; Verify</span>
+                  <span>Connect 1AM / Lace &amp; Verify</span>
                 </button>
               ) : (
                 <button
@@ -265,7 +342,7 @@ export default function VerifyPage() {
                   ) : (
                     <>
                       <ShieldCheck size={16} />
-                      <span>Submit ZK Proof to Preprod</span>
+                      <span>Prove &amp; Inscribe on Preprod</span>
                     </>
                   )}
                 </button>
