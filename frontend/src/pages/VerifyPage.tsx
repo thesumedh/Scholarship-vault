@@ -204,9 +204,9 @@ export default function VerifyPage() {
               disabled={isProcessing}
               onChange={(e) => setGpaRaw(e.target.value)}
             />
-            <div style={{ display: 'flex', justifyContent: 'space-between', fontSize: '0.75rem', color: 'var(--text-muted)', marginTop: '0.35rem' }}>
+            <div className="form-hint-row">
               <span>Scaled witness value: {gpaScaled}</span>
-              <span style={{ color: satisfiesGpa ? '#10b981' : '#f59e0b' }}>
+              <span style={{ color: satisfiesGpa ? '#10b981' : '#f59e0b', fontWeight: 500 }}>
                 {satisfiesGpa ? 'Meets threshold' : 'Below threshold'}
               </span>
             </div>
@@ -229,9 +229,9 @@ export default function VerifyPage() {
               disabled={isProcessing}
               onChange={(e) => setIncomeRaw(e.target.value)}
             />
-            <div style={{ display: 'flex', justifyContent: 'space-between', fontSize: '0.75rem', color: 'var(--text-muted)', marginTop: '0.35rem' }}>
+            <div className="form-hint-row">
               <span>Formatted: ₹{incomeVal.toLocaleString()}</span>
-              <span style={{ color: satisfiesIncome ? '#10b981' : '#f59e0b' }}>
+              <span style={{ color: satisfiesIncome ? '#10b981' : '#f59e0b', fontWeight: 500 }}>
                 {satisfiesIncome ? 'Within ceiling' : 'Exceeds ceiling'}
               </span>
             </div>

@@ -117,7 +117,7 @@ export default function AdminPage() {
           </button>
         </div>
 
-        <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '0.75rem', marginTop: '1rem' }}>
+        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(200px, 1fr))', gap: '0.75rem', marginTop: '1rem' }}>
           <div style={{ background: 'rgba(255,255,255,0.02)', padding: '0.75rem', borderRadius: 'var(--radius-xs)', border: '1px solid var(--border-subtle)' }}>
             <div style={{ fontSize: '0.7rem', color: 'var(--text-muted)' }}>Configured GPA Threshold</div>
             <div style={{ fontSize: '1.1rem', fontWeight: 600, color: '#fff', marginTop: '0.15rem' }}>≥ 8.00 / 10.0</div>
