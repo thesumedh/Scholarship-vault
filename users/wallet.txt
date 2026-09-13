@@ -1,0 +1,62 @@
+================================================================================
+SCHOLARSHIP VAULT - PREPROD VERIFIED USER COHORT (50 WALLETS)
+================================================================================
+Contract Address: 2acabfd90d77a94af7fcab23806b1d5b6da329392d25e0ce6c0766403289bfdc
+Contract Explorer: https://explorer.1am.xyz/contract/2acabfd90d77a94af7fcab23806b1d5b6da329392d25e0ce6c0766403289bfdc?network=preprod
+Circuit Verified: verify_eligibility (Shielded GPA & Income criteria)
+
+--------------------------------------------------------------------------------
+#   | Wallet Address                                                          | Transaction Hash
+--------------------------------------------------------------------------------
+01  | mn_addr_preprod1ynsnwgcla99hejv7q8v26d76euuwuq6xrv47dmzcagj2japchtnqh2fcup | ae5398e7cd22a4ea0c3b3d12c9a1a092d3d5e8c654e2fb43f426208df55476cb
+02  | mn_addr_preprod1qq9kj5dy65x5wndrde3hmd50ea0evp8qgrl0xpnz8lwvdpdfvkhsmhqueg | e04a3af5025d9d754cd45b27a1930723c42f5fc0946a479b578ff2e8cd5916ec
+03  | mn_addr_preprod1wcz6vzhccz0sl37nh20t0pswsussp927qdgqf05d9tc44dvwzkvq3rwxu7 | 03ab1f7a4b17ef47520fb7b22b352e990f86d5c95d69b8435a30089096a33877
+04  | mn_addr_preprod1v09r9u4lmc6jkecwg66wg2lj8f26qq7sapuy8lc0cekrasl9336srxs0dk | 2d5f62922b9a760d725380b3c720fee9fe47574bab8bd1a4d565c9869891cc87
+05  | mn_addr_preprod136ey5682mzkegg2yfq0040z9cud5e554l54hg4nzq69qy2p6xgfq5qandk | 19fd87a4330df7dd79bbe98eb9ddfccc10fd018440a9a02418a8e3e47b5b65e7
+06  | mn_addr_preprod1ckayju28t5n408cgggky0x6pnjveduqnkrwekxln03h79cgmqamqdypzeq | 4690d1d5b478f50db70cf280e1b796c5e88abe3354b5d66301debb41d1f447d7
+07  | mn_addr_preprod10vgs0tvul835lcs2fzhclus7r674ql26dqqkeexrafe8pes0ns3sycj902 | 2fdcae6b8901cbf486533ed4fd91f5d2d6b0199dd0a58fe8ea56ae4e955fce2a
+08  | mn_addr_preprod1t35evkyx664xxd7kt7q3e0e92yr0pmv6teelyprl55f946sc3adqrypnq0 | 081e862ee65b8508295d61b3feb8cb1351a81967eb377375f3728a9107f823ee
+09  | mn_addr_preprod1ftqxdhw2x2wj42wx32xvglatw5ekyhwudk4jew2qc40fjtve8nds4zflm7 | d149b8b6787afce1fe76ba19f02e6593d51b6008113d02be95301be4fdf0b60a
+10  | mn_addr_preprod1z4vydq2ds5jr2c53xnvw7gk82mpcjtcjrxcuqrcaurft4euaa08sphev64 | 137630aedb551d6b622bb50c73a11bbf6dadebd3b3d34eb26010a8a1414cdfe7
+11  | mn_addr_preprod15l45hpy8vf4xk4pkm5mhfjqrpnlglhm8q62jg2yyh4c7z2yxswcqt6fzw0 | e174242371bf21dda22c4934369502f1cfbcdbef26b101dba1d35a5e2efb93d8
+12  | mn_addr_preprod1the4sxxyvrtl4t82m8ne9uk3c4pr5uzfltrw9dm04jxqy7uxk3kszq3dr3 | 8dcc8e3413e22dbf607ed5c1bbdf8ea80df2f486be81154e734831d65b87c22e
+13  | mn_addr_preprod1xyv5wz0d9luvqzlxrp0zffx9628tallahwrcwt7a7575mntde4qqn0qpxq | 4928eebb08b0e7b95d4164ced08bec0477cf492c9de042d8ac96bbec40bb256b
+14  | mn_addr_preprod1d44teyjt7a2uk05kv82epuuysyzsmgke4xf525crg5vp7smz7wuqqnclcu | 3f1fd4076c88768114d56586a7645fcfebd673e18c478af8bfd344fb06f2eaef
+15  | mn_addr_preprod1jt732emhxe4uyapcq3q4663m6xexkcnpm44h239rans7kz7ja6ystycjrt | ae1092692c5a0773492e707553a35ea12fef1063a7c0a20b03f9eb681bc95071
+16  | mn_addr_preprod1wqnfmyk4wrqneg4mf7c08tekstx4qgrkqfjztg48nyuqvf54thdqkh9v65 | 387c69930eb8307fffec51a1d580dd816ade6bbf3acaa490cf5dbca6a832f3e4
+17  | mn_addr_preprod1pykssffcftpf7qlv8a4ev7rmjfmrnqvpaqsvpy4smmpt0pwua4rsuwq238 | 01235d24749cddc0d04f7cf8831af0c849eb8df11a593a7877b923b5ee5b1044
+18  | mn_addr_preprod1mjsvf0lndhcne6ndpm7r8lkjy2se2hp6cd9cmjrk0r9rsl8lex2q8pez2g | 33f2b142f87d335ce223599f9d95d21fdbfc1dbf50bdc2ec181bc481d166965f
+19  | mn_addr_preprod1xj2ygpewudhkhvm0l4z4yg9gsnxsxklcydqqvpypvhhkwzjv5zkqdymlva | 59f1a3d76b800e2e39eb92859de35dc0f5d19f5cf319a2465c2e1266d88abe16
+20  | mn_addr_preprod1lrp2d8kuy7v34e2jt295rtfs9qasdrlw7tqp02claz4qs3d0fx4qeqtf4w | 32df71c31fce375257adde1e5056ba09e56d356fd58b99c70ddfc48b95000adb
+21  | mn_addr_preprod1uvwqyfvf9qk5qnd5jyshmllgmqleq0tafd2u3ps3sm8frdw2p33s784zr3 | 5dbd8372d6a89a85ff8ced077136cba9772e8037101992d35396e8274ffd2ffa
+22  | mn_addr_preprod1h469uy2yq78n9hr3r7u9dn7udnsjj32cg8lc9xaz7m32jsdtmh7sk52ram | cbdbc1d892a82816b8671286fe34a880a9554563d278cdca4ba8e4a94742d33d
+23  | mn_addr_preprod13ulyg4cawtqksszvjwtfjk4423eym29j9jrh3uu83gs5uanapjys34h6q7 | cb522000c84aab6e649d3aa56174aaab9f3354992fcb9f0248d59c68b860544f
+24  | mn_addr_preprod1kf7djyajcwpyrzaqhy5d006yujcjk3n7u0fnunjkqy08329vdq6qn0jwy6 | 2b097a326f1b8bd6cecb228ba5fca644db6a77a6b4c5bb5ac235850ebb1ecd34
+25  | mn_addr_preprod1fgnn29mtam9nh9jcd9ahm7esyttqxx4j60x06c9nmn9rpvv9v5psk6skc5 | 9f46af3904fde2d184ccd9db7d81837842560be244e59c60ed0f11ae414a0a5c
+26  | mn_addr_preprod1s4x7q46zgumpgrxqmajncekky8lqr68az7rf9csku3q2tsm89nkqv4yeed | 0bf9591f3ce10e4b564e921b1d389799fc272891b573b10cdc51b723535b7207
+27  | mn_addr_preprod1q06j05t4yr6ugy5pz9q5utv47tvm7qhnwjrx2ur0n0uc7gp0cxzqf7hqjt | 878dd48cbc3780dda8716b6e64509d8d57e7019e5243ad90fb2ddb7e6b3abc22
+28  | mn_addr_preprod1qr86adqr9473w7mw35sp9t8l0njtj3z0p8zmkr723w7psrvxkt9sjgen9l | 18cdcb41f5c41eb5801e3622bd5da5c17e527d0a2f5b6200762892f6fb1ecd38
+29  | mn_addr_preprod1gm49xa0ymrvp4le6569qfc2yxn69xm9va7fv9mj2heps2f34ymvsa6p8uk | c7febc05b316ced0d21322313d31c9ed2ff30fe20dd05f0b6e46f3b0120dfc60
+30  | mn_addr_preprod1dp2wm257kdvuqrq42xucc2jj6mf7ng80lpeaqrsl48ndez204vlsk5zdaw | c4cc63605d29d0bf92808499ba9456f322e69917863b07804d4cb970bdab812b
+31  | mn_addr_preprod16tfl6ntg7tgyqgpqtudc3x7r6hf99w8gpgaguqwkcd6unv27lfeqlun8d0 | 06e88e800303250d1b8e67ccd4aa080b1ea188bedd0845c799fa7ac67350e9ab
+32  | mn_addr_preprod1lftw7m8mqk5a0ms0k8sf6kq5xa6wkmv0m5x4pjjm3jl7kwhq8ggsygty4p | 66ae734d4a27a00aca6934369d0869b839412d7f8e74f1c43453651a8badd102
+33  | mn_addr_preprod1nsz88lvnp8gtkprl6yennfwkyh47azuqve75stxvehz8nm97a6msex3wpc | 314db8f04a1f033b85311a67e02400be053a1c8d616435a732a729af8e4d2ab8
+34  | mn_addr_preprod1zl0eyd8dcrvqv5retdv0x5g7z8rlqyntykprdfpmv7vp3qlsn8lqz8ftzj | 90b13c5763f774ef19175e1bb31847ae82aa36f369a124708b5ccc8803ce437e
+35  | mn_addr_preprod10449gpnura75d4e6e6y35dah727jgh7xm9p6483qllw6sg7xyehs24yzq0 | 5ad55b2dc35a6225f17a7eeaec37eb25b29732b588338099bfcd623f7679e786
+36  | mn_addr_preprod1tvaw484duld5upnplaxsuxxacmqg9uwsatg39q2nlnu20hd7660sh08cqr | b5c695fc179d458217f780f4c14c855b8727c9a3112fe4f3e14414c92243ec87
+37  | mn_addr_preprod1g40q0uedcn6mxdn3vurnxtrx0ecas7f6adpqqyjjgeh3549e0xdszudrpq | 598de96879ac860de0cfb807e186ec74351a62ef4e05ffeca8f2817a2942761f
+38  | mn_addr_preprod17h3z5qju02ls0ue2xafxva5skhum2a3q7y8sss30nqfjpsfzyh7sdtp77d | fb8eeee1cdf7fd4d6bc1d5ba34c15aa957dffc50bb2bc3031be8ce9e63744b29
+39  | mn_addr_preprod19pkhlqvgezeffqycnrlgsegm32hnu5638fa4rjmure9u804x3z2skrhnwl | 6d2333d6145e30dedb4a06ecdcbefde9ae1e3e918eb7cb0ad66767de697d9c71
+40  | mn_addr_preprod14h7nz0cl8kzhcj7aq5tsejasg35s2hsu3dlr2dc5eh9mffmlm3yq5pdd8u | 3b2eae40c678feb4616b46895f07d32ecbec2054218b996f6120174d391ab2b6
+41  | mn_addr_preprod1kma0c9fdf22p42xt9nqdguyyy5j8l8fhkkkk4eg83hgk5qkzxyysn5yqpa | ef21b9b5cb21a325decbcb9e0851328419a607637a27bf1f8fe31e1bdc71d72e
+42  | mn_addr_preprod1frtlfkymcpneqrpvs4gxtku8yewcs2r0zjyh44kh7hhrd6da84ssy25krc | 622e578a2c7eb80a40435ed81b686848e3834dcea285aa2dc5d41088de42598b
+43  | mn_addr_preprod1hj3z73kweauxelxypkxd627dw7yhnnnaalyp7kuylv69en6vesxsscagp6 | 470796686ff4b3389e58f11633bca8b6b51986278883e9a25ab57550168c00a5
+44  | mn_addr_preprod134rlgv3dpg3cvx6wtefghvzhka4yvdmhq0rnn6s7kwy35an3eg2qewrjf4 | 563cfe0f1affc96d44e37700afd3a9b9b4cefaaafefc5d7f3e0a96947a8f7381
+45  | mn_addr_preprod1xus9h8rcyfytuethc3rpkjtzgnnm9zqp4rn3yl7wr3e309vrg06sk5dgyd | 021df9d974cd7140d9908cbc969f720146dee7ca978d4b51fbf16e97fb727838
+46  | mn_addr_preprod1j26gnlz0e0n6m2w0xnr0rlg8nl4gpd0wv2awuqjn06u66502sqqqfnjqr5 | cf3f9eedc9bf75f71a9aa33ed9355344bde156f62470c53bb7ec3d627f757b20
+47  | mn_addr_preprod14armkfkmzyyuyqk6xehvwx2c5kwpdten3cj99zdee8fsz3ln3xqqwvu5ry | c25e1343da72fc0731064befbc33cd25da168dc4596e286b1396bd0a587953fc
+48  | mn_addr_preprod1dzllh5x9mvqsg2nk508zd8e4k8tu296vwq6spr8f3ecchvjtfejsazamjj | 74470881f27b19d3bd0e8c97cc63b191ab98d19093c01f36fc970cda6dfed472
+49  | mn_addr_preprod1xfdskhrnv86rrel6xfg2sz0rpfd70medkzexng2tm7tkwhcfxcmq9mtpjk | 4abc60c814d97771409f34f555d7dadb8e566394a846dbe38e72763ac81f2cc9
+50  | mn_addr_preprod1kyc42vexhg2wylynpk9sk8ravqdu9s9x27dtzgdqzwajn2vcdz8q4cffsn | 025c37ccf0417e1a771f0454287c7d82ddb587423c1759a1a08c6f67b6816ee4
+51  | mn_addr_preprod1mz4nm3j8vrrlj0y6mgk9ezlhznaummud4dl9q6gncvja5evy20usumycst | 4c93a79544e13b1e968308855fc25fdc05c3dca4dddd3fd7d40c45e9fe8b5987
+================================================================================
