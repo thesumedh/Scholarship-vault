@@ -2,8 +2,7 @@
 
 **Privacy-Preserving Scholarship Verification on the Midnight Network**
 
-[![CI](https://github.com/thesumedh/Scholarship-vault/actions/workflows/ci.yaml/badge.svg)](https://github.com/thesumedh/Scholarship-vault/actions/workflows/ci.yaml)
-[![Frontend Build](https://github.com/thesumedh/Scholarship-vault/actions/workflows/frontend.yml/badge.svg)](https://github.com/thesumedh/Scholarship-vault/actions/workflows/frontend.yml)
+
 [![Midnight Network](https://img.shields.io/badge/Network-Midnight_Preprod-7c3aed?style=flat-square)](https://midnight.network)
 [![Language](https://img.shields.io/badge/Contract-Compact-a78bfa?style=flat-square)](https://midnight.network)
 [![License](https://img.shields.io/badge/License-Apache_2.0-blue?style=flat-square)](./LICENSE)
