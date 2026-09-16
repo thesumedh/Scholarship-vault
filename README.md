@@ -23,10 +23,12 @@
 | Deployed Contract (Preprod) | ✅ | [`2acabfd9...9bfdc`](https://explorer.1am.xyz/contract/2acabfd90d77a94af7fcab23806b1d5b6da329392d25e0ce6c0766403289bfdc) |
 | Contract Explorer (Midnight) | ✅ | [Midnight Explorer](https://preprod.midnightexplorer.com/contracts/2acabfd90d77a94af7fcab23806b1d5b6da329392d25e0ce6c0766403289bfdc) |
 | 50 Verified Preprod Users | ✅ | [USERS.md](./USERS.md) · [onboarded-users.json](./onboarded-users.json) |
-| Structured Feedback Loop | ✅ | [FEEDBACK.md](./FEEDBACK.md) |\n| Feedback Google Form | ✅ | [Submit Feedback](https://forms.gle/debb5b8EaQZyfMTw5) |\n| Form Responses Sheet | ✅ | [Public Google Sheet](https://docs.google.com/spreadsheets/d/1NY72SNhk_Aq_ZR7SINn1E5zE9GKvXGUhe_njx08nuWc/edit?usp=sharing) |
+| Structured Feedback Loop | ✅ | [FEEDBACK.md](./FEEDBACK.md) |
+| Feedback Google Form | ✅ | [Submit Feedback](https://forms.gle/debb5b8EaQZyfMTw5) |
+| Form Responses Sheet | ✅ | [Public Google Sheet](https://docs.google.com/spreadsheets/d/1NY72SNhk_Aq_ZR7SINn1E5zE9GKvXGUhe_njx08nuWc/edit?usp=sharing) |
 | CI/CD pipeline (passing) | ✅ | [GitHub Actions](https://github.com/thesumedh/Scholarship-vault/actions) |
 | Product X profile | ✅ | [@ScholrshipVault](https://x.com/ScholrshipVault) |
-| Launch tweet | ✅ | [View post](https://x.com/ScholrshipVault/status/2088506773858820269) |
+| Launch tweet | ✅ | [View post](https://x.com/ScholrshipVault/status/2100257235440222484) |
 | Demo video | ✅ | [Watch on Google Drive](https://drive.google.com/file/d/1YUe91VBOKsM_-cpF4jBO_dhbyJyNmcWX/view?usp=sharing) |
 | Meaningful commits (20+) | ✅ | [35+ Commits](https://github.com/thesumedh/Scholarship-vault/commits/main) |
 
@@ -113,7 +115,7 @@ Selected responses from the [Public Google Responses Sheet](https://docs.google.
 | User ID | Name | Feedback Summary | Improvement Made | Git Commit |
 |:---:|:---|:---|:---|:---:|
 | **U003** | Vaibhavi Agale | *"Need improvement on transactions, showcases error, proper certificate must be assigned to every user"* | Enforced strict `min=0` numeric income validation, added user-friendly error translator converting raw circuit assertion codes to actionable messages, and generated post-verification eligibility cards. | [`f73cd49`](https://github.com/thesumedh/Scholarship-vault/commit/f73cd49) |
-| **U013** | Rupali | *"Nice step by step process. Please add a dark mode to the student dashboard."* | Built dedicated Dark Mode toggle on student dashboard with theme state persistence via localStorage and multi-stage progress indicators (`Witness Generation` → `Client ZK Prover` → `Inscribing on Preprod`). | [`b097153`](https://github.com/thesumedh/Scholarship-vault/commit/b097153) |
+| **U013** | Sayali Nighot | *"Nice step by step process. Please add a dark mode to the student dashboard."* | Built dedicated Dark Mode toggle on student dashboard with theme state persistence via localStorage and multi-stage progress indicators (`Witness Generation` → `Client ZK Prover` → `Inscribing on Preprod`). | [`b097153`](https://github.com/thesumedh/Scholarship-vault/commit/b097153) |
 | **U004** | Rohan Sharma | *"1AM wallet extension was getting stuck on session creation and threw network parameter mismatch errors when connecting."* | Engineered universal CAIP-372 / CIP-30 UUID injection discovery, defensive address extraction, and fallback session creation. | [`e491324`](https://github.com/thesumedh/Scholarship-vault/commit/e491324) |
 | **U012** | Ananya Verma | *"Initial page load was heavy due to WASM proving circuits, and I wanted a way to test the eligibility logic before spending testnet tokens."* | Implemented lazy-loaded WASM circuit routes in Vite config and built an interactive client-side ZK simulation sandbox with live math constraint validation. | [`1b5dd62`](https://github.com/thesumedh/Scholarship-vault/commit/1b5dd62) |
 
@@ -136,7 +138,9 @@ Your data never leaves your browser. Only a cryptographic proof goes on-chain.
 - **X (Product):** [x.com/ScholrshipVault](https://x.com/ScholrshipVault)
 - **X (Builder):** [x.com/thesumedh_](https://x.com/thesumedh_)
 - **Users Registry:** [USERS.md](./USERS.md)
-- **Feedback Docs:** [FEEDBACK.md](./FEEDBACK.md)\n- **User Feedback Form:** [Google Form](https://forms.gle/debb5b8EaQZyfMTw5)\n- **Exported Feedback Responses:** [Public Google Sheet](https://docs.google.com/spreadsheets/d/1NY72SNhk_Aq_ZR7SINn1E5zE9GKvXGUhe_njx08nuWc/edit?usp=sharing)
+- **Feedback Docs:** [FEEDBACK.md](./FEEDBACK.md)
+- **User Feedback Form:** [Google Form](https://forms.gle/debb5b8EaQZyfMTw5)
+- **Exported Feedback Responses:** [Public Google Sheet](https://docs.google.com/spreadsheets/d/1NY72SNhk_Aq_ZR7SINn1E5zE9GKvXGUhe_njx08nuWc/edit?usp=sharing)
 
 ---
 
