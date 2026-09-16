@@ -16,7 +16,12 @@ For **Level 5 (Full Moon)**, our goal is to guide Preprod users through the Zero
 
 ## 📡 Feedback Collection Channels
 
-Feedback is gathered continuously across 3 primary touchpoints:
+Feedback is gathered continuously across official channels:
+
+- **Official Google Feedback Form:** [Submit Feedback Here](https://forms.gle/debb5b8EaQZyfMTw5)
+- **Public Exported Responses:** [View Public Google Sheet](https://docs.google.com/spreadsheets/d/1NY72SNhk_Aq_ZR7SINn1E5zE9GKvXGUhe_njx08nuWc/edit?usp=sharing)
+
+### Primary Touchpoints:
 
 1. **In-App Post-Verification Flow**:
    - Directly in the web dApp at [https://scholarship-vault.vercel.app/verify](https://scholarship-vault.vercel.app/verify).

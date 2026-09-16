@@ -51,7 +51,7 @@ To satisfy the **Level 5 (Full Moon)** milestone, user onboarding is conducted t
    - Click **Submit ZK Proof to Preprod** and approve the transaction in Lace.
    - The transaction is confirmed on-chain on contract `2acabfd9...`.
 6. **Submit User Feedback**:
-   - Share structured onboarding feedback via our [Feedback Form](./FEEDBACK.md) or on 𝕏 [@ScholrshipVault](https://x.com/ScholrshipVault).
+   - Share structured onboarding feedback via our [Google Feedback Form](https://forms.gle/debb5b8EaQZyfMTw5) or inspect the [Public Responses Sheet](https://docs.google.com/spreadsheets/d/1NY72SNhk_Aq_ZR7SINn1E5zE9GKvXGUhe_njx08nuWc/edit?usp=sharing).
 
 ---
 
@@ -207,7 +207,7 @@ During development, we thoroughly evaluated whether creating, funding, and submi
 
 ### 📊 Table 2: Feedback Implementation
 
-Selected responses from the Google Form feedback sheet that directly drove product improvements in this Level 5 iteration:
+Selected responses from our [Public Google Responses Sheet](https://docs.google.com/spreadsheets/d/1NY72SNhk_Aq_ZR7SINn1E5zE9GKvXGUhe_njx08nuWc/edit?usp=sharing) (collected via the [Google Feedback Form](https://forms.gle/debb5b8EaQZyfMTw5)) that directly drove product improvements in this Level 5 iteration:
 
 | User ID | Name | Feedback Summary | Improvement Made | Git Commit |
 |:---:|:---|:---|:---|:---:|

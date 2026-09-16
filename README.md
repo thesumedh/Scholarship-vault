@@ -23,7 +23,7 @@
 | Deployed Contract (Preprod) | ✅ | [`2acabfd9...9bfdc`](https://explorer.1am.xyz/contract/2acabfd90d77a94af7fcab23806b1d5b6da329392d25e0ce6c0766403289bfdc) |
 | Contract Explorer (Midnight) | ✅ | [Midnight Explorer](https://preprod.midnightexplorer.com/contracts/2acabfd90d77a94af7fcab23806b1d5b6da329392d25e0ce6c0766403289bfdc) |
 | 50 Verified Preprod Users | ✅ | [USERS.md](./USERS.md) · [onboarded-users.json](./onboarded-users.json) |
-| Structured Feedback Loop | ✅ | [FEEDBACK.md](./FEEDBACK.md) |
+| Structured Feedback Loop | ✅ | [FEEDBACK.md](./FEEDBACK.md) |\n| Feedback Google Form | ✅ | [Submit Feedback](https://forms.gle/debb5b8EaQZyfMTw5) |\n| Form Responses Sheet | ✅ | [Public Google Sheet](https://docs.google.com/spreadsheets/d/1NY72SNhk_Aq_ZR7SINn1E5zE9GKvXGUhe_njx08nuWc/edit?usp=sharing) |
 | CI/CD pipeline (passing) | ✅ | [GitHub Actions](https://github.com/thesumedh/Scholarship-vault/actions) |
 | Product X profile | ✅ | [@ScholrshipVault](https://x.com/ScholrshipVault) |
 | Launch tweet | ✅ | [View post](https://x.com/ScholrshipVault/status/2088506773858820269) |
@@ -108,7 +108,7 @@ All 50 wallet interactions are permanently recorded and verifiable on-chain on t
 
 ### 📊 Table 2: Feedback Implementation
 
-Selected responses from the Google Form sheet that directly drove product improvements in this iteration:
+Selected responses from the [Public Google Responses Sheet](https://docs.google.com/spreadsheets/d/1NY72SNhk_Aq_ZR7SINn1E5zE9GKvXGUhe_njx08nuWc/edit?usp=sharing) (collected via our [Community Feedback Form](https://forms.gle/debb5b8EaQZyfMTw5)) that directly drove product improvements in this iteration:
 
 | User ID | Name | Feedback Summary | Improvement Made | Git Commit |
 |:---:|:---|:---|:---|:---:|
@@ -136,7 +136,7 @@ Your data never leaves your browser. Only a cryptographic proof goes on-chain.
 - **X (Product):** [x.com/ScholrshipVault](https://x.com/ScholrshipVault)
 - **X (Builder):** [x.com/thesumedh_](https://x.com/thesumedh_)
 - **Users Registry:** [USERS.md](./USERS.md)
-- **Feedback Docs:** [FEEDBACK.md](./FEEDBACK.md)
+- **Feedback Docs:** [FEEDBACK.md](./FEEDBACK.md)\n- **User Feedback Form:** [Google Form](https://forms.gle/debb5b8EaQZyfMTw5)\n- **Exported Feedback Responses:** [Public Google Sheet](https://docs.google.com/spreadsheets/d/1NY72SNhk_Aq_ZR7SINn1E5zE9GKvXGUhe_njx08nuWc/edit?usp=sharing)
 
 ---
 
