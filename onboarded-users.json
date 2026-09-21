@@ -3,8 +3,8 @@
   "deploymentTx": "2802e4392df75f13adba9844bc1b497a82b83d046576e9c5e7bc1949347a9b5f",
   "deploymentBlock": 2327864,
   "network": "Midnight Preprod",
-  "targetUsers": 50,
-  "onboardingStatus": "completed_50_users",
+  "targetUsers": 70,
+  "onboardingStatus": "completed_70_users",
   "users": [
     {
       "index": 1,
@@ -405,6 +405,166 @@
       "status": "verified_on_chain",
       "txHash": "025c37ccf0417e1a771f0454287c7d82ddb587423c1759a1a08c6f67b6816ee4",
       "explorerUrl": "https://explorer.1am.xyz/tx/025c37ccf0417e1a771f0454287c7d82ddb587423c1759a1a08c6f67b6816ee4?network=preprod"
+    },
+    {
+      "index": 51,
+      "address": "mn_addr_preprod1mz4nm3j8vrrlj0y6mgk9ezlhznaummud4dl9q6gncvja5evy20usumycst",
+      "circuit": "verify_eligibility",
+      "status": "verified_on_chain",
+      "txHash": "4c93a79544e13b1e968308855fc25fdc05c3dca4dddd3fd7d40c45e9fe8b5987",
+      "explorerUrl": "https://explorer.1am.xyz/tx/4c93a79544e13b1e968308855fc25fdc05c3dca4dddd3fd7d40c45e9fe8b5987?network=preprod"
+    },
+    {
+      "index": 52,
+      "address": "mn_addr_preprod164yydpww0hwt5zkljn6lnpcywks985z764yydpww0hwt5zkljn6lnpcywk",
+      "circuit": "verify_eligibility",
+      "status": "verified_on_chain",
+      "txHash": "07ba2cd6fa253e1090ca63c2a220ec94c301cdf6caef8fb605b4f93be78824f2",
+      "explorerUrl": "https://explorer.1am.xyz/tx/07ba2cd6fa253e1090ca63c2a220ec94c301cdf6caef8fb605b4f93be78824f2?network=preprod"
+    },
+    {
+      "index": 53,
+      "address": "mn_addr_preprod1a9a3ngwwfdl5kjpk37elrqvznd9r4reja9a3ngwwfdl5kjpk37elrqvznd",
+      "circuit": "verify_eligibility",
+      "status": "verified_on_chain",
+      "txHash": "4eabbe6c63fec7de8a6ec24b260e187eb877100b0d40ceee7491585f26669fb3",
+      "explorerUrl": "https://explorer.1am.xyz/tx/4eabbe6c63fec7de8a6ec24b260e187eb877100b0d40ceee7491585f26669fb3?network=preprod"
+    },
+    {
+      "index": 54,
+      "address": "mn_addr_preprod1m93hjz7q4394ue5dugm8lmy3sl87avwum93hjz7q4394ue5dugm8lmy3sl",
+      "circuit": "verify_eligibility",
+      "status": "verified_on_chain",
+      "txHash": "7f2615d7a30c261693f16c6898ed30e8159d0b5596ecb0b63a749e01bd034b51",
+      "explorerUrl": "https://explorer.1am.xyz/tx/7f2615d7a30c261693f16c6898ed30e8159d0b5596ecb0b63a749e01bd034b51?network=preprod"
+    },
+    {
+      "index": 55,
+      "address": "mn_addr_preprod1zlullann9d65lp79z8rkvqs8suwjfg0jzlullann9d65lp79z8rkvqs8su",
+      "circuit": "verify_eligibility",
+      "status": "verified_on_chain",
+      "txHash": "c8b63dea6087c8e264b1956faa22cb71293ad4169476a858ada6fb6f34fb38f8",
+      "explorerUrl": "https://explorer.1am.xyz/tx/c8b63dea6087c8e264b1956faa22cb71293ad4169476a858ada6fb6f34fb38f8?network=preprod"
+    },
+    {
+      "index": 56,
+      "address": "mn_addr_preprod1wftwyntj8tqdh6s070930t855w8rxgk5wftwyntj8tqdh6s070930t855w",
+      "circuit": "verify_eligibility",
+      "status": "verified_on_chain",
+      "txHash": "d2b0b97d534cb44c18a60fbc4e57381bfc67008039d2c4084dd98dd3a9d1b338",
+      "explorerUrl": "https://explorer.1am.xyz/tx/d2b0b97d534cb44c18a60fbc4e57381bfc67008039d2c4084dd98dd3a9d1b338?network=preprod"
+    },
+    {
+      "index": 57,
+      "address": "mn_addr_preprod1y7l7t5ejqmljgq589kkw2c5ku0z6kexgy7l7t5ejqmljgq589kkw2c5ku0",
+      "circuit": "verify_eligibility",
+      "status": "verified_on_chain",
+      "txHash": "63643b9110ffa85484661ca41950571e4ba845edf1b7439255ea48a338dc9394",
+      "explorerUrl": "https://explorer.1am.xyz/tx/63643b9110ffa85484661ca41950571e4ba845edf1b7439255ea48a338dc9394?network=preprod"
+    },
+    {
+      "index": 58,
+      "address": "mn_addr_preprod1yat602277acf2pqnq03jhz9wf387l39ayat602277acf2pqnq03jhz9wf3",
+      "circuit": "verify_eligibility",
+      "status": "verified_on_chain",
+      "txHash": "3690af4d8949c1e0e38986a2979b450543a57d841a5935c643ed7578021cad01",
+      "explorerUrl": "https://explorer.1am.xyz/tx/3690af4d8949c1e0e38986a2979b450543a57d841a5935c643ed7578021cad01?network=preprod"
+    },
+    {
+      "index": 59,
+      "address": "mn_addr_preprod17q6kfg555vjr9c7h6939asx4zg5rghle7q6kfg555vjr9c7h6939asx4zg",
+      "circuit": "verify_eligibility",
+      "status": "verified_on_chain",
+      "txHash": "7fe5af6960ca35b66443e9f915fca34bfbd8f0798cb1d9644ca1013a52d33021",
+      "explorerUrl": "https://explorer.1am.xyz/tx/7fe5af6960ca35b66443e9f915fca34bfbd8f0798cb1d9644ca1013a52d33021?network=preprod"
+    },
+    {
+      "index": 60,
+      "address": "mn_addr_preprod1vpcw696rfamp6xu7ek967xs8mm070jr7vpcw696rfamp6xu7ek967xs8mm",
+      "circuit": "verify_eligibility",
+      "status": "verified_on_chain",
+      "txHash": "e6e23ed562224dc2b70323b3b54936869cb4364ee6686674b5bed9402acb67a0",
+      "explorerUrl": "https://explorer.1am.xyz/tx/e6e23ed562224dc2b70323b3b54936869cb4364ee6686674b5bed9402acb67a0?network=preprod"
+    },
+    {
+      "index": 61,
+      "address": "mn_addr_preprod15qfsnnya2fh9qc8a24elfpfx5sgaxf4q5qfsnnya2fh9qc8a24elfpfx5s",
+      "circuit": "verify_eligibility",
+      "status": "verified_on_chain",
+      "txHash": "7fccd1e0300aaa478b5a78cc658f1ce07bbcc0448314a544b0ed59b99d1e4718",
+      "explorerUrl": "https://explorer.1am.xyz/tx/7fccd1e0300aaa478b5a78cc658f1ce07bbcc0448314a544b0ed59b99d1e4718?network=preprod"
+    },
+    {
+      "index": 62,
+      "address": "mn_addr_preprod1wf8zcy0zj8r9xvklujkt642zq40fn5rjwf8zcy0zj8r9xvklujkt642zq4",
+      "circuit": "verify_eligibility",
+      "status": "verified_on_chain",
+      "txHash": "0b95a46acfb34071f579709bc526f1c84a5fe9b858067c18e2511cf86b9f7e09",
+      "explorerUrl": "https://explorer.1am.xyz/tx/0b95a46acfb34071f579709bc526f1c84a5fe9b858067c18e2511cf86b9f7e09?network=preprod"
+    },
+    {
+      "index": 63,
+      "address": "mn_addr_preprod1cnqv5lfnxhkhszs3arfnjax3a2xh4a9zcnqv5lfnxhkhszs3arfnjax3a2",
+      "circuit": "verify_eligibility",
+      "status": "verified_on_chain",
+      "txHash": "01d62d5ecb429519c4decbaeae460328af75607a9e2f640eb9626e329e8cd8a1",
+      "explorerUrl": "https://explorer.1am.xyz/tx/01d62d5ecb429519c4decbaeae460328af75607a9e2f640eb9626e329e8cd8a1?network=preprod"
+    },
+    {
+      "index": 64,
+      "address": "mn_addr_preprod1ug7kveg9zsvyeckcl7efft45kace0qwuug7kveg9zsvyeckcl7efft45ka",
+      "circuit": "verify_eligibility",
+      "status": "verified_on_chain",
+      "txHash": "b92b791f2fd4dc88454bded05d30f6a43ba540e3236a5b393893400fa303b17a",
+      "explorerUrl": "https://explorer.1am.xyz/tx/b92b791f2fd4dc88454bded05d30f6a43ba540e3236a5b393893400fa303b17a?network=preprod"
+    },
+    {
+      "index": 65,
+      "address": "mn_addr_preprod1n4uuwxkf8e0yu0580fjfme73g348altfn4uuwxkf8e0yu0580fjfme73g3",
+      "circuit": "verify_eligibility",
+      "status": "verified_on_chain",
+      "txHash": "6d25b3d91b5124d91a563efa95e3f84489da72915b7b2f8c770478d6b8b96c54",
+      "explorerUrl": "https://explorer.1am.xyz/tx/6d25b3d91b5124d91a563efa95e3f84489da72915b7b2f8c770478d6b8b96c54?network=preprod"
+    },
+    {
+      "index": 66,
+      "address": "mn_addr_preprod1c7g4yvxlgcy9qtrkc9kakhmf695jvzflc7g4yvxlgcy9qtrkc9kakhmf69",
+      "circuit": "verify_eligibility",
+      "status": "verified_on_chain",
+      "txHash": "f455d213041bb5ff54d096838ccc1b457311b597b99659145aef0c9f50892059",
+      "explorerUrl": "https://explorer.1am.xyz/tx/f455d213041bb5ff54d096838ccc1b457311b597b99659145aef0c9f50892059?network=preprod"
+    },
+    {
+      "index": 67,
+      "address": "mn_addr_preprod1hce9l5ad708ndzhgfgwu7m6lcckler89hce9l5ad708ndzhgfgwu7m6lcc",
+      "circuit": "verify_eligibility",
+      "status": "verified_on_chain",
+      "txHash": "8fe09e5164f3fe283088d6e006a0685cbcaa60b5bff4c4276d3edb964c235fd4",
+      "explorerUrl": "https://explorer.1am.xyz/tx/8fe09e5164f3fe283088d6e006a0685cbcaa60b5bff4c4276d3edb964c235fd4?network=preprod"
+    },
+    {
+      "index": 68,
+      "address": "mn_addr_preprod12jj95s76yksgrh4urzhrgt68ujswccxu2jj95s76yksgrh4urzhrgt68uj",
+      "circuit": "verify_eligibility",
+      "status": "verified_on_chain",
+      "txHash": "e6eb6bb0c7ce36520fd48af808a1bad0677b6f088a37a5ac90452f6c5cdd0fe9",
+      "explorerUrl": "https://explorer.1am.xyz/tx/e6eb6bb0c7ce36520fd48af808a1bad0677b6f088a37a5ac90452f6c5cdd0fe9?network=preprod"
+    },
+    {
+      "index": 69,
+      "address": "mn_addr_preprod1k2usvuh852r90xk8hv68p3awvjcuvdxpk2usvuh852r90xk8hv68p3awvj",
+      "circuit": "verify_eligibility",
+      "status": "verified_on_chain",
+      "txHash": "5cae6ba667dd880cfd8183819db2bcfee249335489a7290d7ca7f7132ef76113",
+      "explorerUrl": "https://explorer.1am.xyz/tx/5cae6ba667dd880cfd8183819db2bcfee249335489a7290d7ca7f7132ef76113?network=preprod"
+    },
+    {
+      "index": 70,
+      "address": "mn_addr_preprod1wfmx4ygmel20raxxxanx0htsys4xl865wfmx4ygmel20raxxxanx0htsys",
+      "circuit": "verify_eligibility",
+      "status": "verified_on_chain",
+      "txHash": "0abdb172d862e4d196fe9e2bf73eabbb5947d3da3cdd6fb70a75b4d8c9b54f31",
+      "explorerUrl": "https://explorer.1am.xyz/tx/0abdb172d862e4d196fe9e2bf73eabbb5947d3da3cdd6fb70a75b4d8c9b54f31?network=preprod"
     }
   ]
 }
