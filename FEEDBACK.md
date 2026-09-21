@@ -6,7 +6,7 @@
 
 ## 🎯 Onboarding & Feedback Objective
 
-For **Level 6 (Supermoon)**, our goal is to guide Preprod users through the Zero-Knowledge scholarship verification pipeline on Midnight Preprod, verifying:
+For **Level 5 (Full Moon)**, our goal is to guide Preprod users through the Zero-Knowledge scholarship verification pipeline on Midnight Preprod, verifying:
 1. Ease of wallet connection (1AM / Lace).
 2. Clarity of the zero-knowledge privacy guarantee (client-side vs on-chain).
 3. Speed and responsiveness of local WASM proof generation.
@@ -70,4 +70,4 @@ Selected responses from the Google Form sheet that directly drove product improv
 
 ---
 
-*Scholarship Vault - Midnight Buildthon Level 6*
+*Scholarship Vault - Midnight Buildthon Level 5*

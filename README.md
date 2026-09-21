@@ -14,7 +14,7 @@
 
 ## Submission Checklist
 
-### 🌝 Level 6 — Supermoon
+### 🌕 Level 5 — Full Moon
 
 | Item | Status | Link |
 |------|--------|------|
@@ -22,7 +22,7 @@
 | Live Preprod demo | ✅ | [scholarship-vault.vercel.app](https://scholarship-vault.vercel.app/) |
 | Deployed Contract (Preprod) | ✅ | [`2acabfd9...9bfdc`](https://explorer.1am.xyz/contract/2acabfd90d77a94af7fcab23806b1d5b6da329392d25e0ce6c0766403289bfdc) |
 | Contract Explorer (Midnight) | ✅ | [Midnight Explorer](https://preprod.midnightexplorer.com/contracts/2acabfd90d77a94af7fcab23806b1d5b6da329392d25e0ce6c0766403289bfdc) |
-| 70 Verified Preprod Users | ✅ | [USERS.md](./USERS.md) · [onboarded-users.json](./onboarded-users.json) |
+| 50 Verified Preprod Users | ✅ | [USERS.md](./USERS.md) · [onboarded-users.json](./onboarded-users.json) |
 | Structured Feedback Loop | ✅ | [FEEDBACK.md](./FEEDBACK.md) |
 | Feedback Google Form | ✅ | [Submit Feedback](https://forms.gle/debb5b8EaQZyfMTw5) |
 | Form Responses Sheet | ✅ | [Public Google Sheet](https://docs.google.com/spreadsheets/d/1NY72SNhk_Aq_ZR7SINn1E5zE9GKvXGUhe_njx08nuWc/edit?usp=sharing) |
@@ -30,23 +30,23 @@
 | Product X profile | ✅ | [@ScholrshipVault](https://x.com/ScholrshipVault) |
 | Launch tweet | ✅ | [View post](https://x.com/ScholrshipVault/status/2100257235440222484) |
 | Demo video | ✅ | [Watch on Google Drive](https://drive.google.com/file/d/1YUe91VBOKsM_-cpF4jBO_dhbyJyNmcWX/view?usp=sharing) |
-| Meaningful commits (30+) | ✅ | [45+ Commits](https://github.com/thesumedh/Scholarship-vault/commits/main) |
+| Meaningful commits (20+) | ✅ | [35+ Commits](https://github.com/thesumedh/Scholarship-vault/commits/main) |
 
 ---
 
 
 ---
 
-## 🌝 Level 6 — Supermoon Milestone
+## 🌕 Level 5 — Full Moon Milestone
 
-> **Onboarding & Feedback Loop Complete**: Scholarship Vault is live on **Midnight Preprod**, audited against **70 distinct on-chain user wallet addresses**, and continuously refined through a structured feedback loop with verifiable GitHub commits.
+> **Onboarding & Feedback Loop Complete**: Scholarship Vault is live on **Midnight Preprod**, audited against **50 distinct on-chain user wallet addresses**, and continuously refined through a structured feedback loop with verifiable GitHub commits.
 
-### 📊 Table 1: Verified Preprod User Registry (70 Cohort Wallets)
+### 📊 Table 1: Verified Preprod User Registry (50 Cohort Wallets)
 
-All 70 wallet interactions are permanently recorded and verifiable on-chain on the [1AM Preprod Explorer](https://explorer.1am.xyz/contract/2acabfd90d77a94af7fcab23806b1d5b6da329392d25e0ce6c0766403289bfdc):
+All 50 wallet interactions are permanently recorded and verifiable on-chain on the [1AM Preprod Explorer](https://explorer.1am.xyz/contract/2acabfd90d77a94af7fcab23806b1d5b6da329392d25e0ce6c0766403289bfdc):
 
 <details open>
-<summary><b>Click to expand / collapse 70 Verified Preprod User Wallets</b></summary>
+<summary><b>Click to expand / collapse 50 Verified Preprod User Wallets</b></summary>
 <br/>
 
 | # | User Wallet Address | Circuit Method | Submission TX Hash | On-Chain Status |
@@ -101,26 +101,6 @@ All 70 wallet interactions are permanently recorded and verifiable on-chain on t
 | 48 | `mn_addr_preprod1dzllh5x9mvqsg2nk508zd8e4k8tu296vwq6spr8f3ecchvjtfejsazamjj` | `verify_eligibility` | [`74470881f2...6dfed472`](https://explorer.1am.xyz/tx/74470881f27b19d3bd0e8c97cc63b191ab98d19093c01f36fc970cda6dfed472?network=preprod) | ✅ Confirmed |
 | 49 | `mn_addr_preprod1xfdskhrnv86rrel6xfg2sz0rpfd70medkzexng2tm7tkwhcfxcmq9mtpjk` | `verify_eligibility` | [`4abc60c814...c81f2cc9`](https://explorer.1am.xyz/tx/4abc60c814d97771409f34f555d7dadb8e566394a846dbe38e72763ac81f2cc9?network=preprod) | ✅ Confirmed |
 | 50 | `mn_addr_preprod1kyc42vexhg2wylynpk9sk8ravqdu9s9x27dtzgdqzwajn2vcdz8q4cffsn` | `verify_eligibility` | [`025c37ccf0...b6816ee4`](https://explorer.1am.xyz/tx/025c37ccf0417e1a771f0454287c7d82ddb587423c1759a1a08c6f67b6816ee4?network=preprod) | ✅ Confirmed |
-| 51 | `mn_addr_preprod1mz4nm3j8vrrlj0y6mgk9ezlhznaummud4dl9q6gncvja5evy20usumycst` | `verify_eligibility` | [`4c93a79544...fe8b5987`](https://explorer.1am.xyz/tx/4c93a79544e13b1e968308855fc25fdc05c3dca4dddd3fd7d40c45e9fe8b5987?network=preprod) | ✅ Confirmed |
-| 52 | `mn_addr_preprod164yydpww0hwt5zkljn6lnpcywks985z764yydpww0hwt5zkljn6lnpcywk` | `verify_eligibility` | [`07ba2cd6fa...e78824f2`](https://explorer.1am.xyz/tx/07ba2cd6fa253e1090ca63c2a220ec94c301cdf6caef8fb605b4f93be78824f2?network=preprod) | ✅ Confirmed |
-| 53 | `mn_addr_preprod1a9a3ngwwfdl5kjpk37elrqvznd9r4reja9a3ngwwfdl5kjpk37elrqvznd` | `verify_eligibility` | [`4eabbe6c63...26669fb3`](https://explorer.1am.xyz/tx/4eabbe6c63fec7de8a6ec24b260e187eb877100b0d40ceee7491585f26669fb3?network=preprod) | ✅ Confirmed |
-| 54 | `mn_addr_preprod1m93hjz7q4394ue5dugm8lmy3sl87avwum93hjz7q4394ue5dugm8lmy3sl` | `verify_eligibility` | [`7f2615d7a3...bd034b51`](https://explorer.1am.xyz/tx/7f2615d7a30c261693f16c6898ed30e8159d0b5596ecb0b63a749e01bd034b51?network=preprod) | ✅ Confirmed |
-| 55 | `mn_addr_preprod1zlullann9d65lp79z8rkvqs8suwjfg0jzlullann9d65lp79z8rkvqs8su` | `verify_eligibility` | [`c8b63dea60...34fb38f8`](https://explorer.1am.xyz/tx/c8b63dea6087c8e264b1956faa22cb71293ad4169476a858ada6fb6f34fb38f8?network=preprod) | ✅ Confirmed |
-| 56 | `mn_addr_preprod1wftwyntj8tqdh6s070930t855w8rxgk5wftwyntj8tqdh6s070930t855w` | `verify_eligibility` | [`d2b0b97d53...a9d1b338`](https://explorer.1am.xyz/tx/d2b0b97d534cb44c18a60fbc4e57381bfc67008039d2c4084dd98dd3a9d1b338?network=preprod) | ✅ Confirmed |
-| 57 | `mn_addr_preprod1y7l7t5ejqmljgq589kkw2c5ku0z6kexgy7l7t5ejqmljgq589kkw2c5ku0` | `verify_eligibility` | [`63643b9110...38dc9394`](https://explorer.1am.xyz/tx/63643b9110ffa85484661ca41950571e4ba845edf1b7439255ea48a338dc9394?network=preprod) | ✅ Confirmed |
-| 58 | `mn_addr_preprod1yat602277acf2pqnq03jhz9wf387l39ayat602277acf2pqnq03jhz9wf3` | `verify_eligibility` | [`3690af4d89...021cad01`](https://explorer.1am.xyz/tx/3690af4d8949c1e0e38986a2979b450543a57d841a5935c643ed7578021cad01?network=preprod) | ✅ Confirmed |
-| 59 | `mn_addr_preprod17q6kfg555vjr9c7h6939asx4zg5rghle7q6kfg555vjr9c7h6939asx4zg` | `verify_eligibility` | [`7fe5af6960...52d33021`](https://explorer.1am.xyz/tx/7fe5af6960ca35b66443e9f915fca34bfbd8f0798cb1d9644ca1013a52d33021?network=preprod) | ✅ Confirmed |
-| 60 | `mn_addr_preprod1vpcw696rfamp6xu7ek967xs8mm070jr7vpcw696rfamp6xu7ek967xs8mm` | `verify_eligibility` | [`e6e23ed562...2acb67a0`](https://explorer.1am.xyz/tx/e6e23ed562224dc2b70323b3b54936869cb4364ee6686674b5bed9402acb67a0?network=preprod) | ✅ Confirmed |
-| 61 | `mn_addr_preprod15qfsnnya2fh9qc8a24elfpfx5sgaxf4q5qfsnnya2fh9qc8a24elfpfx5s` | `verify_eligibility` | [`7fccd1e030...9d1e4718`](https://explorer.1am.xyz/tx/7fccd1e0300aaa478b5a78cc658f1ce07bbcc0448314a544b0ed59b99d1e4718?network=preprod) | ✅ Confirmed |
-| 62 | `mn_addr_preprod1wf8zcy0zj8r9xvklujkt642zq40fn5rjwf8zcy0zj8r9xvklujkt642zq4` | `verify_eligibility` | [`0b95a46acf...6b9f7e09`](https://explorer.1am.xyz/tx/0b95a46acfb34071f579709bc526f1c84a5fe9b858067c18e2511cf86b9f7e09?network=preprod) | ✅ Confirmed |
-| 63 | `mn_addr_preprod1cnqv5lfnxhkhszs3arfnjax3a2xh4a9zcnqv5lfnxhkhszs3arfnjax3a2` | `verify_eligibility` | [`01d62d5ecb...9e8cd8a1`](https://explorer.1am.xyz/tx/01d62d5ecb429519c4decbaeae460328af75607a9e2f640eb9626e329e8cd8a1?network=preprod) | ✅ Confirmed |
-| 64 | `mn_addr_preprod1ug7kveg9zsvyeckcl7efft45kace0qwuug7kveg9zsvyeckcl7efft45ka` | `verify_eligibility` | [`b92b791f2f...a303b17a`](https://explorer.1am.xyz/tx/b92b791f2fd4dc88454bded05d30f6a43ba540e3236a5b393893400fa303b17a?network=preprod) | ✅ Confirmed |
-| 65 | `mn_addr_preprod1n4uuwxkf8e0yu0580fjfme73g348altfn4uuwxkf8e0yu0580fjfme73g3` | `verify_eligibility` | [`6d25b3d91b...b8b96c54`](https://explorer.1am.xyz/tx/6d25b3d91b5124d91a563efa95e3f84489da72915b7b2f8c770478d6b8b96c54?network=preprod) | ✅ Confirmed |
-| 66 | `mn_addr_preprod1c7g4yvxlgcy9qtrkc9kakhmf695jvzflc7g4yvxlgcy9qtrkc9kakhmf69` | `verify_eligibility` | [`f455d21304...50892059`](https://explorer.1am.xyz/tx/f455d213041bb5ff54d096838ccc1b457311b597b99659145aef0c9f50892059?network=preprod) | ✅ Confirmed |
-| 67 | `mn_addr_preprod1hce9l5ad708ndzhgfgwu7m6lcckler89hce9l5ad708ndzhgfgwu7m6lcc` | `verify_eligibility` | [`8fe09e5164...4c235fd4`](https://explorer.1am.xyz/tx/8fe09e5164f3fe283088d6e006a0685cbcaa60b5bff4c4276d3edb964c235fd4?network=preprod) | ✅ Confirmed |
-| 68 | `mn_addr_preprod12jj95s76yksgrh4urzhrgt68ujswccxu2jj95s76yksgrh4urzhrgt68uj` | `verify_eligibility` | [`e6eb6bb0c7...5cdd0fe9`](https://explorer.1am.xyz/tx/e6eb6bb0c7ce36520fd48af808a1bad0677b6f088a37a5ac90452f6c5cdd0fe9?network=preprod) | ✅ Confirmed |
-| 69 | `mn_addr_preprod1k2usvuh852r90xk8hv68p3awvjcuvdxpk2usvuh852r90xk8hv68p3awvj` | `verify_eligibility` | [`5cae6ba667...2ef76113`](https://explorer.1am.xyz/tx/5cae6ba667dd880cfd8183819db2bcfee249335489a7290d7ca7f7132ef76113?network=preprod) | ✅ Confirmed |
-| 70 | `mn_addr_preprod1wfmx4ygmel20raxxxanx0htsys4xl865wfmx4ygmel20raxxxanx0htsys` | `verify_eligibility` | [`0abdb172d8...c9b54f31`](https://explorer.1am.xyz/tx/0abdb172d862e4d196fe9e2bf73eabbb5947d3da3cdd6fb70a75b4d8c9b54f31?network=preprod) | ✅ Confirmed |
 
 </details>
 

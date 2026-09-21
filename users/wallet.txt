@@ -1,12 +1,13 @@
 ================================================================================
-SCHOLARSHIP VAULT - PREPROD VERIFIED USER COHORT (70 WALLETS)
+SCHOLARSHIP VAULT - PREPROD VERIFIED USER COHORT (50 WALLETS)
 ================================================================================
-Network: Midnight Preprod
-Contract: 2acabfd90d77a94af7fcab23806b1d5b6da329392d25e0ce6c0766403289bfdc
-Circuit: verify_eligibility
-Explorer: https://explorer.1am.xyz/contract/2acabfd90d77a94af7fcab23806b1d5b6da329392d25e0ce6c0766403289bfdc
-================================================================================
+Contract Address: 2acabfd90d77a94af7fcab23806b1d5b6da329392d25e0ce6c0766403289bfdc
+Contract Explorer: https://explorer.1am.xyz/contract/2acabfd90d77a94af7fcab23806b1d5b6da329392d25e0ce6c0766403289bfdc?network=preprod
+Circuit Verified: verify_eligibility (Shielded GPA & Income criteria)
 
+--------------------------------------------------------------------------------
+#   | Wallet Address                                                          | Transaction Hash
+--------------------------------------------------------------------------------
 01  | mn_addr_preprod1ynsnwgcla99hejv7q8v26d76euuwuq6xrv47dmzcagj2japchtnqh2fcup | ae5398e7cd22a4ea0c3b3d12c9a1a092d3d5e8c654e2fb43f426208df55476cb
 02  | mn_addr_preprod1qq9kj5dy65x5wndrde3hmd50ea0evp8qgrl0xpnz8lwvdpdfvkhsmhqueg | e04a3af5025d9d754cd45b27a1930723c42f5fc0946a479b578ff2e8cd5916ec
 03  | mn_addr_preprod1wcz6vzhccz0sl37nh20t0pswsussp927qdgqf05d9tc44dvwzkvq3rwxu7 | 03ab1f7a4b17ef47520fb7b22b352e990f86d5c95d69b8435a30089096a33877
@@ -58,23 +59,4 @@ Explorer: https://explorer.1am.xyz/contract/2acabfd90d77a94af7fcab23806b1d5b6da3
 49  | mn_addr_preprod1xfdskhrnv86rrel6xfg2sz0rpfd70medkzexng2tm7tkwhcfxcmq9mtpjk | 4abc60c814d97771409f34f555d7dadb8e566394a846dbe38e72763ac81f2cc9
 50  | mn_addr_preprod1kyc42vexhg2wylynpk9sk8ravqdu9s9x27dtzgdqzwajn2vcdz8q4cffsn | 025c37ccf0417e1a771f0454287c7d82ddb587423c1759a1a08c6f67b6816ee4
 51  | mn_addr_preprod1mz4nm3j8vrrlj0y6mgk9ezlhznaummud4dl9q6gncvja5evy20usumycst | 4c93a79544e13b1e968308855fc25fdc05c3dca4dddd3fd7d40c45e9fe8b5987
-52  | mn_addr_preprod164yydpww0hwt5zkljn6lnpcywks985z764yydpww0hwt5zkljn6lnpcywk | 07ba2cd6fa253e1090ca63c2a220ec94c301cdf6caef8fb605b4f93be78824f2
-53  | mn_addr_preprod1a9a3ngwwfdl5kjpk37elrqvznd9r4reja9a3ngwwfdl5kjpk37elrqvznd | 4eabbe6c63fec7de8a6ec24b260e187eb877100b0d40ceee7491585f26669fb3
-54  | mn_addr_preprod1m93hjz7q4394ue5dugm8lmy3sl87avwum93hjz7q4394ue5dugm8lmy3sl | 7f2615d7a30c261693f16c6898ed30e8159d0b5596ecb0b63a749e01bd034b51
-55  | mn_addr_preprod1zlullann9d65lp79z8rkvqs8suwjfg0jzlullann9d65lp79z8rkvqs8su | c8b63dea6087c8e264b1956faa22cb71293ad4169476a858ada6fb6f34fb38f8
-56  | mn_addr_preprod1wftwyntj8tqdh6s070930t855w8rxgk5wftwyntj8tqdh6s070930t855w | d2b0b97d534cb44c18a60fbc4e57381bfc67008039d2c4084dd98dd3a9d1b338
-57  | mn_addr_preprod1y7l7t5ejqmljgq589kkw2c5ku0z6kexgy7l7t5ejqmljgq589kkw2c5ku0 | 63643b9110ffa85484661ca41950571e4ba845edf1b7439255ea48a338dc9394
-58  | mn_addr_preprod1yat602277acf2pqnq03jhz9wf387l39ayat602277acf2pqnq03jhz9wf3 | 3690af4d8949c1e0e38986a2979b450543a57d841a5935c643ed7578021cad01
-59  | mn_addr_preprod17q6kfg555vjr9c7h6939asx4zg5rghle7q6kfg555vjr9c7h6939asx4zg | 7fe5af6960ca35b66443e9f915fca34bfbd8f0798cb1d9644ca1013a52d33021
-60  | mn_addr_preprod1vpcw696rfamp6xu7ek967xs8mm070jr7vpcw696rfamp6xu7ek967xs8mm | e6e23ed562224dc2b70323b3b54936869cb4364ee6686674b5bed9402acb67a0
-61  | mn_addr_preprod15qfsnnya2fh9qc8a24elfpfx5sgaxf4q5qfsnnya2fh9qc8a24elfpfx5s | 7fccd1e0300aaa478b5a78cc658f1ce07bbcc0448314a544b0ed59b99d1e4718
-62  | mn_addr_preprod1wf8zcy0zj8r9xvklujkt642zq40fn5rjwf8zcy0zj8r9xvklujkt642zq4 | 0b95a46acfb34071f579709bc526f1c84a5fe9b858067c18e2511cf86b9f7e09
-63  | mn_addr_preprod1cnqv5lfnxhkhszs3arfnjax3a2xh4a9zcnqv5lfnxhkhszs3arfnjax3a2 | 01d62d5ecb429519c4decbaeae460328af75607a9e2f640eb9626e329e8cd8a1
-64  | mn_addr_preprod1ug7kveg9zsvyeckcl7efft45kace0qwuug7kveg9zsvyeckcl7efft45ka | b92b791f2fd4dc88454bded05d30f6a43ba540e3236a5b393893400fa303b17a
-65  | mn_addr_preprod1n4uuwxkf8e0yu0580fjfme73g348altfn4uuwxkf8e0yu0580fjfme73g3 | 6d25b3d91b5124d91a563efa95e3f84489da72915b7b2f8c770478d6b8b96c54
-66  | mn_addr_preprod1c7g4yvxlgcy9qtrkc9kakhmf695jvzflc7g4yvxlgcy9qtrkc9kakhmf69 | f455d213041bb5ff54d096838ccc1b457311b597b99659145aef0c9f50892059
-67  | mn_addr_preprod1hce9l5ad708ndzhgfgwu7m6lcckler89hce9l5ad708ndzhgfgwu7m6lcc | 8fe09e5164f3fe283088d6e006a0685cbcaa60b5bff4c4276d3edb964c235fd4
-68  | mn_addr_preprod12jj95s76yksgrh4urzhrgt68ujswccxu2jj95s76yksgrh4urzhrgt68uj | e6eb6bb0c7ce36520fd48af808a1bad0677b6f088a37a5ac90452f6c5cdd0fe9
-69  | mn_addr_preprod1k2usvuh852r90xk8hv68p3awvjcuvdxpk2usvuh852r90xk8hv68p3awvj | 5cae6ba667dd880cfd8183819db2bcfee249335489a7290d7ca7f7132ef76113
-70  | mn_addr_preprod1wfmx4ygmel20raxxxanx0htsys4xl865wfmx4ygmel20raxxxanx0htsys | 0abdb172d862e4d196fe9e2bf73eabbb5947d3da3cdd6fb70a75b4d8c9b54f31
 ================================================================================

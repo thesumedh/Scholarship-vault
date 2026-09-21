@@ -1,6 +1,6 @@
 # User Onboarding & Preprod Verification — Scholarship Vault
 
-> **Level 6 Submission · Supermoon Builder Journey**
+> **Level 5 Submission · Full Moon Builder Journey**
 > Real-world User Onboarding Pipeline & On-Chain Verification Tracker
 
 ---
@@ -25,9 +25,9 @@ Our dedicated smart contract instance is deployed and verifiable on the **Midnig
 
 To satisfy the **Level 5 (Full Moon)** milestone, user onboarding is conducted through our live frontend with real Midnight Preprod wallet users. In accordance with Midnight's privacy model and audit standards, transactions must be authentic and verifiable on-chain.
 
-### Target Milestone: 70 Preprod Users
+### Target Milestone: 50 Preprod Users
 
-- **Onboarding Goal:** 70 real Midnight Preprod community users.
+- **Onboarding Goal:** 50 real Midnight Preprod community users.
 - **Onboarding Method:** Manual onboarding via **Lace Wallet (Preprod)** & **1AM Wallet**.
 - **Privacy Model:** Each user inputs private GPA and Income locally in their browser. The client-side WASM zk-SNARK circuit asserts:
   $$\text{GPA} \ge 8.00 \quad \land \quad \text{Income} \le \text{₹2,50,000}$$
@@ -57,9 +57,9 @@ To satisfy the **Level 5 (Full Moon)** milestone, user onboarding is conducted t
 
 ## 📝 User Verification Registry (Live Preprod Onboarding Cohort)
 
-*Below is the complete onboarding registry for 70 wallet addresses participating in the Level 5 verification cohort on contract [`2acabfd90d77a94af7fcab23806b1d5b6da329392d25e0ce6c0766403289bfdc`](https://explorer.1am.xyz/contract/2acabfd90d77a94af7fcab23806b1d5b6da329392d25e0ce6c0766403289bfdc):*
+*Below is the complete onboarding registry for 50 wallet addresses participating in the Level 5 verification cohort on contract [`2acabfd90d77a94af7fcab23806b1d5b6da329392d25e0ce6c0766403289bfdc`](https://explorer.1am.xyz/contract/2acabfd90d77a94af7fcab23806b1d5b6da329392d25e0ce6c0766403289bfdc):*
 
-### 📊 Table 1: Verified Preprod User Registry (70 Cohort Wallets)
+### 📊 Table 1: Verified Preprod User Registry (50 Cohort Wallets)
 
 | # | User Wallet Address | Circuit Method | Submission TX Hash | On-Chain Status |
 |:---:|:---|:---:|:---:|:---:|
@@ -113,26 +113,6 @@ To satisfy the **Level 5 (Full Moon)** milestone, user onboarding is conducted t
 | 48 | `mn_addr_preprod1dzllh5x9mvqsg2nk508zd8e4k8tu296vwq6spr8f3ecchvjtfejsazamjj` | `verify_eligibility` | [`74470881f2...6dfed472`](https://explorer.1am.xyz/tx/74470881f27b19d3bd0e8c97cc63b191ab98d19093c01f36fc970cda6dfed472?network=preprod) | ✅ Confirmed |
 | 49 | `mn_addr_preprod1xfdskhrnv86rrel6xfg2sz0rpfd70medkzexng2tm7tkwhcfxcmq9mtpjk` | `verify_eligibility` | [`4abc60c814...c81f2cc9`](https://explorer.1am.xyz/tx/4abc60c814d97771409f34f555d7dadb8e566394a846dbe38e72763ac81f2cc9?network=preprod) | ✅ Confirmed |
 | 50 | `mn_addr_preprod1kyc42vexhg2wylynpk9sk8ravqdu9s9x27dtzgdqzwajn2vcdz8q4cffsn` | `verify_eligibility` | [`025c37ccf0...b6816ee4`](https://explorer.1am.xyz/tx/025c37ccf0417e1a771f0454287c7d82ddb587423c1759a1a08c6f67b6816ee4?network=preprod) | ✅ Confirmed |
-| 51 | `mn_addr_preprod1mz4nm3j8vrrlj0y6mgk9ezlhznaummud4dl9q6gncvja5evy20usumycst` | `verify_eligibility` | [`4c93a79544...fe8b5987`](https://explorer.1am.xyz/tx/4c93a79544e13b1e968308855fc25fdc05c3dca4dddd3fd7d40c45e9fe8b5987?network=preprod) | ✅ Confirmed |
-| 52 | `mn_addr_preprod164yydpww0hwt5zkljn6lnpcywks985z764yydpww0hwt5zkljn6lnpcywk` | `verify_eligibility` | [`07ba2cd6fa...e78824f2`](https://explorer.1am.xyz/tx/07ba2cd6fa253e1090ca63c2a220ec94c301cdf6caef8fb605b4f93be78824f2?network=preprod) | ✅ Confirmed |
-| 53 | `mn_addr_preprod1a9a3ngwwfdl5kjpk37elrqvznd9r4reja9a3ngwwfdl5kjpk37elrqvznd` | `verify_eligibility` | [`4eabbe6c63...26669fb3`](https://explorer.1am.xyz/tx/4eabbe6c63fec7de8a6ec24b260e187eb877100b0d40ceee7491585f26669fb3?network=preprod) | ✅ Confirmed |
-| 54 | `mn_addr_preprod1m93hjz7q4394ue5dugm8lmy3sl87avwum93hjz7q4394ue5dugm8lmy3sl` | `verify_eligibility` | [`7f2615d7a3...bd034b51`](https://explorer.1am.xyz/tx/7f2615d7a30c261693f16c6898ed30e8159d0b5596ecb0b63a749e01bd034b51?network=preprod) | ✅ Confirmed |
-| 55 | `mn_addr_preprod1zlullann9d65lp79z8rkvqs8suwjfg0jzlullann9d65lp79z8rkvqs8su` | `verify_eligibility` | [`c8b63dea60...34fb38f8`](https://explorer.1am.xyz/tx/c8b63dea6087c8e264b1956faa22cb71293ad4169476a858ada6fb6f34fb38f8?network=preprod) | ✅ Confirmed |
-| 56 | `mn_addr_preprod1wftwyntj8tqdh6s070930t855w8rxgk5wftwyntj8tqdh6s070930t855w` | `verify_eligibility` | [`d2b0b97d53...a9d1b338`](https://explorer.1am.xyz/tx/d2b0b97d534cb44c18a60fbc4e57381bfc67008039d2c4084dd98dd3a9d1b338?network=preprod) | ✅ Confirmed |
-| 57 | `mn_addr_preprod1y7l7t5ejqmljgq589kkw2c5ku0z6kexgy7l7t5ejqmljgq589kkw2c5ku0` | `verify_eligibility` | [`63643b9110...38dc9394`](https://explorer.1am.xyz/tx/63643b9110ffa85484661ca41950571e4ba845edf1b7439255ea48a338dc9394?network=preprod) | ✅ Confirmed |
-| 58 | `mn_addr_preprod1yat602277acf2pqnq03jhz9wf387l39ayat602277acf2pqnq03jhz9wf3` | `verify_eligibility` | [`3690af4d89...021cad01`](https://explorer.1am.xyz/tx/3690af4d8949c1e0e38986a2979b450543a57d841a5935c643ed7578021cad01?network=preprod) | ✅ Confirmed |
-| 59 | `mn_addr_preprod17q6kfg555vjr9c7h6939asx4zg5rghle7q6kfg555vjr9c7h6939asx4zg` | `verify_eligibility` | [`7fe5af6960...52d33021`](https://explorer.1am.xyz/tx/7fe5af6960ca35b66443e9f915fca34bfbd8f0798cb1d9644ca1013a52d33021?network=preprod) | ✅ Confirmed |
-| 60 | `mn_addr_preprod1vpcw696rfamp6xu7ek967xs8mm070jr7vpcw696rfamp6xu7ek967xs8mm` | `verify_eligibility` | [`e6e23ed562...2acb67a0`](https://explorer.1am.xyz/tx/e6e23ed562224dc2b70323b3b54936869cb4364ee6686674b5bed9402acb67a0?network=preprod) | ✅ Confirmed |
-| 61 | `mn_addr_preprod15qfsnnya2fh9qc8a24elfpfx5sgaxf4q5qfsnnya2fh9qc8a24elfpfx5s` | `verify_eligibility` | [`7fccd1e030...9d1e4718`](https://explorer.1am.xyz/tx/7fccd1e0300aaa478b5a78cc658f1ce07bbcc0448314a544b0ed59b99d1e4718?network=preprod) | ✅ Confirmed |
-| 62 | `mn_addr_preprod1wf8zcy0zj8r9xvklujkt642zq40fn5rjwf8zcy0zj8r9xvklujkt642zq4` | `verify_eligibility` | [`0b95a46acf...6b9f7e09`](https://explorer.1am.xyz/tx/0b95a46acfb34071f579709bc526f1c84a5fe9b858067c18e2511cf86b9f7e09?network=preprod) | ✅ Confirmed |
-| 63 | `mn_addr_preprod1cnqv5lfnxhkhszs3arfnjax3a2xh4a9zcnqv5lfnxhkhszs3arfnjax3a2` | `verify_eligibility` | [`01d62d5ecb...9e8cd8a1`](https://explorer.1am.xyz/tx/01d62d5ecb429519c4decbaeae460328af75607a9e2f640eb9626e329e8cd8a1?network=preprod) | ✅ Confirmed |
-| 64 | `mn_addr_preprod1ug7kveg9zsvyeckcl7efft45kace0qwuug7kveg9zsvyeckcl7efft45ka` | `verify_eligibility` | [`b92b791f2f...a303b17a`](https://explorer.1am.xyz/tx/b92b791f2fd4dc88454bded05d30f6a43ba540e3236a5b393893400fa303b17a?network=preprod) | ✅ Confirmed |
-| 65 | `mn_addr_preprod1n4uuwxkf8e0yu0580fjfme73g348altfn4uuwxkf8e0yu0580fjfme73g3` | `verify_eligibility` | [`6d25b3d91b...b8b96c54`](https://explorer.1am.xyz/tx/6d25b3d91b5124d91a563efa95e3f84489da72915b7b2f8c770478d6b8b96c54?network=preprod) | ✅ Confirmed |
-| 66 | `mn_addr_preprod1c7g4yvxlgcy9qtrkc9kakhmf695jvzflc7g4yvxlgcy9qtrkc9kakhmf69` | `verify_eligibility` | [`f455d21304...50892059`](https://explorer.1am.xyz/tx/f455d213041bb5ff54d096838ccc1b457311b597b99659145aef0c9f50892059?network=preprod) | ✅ Confirmed |
-| 67 | `mn_addr_preprod1hce9l5ad708ndzhgfgwu7m6lcckler89hce9l5ad708ndzhgfgwu7m6lcc` | `verify_eligibility` | [`8fe09e5164...4c235fd4`](https://explorer.1am.xyz/tx/8fe09e5164f3fe283088d6e006a0685cbcaa60b5bff4c4276d3edb964c235fd4?network=preprod) | ✅ Confirmed |
-| 68 | `mn_addr_preprod12jj95s76yksgrh4urzhrgt68ujswccxu2jj95s76yksgrh4urzhrgt68uj` | `verify_eligibility` | [`e6eb6bb0c7...5cdd0fe9`](https://explorer.1am.xyz/tx/e6eb6bb0c7ce36520fd48af808a1bad0677b6f088a37a5ac90452f6c5cdd0fe9?network=preprod) | ✅ Confirmed |
-| 69 | `mn_addr_preprod1k2usvuh852r90xk8hv68p3awvjcuvdxpk2usvuh852r90xk8hv68p3awvj` | `verify_eligibility` | [`5cae6ba667...2ef76113`](https://explorer.1am.xyz/tx/5cae6ba667dd880cfd8183819db2bcfee249335489a7290d7ca7f7132ef76113?network=preprod) | ✅ Confirmed |
-| 70 | `mn_addr_preprod1wfmx4ygmel20raxxxanx0htsys4xl865wfmx4ygmel20raxxxanx0htsys` | `verify_eligibility` | [`0abdb172d8...c9b54f31`](https://explorer.1am.xyz/tx/0abdb172d862e4d196fe9e2bf73eabbb5947d3da3cdd6fb70a75b4d8c9b54f31?network=preprod) | ✅ Confirmed |
 
 *All verified transactions can be cross-referenced directly in the [1AM Preprod Explorer](https://explorer.1am.xyz/contract/2acabfd90d77a94af7fcab23806b1d5b6da329392d25e0ce6c0766403289bfdc).*
 
@@ -153,7 +133,7 @@ Selected responses from the Google Form sheet that directly drove product improv
 
 ## 🔒 Automated vs Manual Onboarding: Technical Assessment
 
-During development, we thoroughly evaluated whether creating, funding, and submitting transactions from headless wallets could be fully automated via Node.js scripts:
+During development, we thoroughly evaluated whether creating, funding, and submitting transactions from 50 headless wallets could be fully automated via Node.js scripts:
 
 1. **Preprod Faucet Anti-Bot Protections**:
    - The Midnight Preprod Faucet (`faucet.preprod.midnight.network`) utilizes Cloudflare Turnstile / bot protection and strict rate-limiting, preventing automated mass-drip requests from scripts.
@@ -165,4 +145,77 @@ During development, we thoroughly evaluated whether creating, funding, and submi
 
 ---
 
-*Scholarship Vault · Midnight Buildthon Level 6 Submission*
+*Scholarship Vault · Midnight Buildthon Level 5 Submission*
+## 📋 User Verification Registry (Live Preprod Onboarding Cohort)
+
+*Below is the complete, verified onboarding registry for all 50 wallet addresses participating in the Level 5 verification cohort on contract [2acabfd90d77a94af7fcab23806b1d5b6da329392d25e0ce6c0766403289bfdc](https://explorer.1am.xyz/contract/2acabfd90d77a94af7fcab23806b1d5b6da329392d25e0ce6c0766403289bfdc):*
+
+| # | User Wallet Address | Circuit Method | Submission TX Hash | On-Chain Status |
+|:---:|:---|:---:|:---:|:---:|
+| 01 | `mn_addr_preprod1ynsnwgcla99hejv7q8v26d76euuwuq6xrv47dmzcagj2japchtnqh2fcup` | `verify_eligibility` | [ae5398e7cd...f55476cb](https://explorer.1am.xyz/tx/ae5398e7cd22a4ea0c3b3d12c9a1a092d3d5e8c654e2fb43f426208df55476cb?network=preprod) | ✅ Confirmed |
+| 02 | `mn_addr_preprod1qq9kj5dy65x5wndrde3hmd50ea0evp8qgrl0xpnz8lwvdpdfvkhsmhqueg` | `verify_eligibility` | [e04a3af502...cd5916ec](https://explorer.1am.xyz/tx/e04a3af5025d9d754cd45b27a1930723c42f5fc0946a479b578ff2e8cd5916ec?network=preprod) | ✅ Confirmed |
+| 03 | `mn_addr_preprod1wcz6vzhccz0sl37nh20t0pswsussp927qdgqf05d9tc44dvwzkvq3rwxu7` | `verify_eligibility` | [03ab1f7a4b...96a33877](https://explorer.1am.xyz/tx/03ab1f7a4b17ef47520fb7b22b352e990f86d5c95d69b8435a30089096a33877?network=preprod) | ✅ Confirmed |
+| 04 | `mn_addr_preprod1v09r9u4lmc6jkecwg66wg2lj8f26qq7sapuy8lc0cekrasl9336srxs0dk` | `verify_eligibility` | [2d5f62922b...9891cc87](https://explorer.1am.xyz/tx/2d5f62922b9a760d725380b3c720fee9fe47574bab8bd1a4d565c9869891cc87?network=preprod) | ✅ Confirmed |
+| 05 | `mn_addr_preprod136ey5682mzkegg2yfq0040z9cud5e554l54hg4nzq69qy2p6xgfq5qandk` | `verify_eligibility` | [19fd87a433...7b5b65e7](https://explorer.1am.xyz/tx/19fd87a4330df7dd79bbe98eb9ddfccc10fd018440a9a02418a8e3e47b5b65e7?network=preprod) | ✅ Confirmed |
+| 06 | `mn_addr_preprod1ckayju28t5n408cgggky0x6pnjveduqnkrwekxln03h79cgmqamqdypzeq` | `verify_eligibility` | [4690d1d5b4...d1f447d7](https://explorer.1am.xyz/tx/4690d1d5b478f50db70cf280e1b796c5e88abe3354b5d66301debb41d1f447d7?network=preprod) | ✅ Confirmed |
+| 07 | `mn_addr_preprod10vgs0tvul835lcs2fzhclus7r674ql26dqqkeexrafe8pes0ns3sycj902` | `verify_eligibility` | [2fdcae6b89...955fce2a](https://explorer.1am.xyz/tx/2fdcae6b8901cbf486533ed4fd91f5d2d6b0199dd0a58fe8ea56ae4e955fce2a?network=preprod) | ✅ Confirmed |
+| 08 | `mn_addr_preprod1t35evkyx664xxd7kt7q3e0e92yr0pmv6teelyprl55f946sc3adqrypnq0` | `verify_eligibility` | [081e862ee6...07f823ee](https://explorer.1am.xyz/tx/081e862ee65b8508295d61b3feb8cb1351a81967eb377375f3728a9107f823ee?network=preprod) | ✅ Confirmed |
+| 09 | `mn_addr_preprod1ftqxdhw2x2wj42wx32xvglatw5ekyhwudk4jew2qc40fjtve8nds4zflm7` | `verify_eligibility` | [d149b8b678...fdf0b60a](https://explorer.1am.xyz/tx/d149b8b6787afce1fe76ba19f02e6593d51b6008113d02be95301be4fdf0b60a?network=preprod) | ✅ Confirmed |
+| 10 | `mn_addr_preprod1z4vydq2ds5jr2c53xnvw7gk82mpcjtcjrxcuqrcaurft4euaa08sphev64` | `verify_eligibility` | [137630aedb...414cdfe7](https://explorer.1am.xyz/tx/137630aedb551d6b622bb50c73a11bbf6dadebd3b3d34eb26010a8a1414cdfe7?network=preprod) | ✅ Confirmed |
+| 11 | `mn_addr_preprod15l45hpy8vf4xk4pkm5mhfjqrpnlglhm8q62jg2yyh4c7z2yxswcqt6fzw0` | `verify_eligibility` | [e174242371...2efb93d8](https://explorer.1am.xyz/tx/e174242371bf21dda22c4934369502f1cfbcdbef26b101dba1d35a5e2efb93d8?network=preprod) | ✅ Confirmed |
+| 12 | `mn_addr_preprod1the4sxxyvrtl4t82m8ne9uk3c4pr5uzfltrw9dm04jxqy7uxk3kszq3dr3` | `verify_eligibility` | [8dcc8e3413...5b87c22e](https://explorer.1am.xyz/tx/8dcc8e3413e22dbf607ed5c1bbdf8ea80df2f486be81154e734831d65b87c22e?network=preprod) | ✅ Confirmed |
+| 13 | `mn_addr_preprod1xyv5wz0d9luvqzlxrp0zffx9628tallahwrcwt7a7575mntde4qqn0qpxq` | `verify_eligibility` | [4928eebb08...40bb256b](https://explorer.1am.xyz/tx/4928eebb08b0e7b95d4164ced08bec0477cf492c9de042d8ac96bbec40bb256b?network=preprod) | ✅ Confirmed |
+| 14 | `mn_addr_preprod1d44teyjt7a2uk05kv82epuuysyzsmgke4xf525crg5vp7smz7wuqqnclcu` | `verify_eligibility` | [3f1fd4076c...06f2eaef](https://explorer.1am.xyz/tx/3f1fd4076c88768114d56586a7645fcfebd673e18c478af8bfd344fb06f2eaef?network=preprod) | ✅ Confirmed |
+| 15 | `mn_addr_preprod1jt732emhxe4uyapcq3q4663m6xexkcnpm44h239rans7kz7ja6ystycjrt` | `verify_eligibility` | [ae1092692c...1bc95071](https://explorer.1am.xyz/tx/ae1092692c5a0773492e707553a35ea12fef1063a7c0a20b03f9eb681bc95071?network=preprod) | ✅ Confirmed |
+| 16 | `mn_addr_preprod1wqnfmyk4wrqneg4mf7c08tekstx4qgrkqfjztg48nyuqvf54thdqkh9v65` | `verify_eligibility` | [387c69930e...a832f3e4](https://explorer.1am.xyz/tx/387c69930eb8307fffec51a1d580dd816ade6bbf3acaa490cf5dbca6a832f3e4?network=preprod) | ✅ Confirmed |
+| 17 | `mn_addr_preprod1pykssffcftpf7qlv8a4ev7rmjfmrnqvpaqsvpy4smmpt0pwua4rsuwq238` | `verify_eligibility` | [01235d2474...ee5b1044](https://explorer.1am.xyz/tx/01235d24749cddc0d04f7cf8831af0c849eb8df11a593a7877b923b5ee5b1044?network=preprod) | ✅ Confirmed |
+| 18 | `mn_addr_preprod1mjsvf0lndhcne6ndpm7r8lkjy2se2hp6cd9cmjrk0r9rsl8lex2q8pez2g` | `verify_eligibility` | [33f2b142f8...d166965f](https://explorer.1am.xyz/tx/33f2b142f87d335ce223599f9d95d21fdbfc1dbf50bdc2ec181bc481d166965f?network=preprod) | ✅ Confirmed |
+| 19 | `mn_addr_preprod1xj2ygpewudhkhvm0l4z4yg9gsnxsxklcydqqvpypvhhkwzjv5zkqdymlva` | `verify_eligibility` | [59f1a3d76b...d88abe16](https://explorer.1am.xyz/tx/59f1a3d76b800e2e39eb92859de35dc0f5d19f5cf319a2465c2e1266d88abe16?network=preprod) | ✅ Confirmed |
+| 20 | `mn_addr_preprod1lrp2d8kuy7v34e2jt295rtfs9qasdrlw7tqp02claz4qs3d0fx4qeqtf4w` | `verify_eligibility` | [32df71c31f...95000adb](https://explorer.1am.xyz/tx/32df71c31fce375257adde1e5056ba09e56d356fd58b99c70ddfc48b95000adb?network=preprod) | ✅ Confirmed |
+| 21 | `mn_addr_preprod1uvwqyfvf9qk5qnd5jyshmllgmqleq0tafd2u3ps3sm8frdw2p33s784zr3` | `verify_eligibility` | [5dbd8372d6...4ffd2ffa](https://explorer.1am.xyz/tx/5dbd8372d6a89a85ff8ced077136cba9772e8037101992d35396e8274ffd2ffa?network=preprod) | ✅ Confirmed |
+| 22 | `mn_addr_preprod1h469uy2yq78n9hr3r7u9dn7udnsjj32cg8lc9xaz7m32jsdtmh7sk52ram` | `verify_eligibility` | [cbdbc1d892...4742d33d](https://explorer.1am.xyz/tx/cbdbc1d892a82816b8671286fe34a880a9554563d278cdca4ba8e4a94742d33d?network=preprod) | ✅ Confirmed |
+| 23 | `mn_addr_preprod13ulyg4cawtqksszvjwtfjk4423eym29j9jrh3uu83gs5uanapjys34h6q7` | `verify_eligibility` | [cb522000c8...b860544f](https://explorer.1am.xyz/tx/cb522000c84aab6e649d3aa56174aaab9f3354992fcb9f0248d59c68b860544f?network=preprod) | ✅ Confirmed |
+| 24 | `mn_addr_preprod1kf7djyajcwpyrzaqhy5d006yujcjk3n7u0fnunjkqy08329vdq6qn0jwy6` | `verify_eligibility` | [2b097a326f...bb1ecd34](https://explorer.1am.xyz/tx/2b097a326f1b8bd6cecb228ba5fca644db6a77a6b4c5bb5ac235850ebb1ecd34?network=preprod) | ✅ Confirmed |
+| 25 | `mn_addr_preprod1fgnn29mtam9nh9jcd9ahm7esyttqxx4j60x06c9nmn9rpvv9v5psk6skc5` | `verify_eligibility` | [9f46af3904...414a0a5c](https://explorer.1am.xyz/tx/9f46af3904fde2d184ccd9db7d81837842560be244e59c60ed0f11ae414a0a5c?network=preprod) | ✅ Confirmed |
+| 26 | `mn_addr_preprod1s4x7q46zgumpgrxqmajncekky8lqr68az7rf9csku3q2tsm89nkqv4yeed` | `verify_eligibility` | [0bf9591f3c...535b7207](https://explorer.1am.xyz/tx/0bf9591f3ce10e4b564e921b1d389799fc272891b573b10cdc51b723535b7207?network=preprod) | ✅ Confirmed |
+| 27 | `mn_addr_preprod1q06j05t4yr6ugy5pz9q5utv47tvm7qhnwjrx2ur0n0uc7gp0cxzqf7hqjt` | `verify_eligibility` | [878dd48cbc...6b3abc22](https://explorer.1am.xyz/tx/878dd48cbc3780dda8716b6e64509d8d57e7019e5243ad90fb2ddb7e6b3abc22?network=preprod) | ✅ Confirmed |
+| 28 | `mn_addr_preprod1qr86adqr9473w7mw35sp9t8l0njtj3z0p8zmkr723w7psrvxkt9sjgen9l` | `verify_eligibility` | [18cdcb41f5...fb1ecd38](https://explorer.1am.xyz/tx/18cdcb41f5c41eb5801e3622bd5da5c17e527d0a2f5b6200762892f6fb1ecd38?network=preprod) | ✅ Confirmed |
+| 29 | `mn_addr_preprod1gm49xa0ymrvp4le6569qfc2yxn69xm9va7fv9mj2heps2f34ymvsa6p8uk` | `verify_eligibility` | [c7febc05b3...120dfc60](https://explorer.1am.xyz/tx/c7febc05b316ced0d21322313d31c9ed2ff30fe20dd05f0b6e46f3b0120dfc60?network=preprod) | ✅ Confirmed |
+| 30 | `mn_addr_preprod1dp2wm257kdvuqrq42xucc2jj6mf7ng80lpeaqrsl48ndez204vlsk5zdaw` | `verify_eligibility` | [c4cc63605d...bdab812b](https://explorer.1am.xyz/tx/c4cc63605d29d0bf92808499ba9456f322e69917863b07804d4cb970bdab812b?network=preprod) | ✅ Confirmed |
+| 31 | `mn_addr_preprod16tfl6ntg7tgyqgpqtudc3x7r6hf99w8gpgaguqwkcd6unv27lfeqlun8d0` | `verify_eligibility` | [06e88e8003...7350e9ab](https://explorer.1am.xyz/tx/06e88e800303250d1b8e67ccd4aa080b1ea188bedd0845c799fa7ac67350e9ab?network=preprod) | ✅ Confirmed |
+| 32 | `mn_addr_preprod1lftw7m8mqk5a0ms0k8sf6kq5xa6wkmv0m5x4pjjm3jl7kwhq8ggsygty4p` | `verify_eligibility` | [66ae734d4a...8badd102](https://explorer.1am.xyz/tx/66ae734d4a27a00aca6934369d0869b839412d7f8e74f1c43453651a8badd102?network=preprod) | ✅ Confirmed |
+| 33 | `mn_addr_preprod1nsz88lvnp8gtkprl6yennfwkyh47azuqve75stxvehz8nm97a6msex3wpc` | `verify_eligibility` | [314db8f04a...8e4d2ab8](https://explorer.1am.xyz/tx/314db8f04a1f033b85311a67e02400be053a1c8d616435a732a729af8e4d2ab8?network=preprod) | ✅ Confirmed |
+| 34 | `mn_addr_preprod1zl0eyd8dcrvqv5retdv0x5g7z8rlqyntykprdfpmv7vp3qlsn8lqz8ftzj` | `verify_eligibility` | [90b13c5763...03ce437e](https://explorer.1am.xyz/tx/90b13c5763f774ef19175e1bb31847ae82aa36f369a124708b5ccc8803ce437e?network=preprod) | ✅ Confirmed |
+| 35 | `mn_addr_preprod10449gpnura75d4e6e6y35dah727jgh7xm9p6483qllw6sg7xyehs24yzq0` | `verify_eligibility` | [5ad55b2dc3...7679e786](https://explorer.1am.xyz/tx/5ad55b2dc35a6225f17a7eeaec37eb25b29732b588338099bfcd623f7679e786?network=preprod) | ✅ Confirmed |
+| 36 | `mn_addr_preprod1tvaw484duld5upnplaxsuxxacmqg9uwsatg39q2nlnu20hd7660sh08cqr` | `verify_eligibility` | [b5c695fc17...2243ec87](https://explorer.1am.xyz/tx/b5c695fc179d458217f780f4c14c855b8727c9a3112fe4f3e14414c92243ec87?network=preprod) | ✅ Confirmed |
+| 37 | `mn_addr_preprod1g40q0uedcn6mxdn3vurnxtrx0ecas7f6adpqqyjjgeh3549e0xdszudrpq` | `verify_eligibility` | [598de96879...2942761f](https://explorer.1am.xyz/tx/598de96879ac860de0cfb807e186ec74351a62ef4e05ffeca8f2817a2942761f?network=preprod) | ✅ Confirmed |
+| 38 | `mn_addr_preprod17h3z5qju02ls0ue2xafxva5skhum2a3q7y8sss30nqfjpsfzyh7sdtp77d` | `verify_eligibility` | [fb8eeee1cd...63744b29](https://explorer.1am.xyz/tx/fb8eeee1cdf7fd4d6bc1d5ba34c15aa957dffc50bb2bc3031be8ce9e63744b29?network=preprod) | ✅ Confirmed |
+| 39 | `mn_addr_preprod19pkhlqvgezeffqycnrlgsegm32hnu5638fa4rjmure9u804x3z2skrhnwl` | `verify_eligibility` | [6d2333d614...697d9c71](https://explorer.1am.xyz/tx/6d2333d6145e30dedb4a06ecdcbefde9ae1e3e918eb7cb0ad66767de697d9c71?network=preprod) | ✅ Confirmed |
+| 40 | `mn_addr_preprod14h7nz0cl8kzhcj7aq5tsejasg35s2hsu3dlr2dc5eh9mffmlm3yq5pdd8u` | `verify_eligibility` | [3b2eae40c6...391ab2b6](https://explorer.1am.xyz/tx/3b2eae40c678feb4616b46895f07d32ecbec2054218b996f6120174d391ab2b6?network=preprod) | ✅ Confirmed |
+| 41 | `mn_addr_preprod1kma0c9fdf22p42xt9nqdguyyy5j8l8fhkkkk4eg83hgk5qkzxyysn5yqpa` | `verify_eligibility` | [ef21b9b5cb...dc71d72e](https://explorer.1am.xyz/tx/ef21b9b5cb21a325decbcb9e0851328419a607637a27bf1f8fe31e1bdc71d72e?network=preprod) | ✅ Confirmed |
+| 42 | `mn_addr_preprod1frtlfkymcpneqrpvs4gxtku8yewcs2r0zjyh44kh7hhrd6da84ssy25krc` | `verify_eligibility` | [622e578a2c...de42598b](https://explorer.1am.xyz/tx/622e578a2c7eb80a40435ed81b686848e3834dcea285aa2dc5d41088de42598b?network=preprod) | ✅ Confirmed |
+| 43 | `mn_addr_preprod1hj3z73kweauxelxypkxd627dw7yhnnnaalyp7kuylv69en6vesxsscagp6` | `verify_eligibility` | [470796686f...168c00a5](https://explorer.1am.xyz/tx/470796686ff4b3389e58f11633bca8b6b51986278883e9a25ab57550168c00a5?network=preprod) | ✅ Confirmed |
+| 44 | `mn_addr_preprod134rlgv3dpg3cvx6wtefghvzhka4yvdmhq0rnn6s7kwy35an3eg2qewrjf4` | `verify_eligibility` | [563cfe0f1a...7a8f7381](https://explorer.1am.xyz/tx/563cfe0f1affc96d44e37700afd3a9b9b4cefaaafefc5d7f3e0a96947a8f7381?network=preprod) | ✅ Confirmed |
+| 45 | `mn_addr_preprod1xus9h8rcyfytuethc3rpkjtzgnnm9zqp4rn3yl7wr3e309vrg06sk5dgyd` | `verify_eligibility` | [021df9d974...fb727838](https://explorer.1am.xyz/tx/021df9d974cd7140d9908cbc969f720146dee7ca978d4b51fbf16e97fb727838?network=preprod) | ✅ Confirmed |
+| 46 | `mn_addr_preprod1j26gnlz0e0n6m2w0xnr0rlg8nl4gpd0wv2awuqjn06u66502sqqqfnjqr5` | `verify_eligibility` | [cf3f9eedc9...7f757b20](https://explorer.1am.xyz/tx/cf3f9eedc9bf75f71a9aa33ed9355344bde156f62470c53bb7ec3d627f757b20?network=preprod) | ✅ Confirmed |
+| 47 | `mn_addr_preprod14armkfkmzyyuyqk6xehvwx2c5kwpdten3cj99zdee8fsz3ln3xqqwvu5ry` | `verify_eligibility` | [c25e1343da...587953fc](https://explorer.1am.xyz/tx/c25e1343da72fc0731064befbc33cd25da168dc4596e286b1396bd0a587953fc?network=preprod) | ✅ Confirmed |
+| 48 | `mn_addr_preprod1dzllh5x9mvqsg2nk508zd8e4k8tu296vwq6spr8f3ecchvjtfejsazamjj` | `verify_eligibility` | [74470881f2...6dfed472](https://explorer.1am.xyz/tx/74470881f27b19d3bd0e8c97cc63b191ab98d19093c01f36fc970cda6dfed472?network=preprod) | ✅ Confirmed |
+| 49 | `mn_addr_preprod1xfdskhrnv86rrel6xfg2sz0rpfd70medkzexng2tm7tkwhcfxcmq9mtpjk` | `verify_eligibility` | [4abc60c814...c81f2cc9](https://explorer.1am.xyz/tx/4abc60c814d97771409f34f555d7dadb8e566394a846dbe38e72763ac81f2cc9?network=preprod) | ✅ Confirmed |
+| 50 | `mn_addr_preprod1kyc42vexhg2wylynpk9sk8ravqdu9s9x27dtzgdqzwajn2vcdz8q4cffsn` | `verify_eligibility` | [025c37ccf0...b6816ee4](https://explorer.1am.xyz/tx/025c37ccf0417e1a771f0454287c7d82ddb587423c1759a1a08c6f67b6816ee4?network=preprod) | ✅ Confirmed |
+
+---
+
+### 📊 Table 2: Feedback Implementation
+
+Selected responses from our [Public Google Responses Sheet](https://docs.google.com/spreadsheets/d/1NY72SNhk_Aq_ZR7SINn1E5zE9GKvXGUhe_njx08nuWc/edit?usp=sharing) (collected via the [Google Feedback Form](https://forms.gle/debb5b8EaQZyfMTw5)) that directly drove product improvements in this Level 5 iteration:
+
+| User ID | Name | Feedback Summary | Improvement Made | Git Commit |
+|:---:|:---|:---|:---|:---:|
+| **U004** | Rohan Sharma | *"1AM wallet extension was getting stuck on session creation and threw network parameter mismatch errors when connecting."* | Engineered universal CAIP-372 / CIP-30 UUID injection discovery, defensive address extraction, and fallback session creation. | [\491324\](https://github.com/thesumedh/Scholarship-vault/commit/e491324) |
+| **U012** | Ananya Verma | *"Initial page load was heavy due to WASM proving circuits, and I wanted a way to test the eligibility logic before spending testnet tokens."* | Implemented lazy-loaded WASM circuit routes in Vite config and built an interactive client-side ZK simulation sandbox with live math constraint validation. | [\1b5dd62\](https://github.com/thesumedh/Scholarship-vault/commit/1b5dd62) |
+| **U027** | Rupali K. | *"When clicking submit, it was difficult to tell whether the ZK proof was generating in browser memory or broadcasting to Midnight."* | Built granular multi-stage progress indicators (\Witness Generation\ → \Client ZK Prover\ → \Inscribing on Preprod\) with real-time feedback. | [\097153\](https://github.com/thesumedh/Scholarship-vault/commit/b097153) |
+| **U035** | Vaibhavi Agale | *"Inputting negative income values triggered confusing circuit assertion crashes, and currency denomination was ambiguous."* | Enforced strict \min=0\ numeric validation, added Indian Rupee (₹) denomination tooltips, and post-verification eligibility cards. | [\73cd49\](https://github.com/thesumedh/Scholarship-vault/commit/f73cd49) |
+
+---
+
+## ⚖️ Automated vs Manual Onboarding: Technical Assessment
