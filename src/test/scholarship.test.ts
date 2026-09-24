@@ -165,6 +165,9 @@ describe(`Scholarship Contract (${network})`, () => {
   });
 
   it('Verifies eligibility successfully for a qualifying student', async () => {
+    expect(contractAddress, 'contractAddress must be assigned from a successful deployment').toBeDefined();
+    expect(contractAddress).not.toBe('');
+
     // Student GPA: 9.1 (910), Income: 180,000 (qualifies!)
     logger.info(`Running verify_eligibility for qualifying student...`);
 
@@ -180,6 +183,9 @@ describe(`Scholarship Contract (${network})`, () => {
   });
 
   it('Fails verification for a student with GPA too low', async () => {
+    expect(contractAddress, 'contractAddress must be assigned from a successful deployment').toBeDefined();
+    expect(contractAddress).not.toBe('');
+
     // Student GPA: 7.5 (750), Income: 180,000 (fails!)
     logger.info(`Running verify_eligibility for low GPA student (should fail)...`);
 
@@ -197,6 +203,9 @@ describe(`Scholarship Contract (${network})`, () => {
   });
 
   it('Fails verification for a student with income too high', async () => {
+    expect(contractAddress, 'contractAddress must be assigned from a successful deployment').toBeDefined();
+    expect(contractAddress).not.toBe('');
+
     // Student GPA: 9.1 (910), Income: 300,000 (fails!)
     logger.info(`Running verify_eligibility for high income student (should fail)...`);
 

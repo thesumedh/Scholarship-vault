@@ -47,8 +47,8 @@ jobs:
       - name: Wait for spendable DUST to accrue
         run: npx vite-node scripts/wait-for-dust.ts
         env:
-          WAIT_FOR_DUST_MIN_COINS: "2"
-          WAIT_FOR_DUST_TIMEOUT_MS: "300000"
+          WAIT_FOR_DUST_MIN_COINS: "10"
+          WAIT_FOR_DUST_TIMEOUT_MS: "600000"
 
       - name: Run test suite against local network
         run: yarn test:local
