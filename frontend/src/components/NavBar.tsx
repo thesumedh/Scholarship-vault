@@ -18,9 +18,18 @@ export default function NavBar() {
     <nav className="navbar">
       <div className="navbar-container">
         <Link to="/" className="navbar-logo" onClick={() => setMobileMenuOpen(false)}>
-          <div className="navbar-logo-icon">
-            <Shield size={15} />
-          </div>
+          <img 
+            src="/logo.jpg" 
+            alt="Scholarship Vault" 
+            style={{ 
+              width: '24px', 
+              height: '24px', 
+              borderRadius: '6px', 
+              objectFit: 'cover',
+              border: '1px solid rgba(168, 85, 247, 0.4)',
+              boxShadow: '0 0 10px rgba(168, 85, 247, 0.3)' 
+            }} 
+          />
           <span>Scholarship Vault</span>
         </Link>
 

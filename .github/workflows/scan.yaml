@@ -1,4 +1,4 @@
-name: Scan
+name: Security Scan
 permissions: {}
 
 on:
@@ -6,16 +6,17 @@ on:
     branches: [main]
   pull_request:
     branches: [main]
-  workflow_dispatch: {}   # so you can still run it manually
+  workflow_dispatch: {}
   schedule:
-    - cron: '0 0 * * *'   # run daily at midnight UTC
+    - cron: '0 0 * * *'
+
 concurrency:
-  group:
-    ${{ github.event_name != 'merge_group' && format('{0}-{1}', github.workflow, github.head_ref) || github.run_id }}
+  group: ${{ github.workflow }}-${{ github.head_ref || github.run_id }}
   cancel-in-progress: true
 
 jobs:
   scan:
+    name: Midnight Security Scan
     runs-on: ubuntu-latest
     permissions:
       actions: read
@@ -24,7 +25,7 @@ jobs:
       statuses: write
     steps:
       - name: Checkout code
-        uses: actions/checkout@df4cb1c069e1874edd31b4311f1884172cec0e10  #v6.0.3
+        uses: actions/checkout@v4
 
       - name: Scan code
         uses: midnightntwrk/upload-sarif-github-action@07dad711370cc5985885ebcf07cb8c9264bc4167

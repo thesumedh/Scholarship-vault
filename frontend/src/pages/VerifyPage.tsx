@@ -402,7 +402,17 @@ export default function VerifyPage() {
               </div>
             )}
 
-            <div style={{ marginTop: '1rem' }}>
+            <div style={{ marginTop: '1.25rem', display: 'flex', gap: '0.75rem', justifyContent: 'center', flexWrap: 'wrap' }}>
+              <a
+                href="https://forms.gle/debb5b8EaQZyfMTw5"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="btn btn-secondary"
+                style={{ fontSize: '0.8rem', padding: '0.45rem 0.85rem' }}
+              >
+                <span>📝 Share Feedback on Experience</span>
+                <ExternalLink size={12} />
+              </a>
               <button className="btn btn-secondary" onClick={reset} style={{ fontSize: '0.8rem', padding: '0.4rem 0.85rem' }}>
                 <RefreshCw size={13} />
                 <span>Verify Another</span>

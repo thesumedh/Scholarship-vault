@@ -15,9 +15,17 @@ export default function Footer() {
       <div style={{ maxWidth: '1100px', margin: '0 auto', display: 'flex', justifyContent: 'space-between', alignItems: 'center', flexWrap: 'wrap', gap: '1.5rem' }}>
 
         <div style={{ display: 'flex', alignItems: 'center', gap: '0.6rem' }}>
-          <div className="navbar-logo-icon" style={{ width: 24, height: 24 }}>
-            <Shield size={13} />
-          </div>
+          <img 
+            src="/logo.jpg" 
+            alt="Scholarship Vault" 
+            style={{ 
+              width: '22px', 
+              height: '22px', 
+              borderRadius: '5px', 
+              objectFit: 'cover',
+              border: '1px solid rgba(168, 85, 247, 0.3)' 
+            }} 
+          />
           <span style={{ fontWeight: 600, color: '#fff' }}>Scholarship Vault</span>
           <span style={{ color: 'var(--text-muted)' }}>· Midnight Preprod</span>
         </div>
@@ -31,6 +39,8 @@ export default function Footer() {
             <span>Explorer</span>
             <ExternalLink size={10} />
           </a>
+          <a href="https://forms.gle/debb5b8EaQZyfMTw5" target="_blank" rel="noopener noreferrer" style={{ color: 'var(--text-secondary)', textDecoration: 'none' }}>Feedback Form</a>
+          <a href="https://docs.google.com/spreadsheets/d/1NY72SNhk_Aq_ZR7SINn1E5zE9GKvXGUhe_njx08nuWc/edit?usp=sharing" target="_blank" rel="noopener noreferrer" style={{ color: 'var(--text-secondary)', textDecoration: 'none' }}>Live Responses</a>
           <a href="https://x.com/ScholrshipVault" target="_blank" rel="noopener noreferrer" style={{ color: 'var(--text-secondary)', textDecoration: 'none' }}>
             𝕏 @ScholrshipVault
           </a>
