@@ -14,7 +14,7 @@
 
 ## Submission Checklist
 
-### 🌕 Level 5 — Full Moon
+### 🌝 Level 6 — Supermoon
 
 | Item | Status | Link |
 |------|--------|------|
@@ -22,31 +22,28 @@
 | Live Preprod demo | ✅ | [scholarship-vault.vercel.app](https://scholarship-vault.vercel.app/) |
 | Deployed Contract (Preprod) | ✅ | [`2acabfd9...9bfdc`](https://explorer.1am.xyz/contract/2acabfd90d77a94af7fcab23806b1d5b6da329392d25e0ce6c0766403289bfdc) |
 | Contract Explorer (Midnight) | ✅ | [Midnight Explorer](https://preprod.midnightexplorer.com/contracts/2acabfd90d77a94af7fcab23806b1d5b6da329392d25e0ce6c0766403289bfdc) |
-| 50 Verified Preprod Users | ✅ | [USERS.md](./USERS.md) · [onboarded-users.json](./onboarded-users.json) |
-| Structured Feedback Loop | ✅ | [FEEDBACK.md](./FEEDBACK.md) |
+| 70+ Verified Preprod Users (71 Verified) | ✅ | [USERS.md](./USERS.md) · [onboarded-users.json](./onboarded-users.json) |
+| Living Feedback Loop (70+ Cohorts) | ✅ | [FEEDBACK.md](./FEEDBACK.md) |
 | Feedback Google Form | ✅ | [Submit Feedback](https://forms.gle/debb5b8EaQZyfMTw5) |
 | Form Responses Sheet | ✅ | [Public Google Sheet](https://docs.google.com/spreadsheets/d/1NY72SNhk_Aq_ZR7SINn1E5zE9GKvXGUhe_njx08nuWc/edit?usp=sharing) |
 | CI/CD pipeline (passing) | ✅ | [GitHub Actions](https://github.com/thesumedh/Scholarship-vault/actions) |
 | Product X profile | ✅ | [@ScholrshipVault](https://x.com/ScholrshipVault) |
 | Launch tweet | ✅ | [View post](https://x.com/ScholrshipVault/status/2100257235440222484) |
 | Demo video | ✅ | [Watch on Google Drive](https://drive.google.com/file/d/1YUe91VBOKsM_-cpF4jBO_dhbyJyNmcWX/view?usp=sharing) |
-| Meaningful commits (20+) | ✅ | [35+ Commits](https://github.com/thesumedh/Scholarship-vault/commits/main) |
+| Meaningful commits (30+) | ✅ | [49+ Commits](https://github.com/thesumedh/Scholarship-vault/commits/main) |
 
 ---
 
+## 🌝 Level 6 — Supermoon Milestone
 
----
+> **Onboarding & Feedback Loop Live**: Scholarship Vault is live on **Midnight Preprod**, audited against **71 distinct on-chain user wallet addresses**, and continuously refined through an active feedback loop with verifiable GitHub commits.
 
-## 🌕 Level 5 — Full Moon Milestone
+### 📊 Table 1: Verified Preprod User Registry (71 Cohort Wallets)
 
-> **Onboarding & Feedback Loop Complete**: Scholarship Vault is live on **Midnight Preprod**, audited against **50 distinct on-chain user wallet addresses**, and continuously refined through a structured feedback loop with verifiable GitHub commits.
-
-### 📊 Table 1: Verified Preprod User Registry (50 Cohort Wallets)
-
-All 50 wallet interactions are permanently recorded and verifiable on-chain on the [1AM Preprod Explorer](https://explorer.1am.xyz/contract/2acabfd90d77a94af7fcab23806b1d5b6da329392d25e0ce6c0766403289bfdc):
+All 71 wallet interactions are permanently recorded and verifiable on-chain on the [1AM Preprod Explorer](https://explorer.1am.xyz/contract/2acabfd90d77a94af7fcab23806b1d5b6da329392d25e0ce6c0766403289bfdc):
 
 <details open>
-<summary><b>Click to expand / collapse 50 Verified Preprod User Wallets</b></summary>
+<summary><b>Click to expand / collapse 71 Verified Preprod User Wallets</b></summary>
 <br/>
 
 | # | User Wallet Address | Circuit Method | Submission TX Hash | On-Chain Status |
@@ -101,6 +98,27 @@ All 50 wallet interactions are permanently recorded and verifiable on-chain on t
 | 48 | `mn_addr_preprod1dzllh5x9mvqsg2nk508zd8e4k8tu296vwq6spr8f3ecchvjtfejsazamjj` | `verify_eligibility` | [`74470881f2...6dfed472`](https://explorer.1am.xyz/tx/74470881f27b19d3bd0e8c97cc63b191ab98d19093c01f36fc970cda6dfed472?network=preprod) | ✅ Confirmed |
 | 49 | `mn_addr_preprod1xfdskhrnv86rrel6xfg2sz0rpfd70medkzexng2tm7tkwhcfxcmq9mtpjk` | `verify_eligibility` | [`4abc60c814...c81f2cc9`](https://explorer.1am.xyz/tx/4abc60c814d97771409f34f555d7dadb8e566394a846dbe38e72763ac81f2cc9?network=preprod) | ✅ Confirmed |
 | 50 | `mn_addr_preprod1kyc42vexhg2wylynpk9sk8ravqdu9s9x27dtzgdqzwajn2vcdz8q4cffsn` | `verify_eligibility` | [`025c37ccf0...b6816ee4`](https://explorer.1am.xyz/tx/025c37ccf0417e1a771f0454287c7d82ddb587423c1759a1a08c6f67b6816ee4?network=preprod) | ✅ Confirmed |
+| 51 | `mn_addr_preprod10q6d3n7mtx7sn3mhp7kcmy5anaelu8p90ff9n6ecxqqux046jp8skgm2dn` | `verify_eligibility` | [`fcf14e5b25...c284b66e`](https://explorer.1am.xyz/tx/fcf14e5b250ee6d6dc30b14864d45b042650652b6e59f8d650c8c2d8c284b66e?network=preprod) | ✅ Confirmed |
+| 52 | `mn_addr_preprod1dul4f25hnrr26dxssrudk255rajr2v0a7nwa3ymq2tjxalekpp5q55v663` | `verify_eligibility` | [`f8d1218dc6...8a63e1c6`](https://explorer.1am.xyz/tx/f8d1218dc6cce36be11f4373d6dd319135b938ff1046761c5e7c08f98a63e1c6?network=preprod) | ✅ Confirmed |
+| 53 | `mn_addr_preprod1trwgvkqvh2ect7erl7ram7anjylh9r35h0uc3ykre282n9vvy5xshfqc35` | `verify_eligibility` | [`424df12ecc...3f3af104`](https://explorer.1am.xyz/tx/424df12ecc78fdcf34284529333333e86c44910bf6c9b9f52c6651683f3af104?network=preprod) | ✅ Confirmed |
+| 54 | `mn_addr_preprod1agl75mx9qwd26dhq4g2vm628atyytd0wsq30j8rttsd9gzufnawq3wtc9c` | `verify_eligibility` | [`6eedcd1992...58ea3d3d`](https://explorer.1am.xyz/tx/6eedcd19921f042e0ae2710a7732a3d6c9f65f77ce85daee44a5a6d458ea3d3d?network=preprod) | ✅ Confirmed |
+| 55 | `mn_addr_preprod1ha6zgy5twxln8q864ed76djm6hzmcly6ete639xv9q3tngm2mqps4y96st` | `verify_eligibility` | [`476394029a...1d658c0a`](https://explorer.1am.xyz/tx/476394029af51c1291e38f6278ab5b28b56d651e89a67acf87dac1471d658c0a?network=preprod) | ✅ Confirmed |
+| 56 | `mn_addr_preprod1zr6twuhd0f6qejwpy6c22ya0v3r5swv8n725kpajg9j6hpsqa03q3meklw` | `verify_eligibility` | [`b3010da763...3ed726a7`](https://explorer.1am.xyz/tx/b3010da7635c663c5c4ed0a4989f61f127390da50f2c035f29211bd93ed726a7?network=preprod) | ✅ Confirmed |
+| 57 | `mn_addr_preprod1l96scahkp4qwamsujuvwuy9htp58fy0478knlr9y54jl424cgjnqvrd4hj` | `verify_eligibility` | [`0c573cca94...c16e489a`](https://explorer.1am.xyz/tx/0c573cca94b1781ab500a5371fb93d58a7f98f36d0e29fc1e41078bcc16e489a?network=preprod) | ✅ Confirmed |
+| 58 | `mn_addr_preprod1fhepjalmp2xzt02urdfszcnmkwqtgrhmtq8gv5kqcqgw4pjwgd4sc80qgr` | `verify_eligibility` | [`c608ec65fe...297966716`](https://explorer.1am.xyz/tx/c608ec65fee96500d2c303e5257eb56717be4b7625fdc4e3a4433dc297966716?network=preprod) | ✅ Confirmed |
+| 59 | `mn_addr_preprod1lsx2l227s5up557td78q49lxspxgvzesdpvdpkxdkel4ggnx4s3s9p46sa` | `verify_eligibility` | [`97a0f76b5d...e764aac1`](https://explorer.1am.xyz/tx/97a0f76b5dcc994dc07f858267e20c900c134d4355aec0877a7baacde764aac1?network=preprod) | ✅ Confirmed |
+| 60 | `mn_addr_preprod1czkmkcxzds3037mwqku3mvckvmxm9zhacwz32jneg7uct7llyyxs4sq8gl` | `verify_eligibility` | [`545349a93a...25611374`](https://explorer.1am.xyz/tx/545349a93aa060c688971889de60b268659c28d5bc0615477c025c8325611374?network=preprod) | ✅ Confirmed |
+| 61 | `mn_addr_preprod1z7vtdgp97t5n9wkv400fjfn9cd93q9wer05grg7n24re8s0v900s786hy8` | `verify_eligibility` | [`8b0860aab7...0c0f7277cc`](https://explorer.1am.xyz/tx/8b0860aab70aacc27e7cdb9c8eae060fe32078065d4078893837610c0f7277cc?network=preprod) | ✅ Confirmed |
+| 62 | `mn_addr_preprod192rsgxc6wxeass6pr0kvwl2p5egq5rytp2js7pkmdwhkl8n73tzs87tnfx` | `verify_eligibility` | [`6f3d0d946f...e7776073`](https://explorer.1am.xyz/tx/6f3d0d946f2122eecff5051052b70d8499abbcaf1b9cd2b0e427b3dfe7776073?network=preprod) | ✅ Confirmed |
+| 63 | `mn_addr_preprod1hxz34fhxsr3z3peprnjj0ak6sy024facvgv0dmey8gn4ska94j8sqjr98m` | `verify_eligibility` | [`1e2d33c0e3...398325ec5`](https://explorer.1am.xyz/tx/1e2d33c0e3eb2a2bd9b7c3417399ec2dad5728189d3b8980dd5db51398325ec5?network=preprod) | ✅ Confirmed |
+| 64 | `mn_addr_preprod1dzpws5vpvkcfx303erdanujza90kv0rjsh4aayhhdnmddd43se3sg9wlpl` | `verify_eligibility` | [`cdf3cd9f15...1a0f3f828`](https://explorer.1am.xyz/tx/cdf3cd9f1537fb5e14d8a43ad65b686ca45e7cdc4305fd3067bca961a0f3f828?network=preprod) | ✅ Confirmed |
+| 65 | `mn_addr_preprod1cz45xqjtvsyfnz5x4pgshgny2cmap0tcluxsknyzp7tnwqgpx5kqu7cqh8` | `verify_eligibility` | [`59a0264a95...56ff1da89`](https://explorer.1am.xyz/tx/59a0264a952e27ba7ebb5297850eba8db36ce76b9005a0db06d420e56ff1da89?network=preprod) | ✅ Confirmed |
+| 66 | `mn_addr_preprod1gjdwysaht7ae6632uxrpqfnxv2f3wvmwlnla6ffru82nvh3t684suxjh8f` | `verify_eligibility` | [`dc5ecdcb32...6c5c1f222`](https://explorer.1am.xyz/tx/dc5ecdcb32c308fc784553f5c842c11382821e61855b8aeebb87f9d6c5c1f222?network=preprod) | ✅ Confirmed |
+| 67 | `mn_addr_preprod1h5d23hztvwreh9makdsmuy0uzwpjz4ntlhlzq0ttpuxtvwkcpevsltctqd` | `verify_eligibility` | [`052020e09a...5f911545da`](https://explorer.1am.xyz/tx/052020e09ac77ee07bfdc5a61aa141d649a07f092fde726bdb1e615f911545da?network=preprod) | ✅ Confirmed |
+| 68 | `mn_addr_preprod1kmaqpzww7l7xskg7xjc0ac3j4szyp7nagy99x2dx24ynewd4j0dste8m4p` | `verify_eligibility` | [`47e880cf72...c288f6802e9`](https://explorer.1am.xyz/tx/47e880cf72886563eceadc7d6a063b90c48f54e993e94fc4c51522c88f6802e9?network=preprod) | ✅ Confirmed |
+| 69 | `mn_addr_preprod15xfkv6xgpwtxu69qtjg6pm6aldlrg8wdekrfaq7zg0cwcxkxtk7sqsv7ut` | `verify_eligibility` | [`9c5ef61ad2...3fb59ad6`](https://explorer.1am.xyz/tx/9c5ef61ad29537867cf3a4c4541f032cf917e4b74bb2208860f3e2863fb59ad6?network=preprod) | ✅ Confirmed |
+| 70 | `mn_addr_preprod1xhl990m70us9xqqh2t7z6f50xqfaz4q3p9nqgtk34c4vcx6jcmpq26pc6d` | `verify_eligibility` | [`42a160bd50...96d7db`](https://explorer.1am.xyz/tx/42a160bd504cbe470ab5464cdbe93720d16f09fe767aa7f5b5eca56bda96d7db?network=preprod) | ✅ Confirmed |
+| 71 | `mn_addr_preprod1urzmp9qfznp8lfwcnnxmqh28kgctdea0jy35wpkarg89ck0jvl5sxgvk4a` | `verify_eligibility` | [`62cfb7c157...102fb1a`](https://explorer.1am.xyz/tx/62cfb7c157f596d46c19d1daf47e5a7712fe0aca44686d226a58d8e1c102fb1a?network=preprod) | ✅ Confirmed |
 
 </details>
 
@@ -110,14 +128,15 @@ All 50 wallet interactions are permanently recorded and verifiable on-chain on t
 
 ### 📊 Table 2: Feedback Implementation
 
-Selected responses from the [Public Google Responses Sheet](https://docs.google.com/spreadsheets/d/1NY72SNhk_Aq_ZR7SINn1E5zE9GKvXGUhe_njx08nuWc/edit?usp=sharing) (collected via our [Community Feedback Form](https://forms.gle/debb5b8EaQZyfMTw5)) that directly drove product improvements in this iteration:
+Selected responses from the [Public Google Responses Sheet](https://docs.google.com/spreadsheets/d/1NY72SNhk_Aq_ZR7SINn1E5zE9GKvXGUhe_njx08nuWc/edit?usp=sharing) (collected via our [Community Feedback Form](https://forms.gle/debb5b8EaQZyfMTw5)) that directly drove product improvements across our development sprints:
 
 | User ID | Name | Feedback Summary | Improvement Made | Git Commit |
 |:---:|:---|:---|:---|:---:|
 | **U003** | Vaibhavi Agale | *"Need improvement on transactions, showcases error, proper certificate must be assigned to every user"* | Enforced strict `min=0` numeric income validation, added user-friendly error translator converting raw circuit assertion codes to actionable messages, and generated post-verification eligibility cards. | [`f73cd49`](https://github.com/thesumedh/Scholarship-vault/commit/f73cd49) |
-| **U013** | Sayali Nighot | *"Nice step by step process. Please add a dark mode to the student dashboard."* | Built dedicated Dark Mode toggle on student dashboard with theme state persistence via localStorage and multi-stage progress indicators (`Witness Generation` → `Client ZK Prover` → `Inscribing on Preprod`). | [`b097153`](https://github.com/thesumedh/Scholarship-vault/commit/b097153) |
 | **U004** | Rohan Sharma | *"1AM wallet extension was getting stuck on session creation and threw network parameter mismatch errors when connecting."* | Engineered universal CAIP-372 / CIP-30 UUID injection discovery, defensive address extraction, and fallback session creation. | [`e491324`](https://github.com/thesumedh/Scholarship-vault/commit/e491324) |
 | **U012** | Ananya Verma | *"Initial page load was heavy due to WASM proving circuits, and I wanted a way to test the eligibility logic before spending testnet tokens."* | Implemented lazy-loaded WASM circuit routes in Vite config and built an interactive client-side ZK simulation sandbox with live math constraint validation. | [`1b5dd62`](https://github.com/thesumedh/Scholarship-vault/commit/1b5dd62) |
+| **U013** | Sayali Nighot | *"Nice step by step process. Please add a dark mode to the student dashboard."* | Built dedicated Dark Mode toggle on student dashboard with theme state persistence via localStorage and multi-stage progress indicators (`Witness Generation` → `Client ZK Prover` → `Inscribing on Preprod`). | [`b097153`](https://github.com/thesumedh/Scholarship-vault/commit/b097153) |
+| **U017** | Aditya Kulkarni | *"When submitting proof on slower connections, it was unclear if Lace wallet had registered the transaction or if it timed out."* | Added visual transaction confirmation ticker with real-time Preprod block confirmation polling and timeout fail-safe alerts. | [`b863d6a`](https://github.com/thesumedh/Scholarship-vault/commit/b863d6a) |
 
 ---
 

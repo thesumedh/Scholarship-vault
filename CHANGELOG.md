@@ -5,6 +5,25 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [1.3.0] - 2026-09-26
+
+### Added
+- **Level 6 Supermoon Milestones & 71 Verified Preprod Users Cohort**:
+  - Expanded on-chain verified user cohort from 50 to 71 distinct Preprod wallet addresses and transaction IDs.
+  - Formally documented expanded 14-item community feedback implementation loop mapped to specific git commits.
+  - Added on-chain transaction hashes cross-referencing Midnight Preprod block explorer and 1AM Explorer.
+  - Added CI/CD pipeline hardening with 10-coin DUST funding buffer in local network test harness.
+  - Integrated circuit assertion error translator converting raw WASM codes into user-friendly diagnostic guidance.
+
+## [1.2.0] - 2026-09-18
+
+### Added
+- **ZK Sandbox & Interactive Witness Inspector**:
+  - Built client-side zero-knowledge simulation sandbox on `/verify` to test threshold math without requiring testnet tokens.
+  - Added student dashboard Dark Mode toggle with localStorage theme state persistence.
+  - Introduced granular multi-stage progress badges (`Witness Generation` → `Client ZK Prover` → `Inscribing on Preprod`).
+  - Added responsive collapsible mobile navigation drawer with touch-friendly input targets.
+
 ## [1.1.0] - 2026-09-11
 
 ### Fixed

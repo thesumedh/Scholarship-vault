@@ -52,3 +52,4 @@ A decentralized application (dApp) that allows students to prove their eligibili
 - **Phase 3 (Level 3 - First Quarter)**: Polishing the UX, adding comprehensive integration tests, and configuring CI/CD pipelines.
 - **Phase 4 (Level 4 - Waxing Gibbous)**: Live Preprod MVP, comprehensive documentation, and public brand presence.
 - **Phase 5 (Level 5 - Full Moon)**: User onboarding (50+ Preprod users), feedback loops, and deployment with dedicated preprod contracts.
+- **Phase 6 (Level 6 - Supermoon)**: Community scale (70+ Preprod users), living feedback loop with commit tracking, ecosystem brand presence, and Mainnet readiness.
